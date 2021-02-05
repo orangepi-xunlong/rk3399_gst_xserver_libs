@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>audiolatency: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-audiochannelmix.html" title="audiochannelmix">
+<link rel="next" href="gst-plugins-bad-plugins-audiomixmatrix.html" title="audiomixmatrix">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-audiolatency.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-audiolatency.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-audiolatency.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-audiolatency.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-audiochannelmix.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-audiomixmatrix.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-audiolatency"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-audiolatency.top_of_page"></a>audiolatency</span></h2>
+<p>audiolatency</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiolatency.html#GstAudioLatency--average-latency" title="The “average-latency” property">average-latency</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiolatency.html#GstAudioLatency--last-latency" title="The “last-latency” property">last-latency</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiolatency.html#GstAudioLatency--print-latency" title="The “print-latency” property">print-latency</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstAudioLatency"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-audiolatency.html#GstAudioLatency-struct" title="struct GstAudioLatency">GstAudioLatency</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBin.html#GstBin-struct">GstBin</a>
+                    <span class="lineart">╰──</span> GstAudioLatency
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstAudioLatency implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstChildProxy.html#GstChildProxy-struct">GstChildProxy</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.description"></a><h2>Description</h2>
+<p>Measures the audio latency between the source pad and the sink pad by
+outputting period ticks on the source pad and measuring how long they take to
+arrive on the sink pad.</p>
+<p>The ticks have a period of 1 second, so this element can only measure
+latencies smaller than that.</p>
+<div class="refsect3">
+<a name="id-1.2.13.8.4"></a><h4>Example pipeline</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v autoaudiosrc <span class="gtkdoc opt">!</span> audiolatency print<span class="gtkdoc opt">-</span>latency<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> autoaudiosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Continuously print the latency of the audio output and the audio capture</p>
+<p>In this case, you must ensure that the audio output is captured by the audio
+source. The simplest way is to use a standard 3.5mm male-to-male audio cable
+to connect line-out to line-in, or speaker-out to mic-in, etc.</p>
+<p>Capturing speaker output with a microphone should also work, as long as the
+ambient noise level is low enough. You may have to adjust the microphone gain
+to ensure that the volume is loud enough to be detected by the element, and
+at the same time that it's not so loud that it picks up ambient noise.</p>
+<p>For programmatic use, instead of using 'print-stats', you should read the
+'last-latency' and 'average-latency' properties at most once a second, or
+parse the "latency" element message, which contains the "last-latency" and
+"average-latency" fields in the GstStructure.</p>
+<p>The average latency is a running average of the last 5 measurements.</p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.13.8.5.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-audiolatency.html#plugin-audiolatency">audiolatency</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Nirbheek Chauhan &lt;nirbheek@centricular.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Audio/Util</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.13.8.5.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>audio/x-raw, format=(string)F32LE, layout=(string)interleaved, rate=(int)[ 1, 2147483647 ], channels=(int)[ 1, 2147483647 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>audio/x-raw, format=(string)F32LE, layout=(string)interleaved, rate=(int)[ 1, 2147483647 ], channels=(int)[ 1, 2147483647 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstAudioLatency-struct"></a><h3>struct GstAudioLatency</h3>
+<pre class="programlisting">struct GstAudioLatency;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiolatency.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstAudioLatency--average-latency"></a><h3>The <code class="literal">“average-latency”</code> property</h3>
+<pre class="programlisting">  “average-latency”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>The running average latency, in microseconds.</p>
+<p>Flags: Read</p>
+<p>Allowed values: [0,1000000]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioLatency--last-latency"></a><h3>The <code class="literal">“last-latency”</code> property</h3>
+<pre class="programlisting">  “last-latency”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint64"><span class="type">gint64</span></a></pre>
+<p>The last latency that was measured, in microseconds.</p>
+<p>Flags: Read</p>
+<p>Allowed values: [0,1000000]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioLatency--print-latency"></a><h3>The <code class="literal">“print-latency”</code> property</h3>
+<pre class="programlisting">  “print-latency”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Print the measured latencies on stdout.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>rtpulpfecdec: GStreamer Good Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Good Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-good Elements">
+<link rel="prev" href="gst-plugins-good-plugins-rtptheorapay.html" title="rtptheorapay">
+<link rel="next" href="gst-plugins-good-plugins-rtpulpfecenc.html" title="rtpulpfecenc">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtpulpfecdec.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtpulpfecdec.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtpulpfecdec.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-good-plugins-rtptheorapay.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-good-plugins-rtpulpfecenc.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-good-plugins-rtpulpfecdec"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-good-plugins-rtpulpfecdec.top_of_page"></a>rtpulpfecdec</span></h2>
+<p>rtpulpfecdec — Generic RTP Forward Error Correction (FEC) decoder</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecdec.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec--pt" title="The “pt” property">pt</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec--recovered" title="The “recovered” property">recovered</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec--storage" title="The “storage” property">storage</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec--unrecovered" title="The “unrecovered” property">unrecovered</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstRtpUlpFecDec"></a><div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecdec.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec-struct" title="struct GstRtpUlpFecDec">GstRtpUlpFecDec</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecdec.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> GstRtpUlpFecDec
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecdec.description"></a><h2>Description</h2>
+<p>Generic Forward Error Correction (FEC) decoder for Uneven Level
+Protection (ULP) as described in RFC 5109.</p>
+<p>This element will work in combination with an upstream <a class="link" href="gst-plugins-good-plugins-rtpstorage.html#GstRtpStorage"><span class="type">GstRtpStorage</span></a>
+element and attempt to recover packets declared lost through custom
+'GstRTPPacketLost' events, usually emitted by <a class="link" href="gst-plugins-good-plugins-rtpjitterbuffer.html#GstRtpJitterBuffer"><span class="type">GstRtpJitterBuffer</span></a>.</p>
+<p>As such, this element cannot be usefully used from the command line,
+because a reference to the upstream storage object needs to be
+provided to it through its <a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec--storage" title="The “storage” property"><span class="type">“storage”</span></a> property, example
+programs are available at
+<a class="ulink" href="https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecserver.rs" target="_top">https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecserver.rs</a>
+and
+<a class="ulink" href="https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecclient.rs" target="_top">https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecclient.rs</a>.</p>
+<p>Additionally, the payload types of the protection packets *must* be
+provided to this element via its <a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec--pt" title="The “pt” property"><span class="type">“pt”</span></a> property.</p>
+<p>When using <a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin"><span class="type">GstRtpBin</span></a>, this element should be inserted through the
+<a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin-request-fec-decoder" title="The “request-fec-decoder” signal"><span class="type">“request-fec-decoder”</span></a> signal.</p>
+<p>See also: <a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc"><span class="type">GstRtpUlpFecEnc</span></a>, <a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin"><span class="type">GstRtpBin</span></a>, <a class="link" href="gst-plugins-good-plugins-rtpstorage.html#GstRtpStorage"><span class="type">GstRtpStorage</span></a></p>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.227.7.8.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-good-plugins-plugin-rtp.html#plugin-rtp">rtp</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Mikhail Fludkov &lt;misha@pexip.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Codec/Depayloader/Network/RTP</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.227.7.8.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecdec.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecdec.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstRtpUlpFecDec-struct"></a><h3>struct GstRtpUlpFecDec</h3>
+<pre class="programlisting">struct GstRtpUlpFecDec;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecdec.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstRtpUlpFecDec--pt"></a><h3>The <code class="literal">“pt”</code> property</h3>
+<pre class="programlisting">  “pt”                       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>FEC packets payload type.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 127</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecDec--recovered"></a><h3>The <code class="literal">“recovered”</code> property</h3>
+<pre class="programlisting">  “recovered”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The number of recovered packets.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecDec--storage"></a><h3>The <code class="literal">“storage”</code> property</h3>
+<pre class="programlisting">  “storage”                  <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct"><span class="type">GObject</span></a> *</pre>
+<p>RTP storage.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecDec--unrecovered"></a><h3>The <code class="literal">“unrecovered”</code> property</h3>
+<pre class="programlisting">  “unrecovered”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The number of unrecovered packets.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

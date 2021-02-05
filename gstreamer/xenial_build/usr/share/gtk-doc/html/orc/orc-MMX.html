@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>MMX: Orc Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Orc Reference Manual">
+<link rel="up" href="ch04.html" title="Code Generation">
+<link rel="prev" href="orc-ARM.html" title="ARM">
+<link rel="next" href="orc-PowerPC.html" title="PowerPC">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#orc-MMX.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch04.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="orc-ARM.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="orc-PowerPC.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="orc-MMX"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="orc-MMX.top_of_page"></a>MMX</span></h2>
+<p>MMX — code generation for MMX</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="orc-MMX.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#ORC-MMX-SHUF:CAPS" title="ORC_MMX_SHUF()">ORC_MMX_SHUF</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-0f" title="orc_mmx_emit_0f ()">orc_mmx_emit_0f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-660f" title="orc_mmx_emit_660f ()">orc_mmx_emit_660f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-f20f" title="orc_mmx_emit_f20f ()">orc_mmx_emit_f20f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-f30f" title="orc_mmx_emit_f30f ()">orc_mmx_emit_f30f</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-loadib" title="orc_mmx_emit_loadib ()">orc_mmx_emit_loadib</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-loadil" title="orc_mmx_emit_loadil ()">orc_mmx_emit_loadil</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-loadiw" title="orc_mmx_emit_loadiw ()">orc_mmx_emit_loadiw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-loadpb" title="orc_mmx_emit_loadpb ()">orc_mmx_emit_loadpb</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-loadpl" title="orc_mmx_emit_loadpl ()">orc_mmx_emit_loadpl</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-loadpq" title="orc_mmx_emit_loadpq ()">orc_mmx_emit_loadpq</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-loadpw" title="orc_mmx_emit_loadpw ()">orc_mmx_emit_loadpw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-pshufw" title="orc_mmx_emit_pshufw ()">orc_mmx_emit_pshufw</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-emit-shiftimm" title="orc_mmx_emit_shiftimm ()">orc_mmx_emit_shiftimm</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">unsigned <span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-get-cpu-flags" title="orc_mmx_get_cpu_flags ()">orc_mmx_get_cpu_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-MMX.html#orc-mmx-init" title="orc_mmx_init ()">orc_mmx_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-MMX.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="orc-MMX.html#OrcMMXRegister" title="enum OrcMMXRegister">OrcMMXRegister</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="orc-MMX.html#OrcTargetMMXFlags" title="enum OrcTargetMMXFlags">OrcTargetMMXFlags</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-MMX.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="orc-MMX.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ORC-MMX-SHUF:CAPS"></a><h3>ORC_MMX_SHUF()</h3>
+<pre class="programlisting">#define ORC_MMX_SHUF(a,b,c,d) ((((a)&amp;3)&lt;&lt;6)|(((b)&amp;3)&lt;&lt;4)|(((c)&amp;3)&lt;&lt;2)|(((d)&amp;3)&lt;&lt;0))
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-0f"></a><h3>orc_mmx_emit_0f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_0f (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                 <em class="parameter"><code>const <span class="type">char</span> *insn_name</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> code</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> src</code></em>,
+                 <em class="parameter"><code><span class="type">int</span> dest</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-660f"></a><h3>orc_mmx_emit_660f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_660f (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                   <em class="parameter"><code>const <span class="type">char</span> *insn_name</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> code</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> src</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> dest</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-f20f"></a><h3>orc_mmx_emit_f20f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_f20f (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                   <em class="parameter"><code>const <span class="type">char</span> *insn_name</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> code</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> src</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> dest</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-f30f"></a><h3>orc_mmx_emit_f30f ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_f30f (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                   <em class="parameter"><code>const <span class="type">char</span> *insn_name</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> code</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> src</code></em>,
+                   <em class="parameter"><code><span class="type">int</span> dest</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-loadib"></a><h3>orc_mmx_emit_loadib ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_loadib (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> reg</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-loadil"></a><h3>orc_mmx_emit_loadil ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_loadil (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> reg</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-loadiw"></a><h3>orc_mmx_emit_loadiw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_loadiw (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> reg</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-loadpb"></a><h3>orc_mmx_emit_loadpb ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_loadpb (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> reg</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-loadpl"></a><h3>orc_mmx_emit_loadpl ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_loadpl (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> reg</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-loadpq"></a><h3>orc_mmx_emit_loadpq ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_loadpq (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> reg</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-loadpw"></a><h3>orc_mmx_emit_loadpw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_loadpw (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> reg</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> value</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-pshufw"></a><h3>orc_mmx_emit_pshufw ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_pshufw (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> shuf</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> src</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> dest</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-emit-shiftimm"></a><h3>orc_mmx_emit_shiftimm ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_emit_shiftimm (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                       <em class="parameter"><code>const <span class="type">char</span> *insn_name</code></em>,
+                       <em class="parameter"><code><span class="type">int</span> code</code></em>,
+                       <em class="parameter"><code><span class="type">int</span> modrm_code</code></em>,
+                       <em class="parameter"><code><span class="type">int</span> shift</code></em>,
+                       <em class="parameter"><code><span class="type">int</span> reg</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-get-cpu-flags"></a><h3>orc_mmx_get_cpu_flags ()</h3>
+<pre class="programlisting">unsigned <span class="returnvalue">int</span>
+orc_mmx_get_cpu_flags (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-mmx-init"></a><h3>orc_mmx_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_mmx_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="orc-MMX.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="OrcMMXRegister"></a><h3>enum OrcMMXRegister</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="OrcMMXRegister.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM0:CAPS"></a>X86_MM0</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM1:CAPS"></a>X86_MM1</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM2:CAPS"></a>X86_MM2</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM3:CAPS"></a>X86_MM3</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM4:CAPS"></a>X86_MM4</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM5:CAPS"></a>X86_MM5</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM6:CAPS"></a>X86_MM6</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="X86-MM7:CAPS"></a>X86_MM7</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcTargetMMXFlags"></a><h3>enum OrcTargetMMXFlags</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="OrcTargetMMXFlags.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-MMX:CAPS"></a>ORC_TARGET_MMX_MMX</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-MMXEXT:CAPS"></a>ORC_TARGET_MMX_MMXEXT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-3DNOW:CAPS"></a>ORC_TARGET_MMX_3DNOW</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-3DNOWEXT:CAPS"></a>ORC_TARGET_MMX_3DNOWEXT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-SSSE3:CAPS"></a>ORC_TARGET_MMX_SSSE3</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-SSE4-1:CAPS"></a>ORC_TARGET_MMX_SSE4_1</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-SSE4-2:CAPS"></a>ORC_TARGET_MMX_SSE4_2</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-FRAME-POINTER:CAPS"></a>ORC_TARGET_MMX_FRAME_POINTER</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-SHORT-JUMPS:CAPS"></a>ORC_TARGET_MMX_SHORT_JUMPS</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-TARGET-MMX-64BIT:CAPS"></a>ORC_TARGET_MMX_64BIT</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

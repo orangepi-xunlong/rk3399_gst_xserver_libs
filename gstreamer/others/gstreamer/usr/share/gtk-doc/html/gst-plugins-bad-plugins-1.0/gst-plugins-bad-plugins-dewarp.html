@@ -1,0 +1,375 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dewarp: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-decklinkvideosrc.html" title="decklinkvideosrc">
+<link rel="next" href="gst-plugins-bad-plugins-dfbvideosink.html" title="dfbvideosink">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-dewarp.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-dewarp.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-dewarp.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-decklinkvideosrc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-dfbvideosink.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-dewarp"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-dewarp.top_of_page"></a>dewarp</span></h2>
+<p>dewarp</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dewarp.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarpDisplayMode" title="enum GstDewarpDisplayMode"><span class="type">GstDewarpDisplayMode</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--display-mode" title="The “display-mode” property">display-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--inner-radius" title="The “inner-radius” property">inner-radius</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarpInterpolationMode" title="enum GstDewarpInterpolationMode"><span class="type">GstDewarpInterpolationMode</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--interpolation-method" title="The “interpolation-method” property">interpolation-method</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--outer-radius" title="The “outer-radius” property">outer-radius</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--x-center" title="The “x-center” property">x-center</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--x-remap-correction" title="The “x-remap-correction” property">x-remap-correction</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--y-center" title="The “y-center” property">y-center</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp--y-remap-correction" title="The “y-remap-correction” property">y-remap-correction</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstDewarp"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-dewarp.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarp-struct" title="struct GstDewarp">GstDewarp</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarpDisplayMode" title="enum GstDewarpDisplayMode">GstDewarpDisplayMode</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarpInterpolationMode" title="enum GstDewarpInterpolationMode">GstDewarpInterpolationMode</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dewarp.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0/GstVideoFilter.html#GstVideoFilter-struct">GstVideoFilter</a>
+                        <span class="lineart">╰──</span> GstOpencvVideoFilter
+                            <span class="lineart">╰──</span> GstDewarp
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dewarp.description"></a><h2>Description</h2>
+<p>Dewarp fisheye images</p>
+<div class="refsect2">
+<a name="id-1.2.59.7.3"></a><h3>Example launch line</h3>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> videotestsrc <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> circle radius<span class="gtkdoc opt">=</span><span class="number">0.1</span> height<span class="gtkdoc opt">=</span><span class="number">80</span>  <span class="gtkdoc opt">!</span> dewarp outer<span class="gtkdoc opt">-</span>radius<span class="gtkdoc opt">=</span><span class="number">0.35</span> inner<span class="gtkdoc opt">-</span>radius<span class="gtkdoc opt">=</span><span class="number">0.1</span> <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> xvimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.59.7.4.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-opencv.html#plugin-opencv">opencv</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Nicola Murino &lt;nicola.murino@gmail.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Effect/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.59.7.4.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dewarp.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dewarp.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstDewarp-struct"></a><h3>struct GstDewarp</h3>
+<pre class="programlisting">struct GstDewarp;</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarpDisplayMode"></a><h3>enum GstDewarpDisplayMode</h3>
+<div class="refsect3">
+<a name="GstDewarpDisplayMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-DEWARP-DISPLAY-PANORAMA:CAPS"></a>GST_DEWARP_DISPLAY_PANORAMA</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-DEWARP-DISPLAY-DOUBLE-PANORAMA:CAPS"></a>GST_DEWARP_DISPLAY_DOUBLE_PANORAMA</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-DEWARP-DISPLAY-QUAD-VIEW:CAPS"></a>GST_DEWARP_DISPLAY_QUAD_VIEW</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarpInterpolationMode"></a><h3>enum GstDewarpInterpolationMode</h3>
+<div class="refsect3">
+<a name="GstDewarpInterpolationMode.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-DEWARP-INTER-NEAREST:CAPS"></a>GST_DEWARP_INTER_NEAREST</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-DEWARP-INTER-LINEAR:CAPS"></a>GST_DEWARP_INTER_LINEAR</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-DEWARP-INTER-CUBIC:CAPS"></a>GST_DEWARP_INTER_CUBIC</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-DEWARP-INTER-LANCZOS4:CAPS"></a>GST_DEWARP_INTER_LANCZOS4</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dewarp.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstDewarp--display-mode"></a><h3>The <code class="literal">“display-mode”</code> property</h3>
+<pre class="programlisting">  “display-mode”             <a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarpDisplayMode" title="enum GstDewarpDisplayMode"><span class="type">GstDewarpDisplayMode</span></a></pre>
+<p>How to display the dewarped image.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Single panorama image</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarp--inner-radius"></a><h3>The <code class="literal">“inner-radius”</code> property</h3>
+<pre class="programlisting">  “inner-radius”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Inner radius of the fisheye image donut. If outer radius &lt;= inner radius the element will work in passthrough mode.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarp--interpolation-method"></a><h3>The <code class="literal">“interpolation-method”</code> property</h3>
+<pre class="programlisting">  “interpolation-method”     <a class="link" href="gst-plugins-bad-plugins-dewarp.html#GstDewarpInterpolationMode" title="enum GstDewarpInterpolationMode"><span class="type">GstDewarpInterpolationMode</span></a></pre>
+<p>Interpolation method to use.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: A bilinear interpolation</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarp--outer-radius"></a><h3>The <code class="literal">“outer-radius”</code> property</h3>
+<pre class="programlisting">  “outer-radius”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Outer radius of the fisheye image donut. If outer radius &lt;= inner radius the element will work in passthrough mode.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarp--x-center"></a><h3>The <code class="literal">“x-center”</code> property</h3>
+<pre class="programlisting">  “x-center”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>X axis center of the fisheye image.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarp--x-remap-correction"></a><h3>The <code class="literal">“x-remap-correction”</code> property</h3>
+<pre class="programlisting">  “x-remap-correction”       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Correction factor for remapping on x axis. A correction is needed if the fisheye image is not inside a circle.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0.1,10]</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarp--y-center"></a><h3>The <code class="literal">“y-center”</code> property</h3>
+<pre class="programlisting">  “y-center”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Y axis center of the fisheye image.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0.5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDewarp--y-remap-correction"></a><h3>The <code class="literal">“y-remap-correction”</code> property</h3>
+<pre class="programlisting">  “y-remap-correction”       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gdouble"><span class="type">gdouble</span></a></pre>
+<p>Correction factor for remapping on y axis. A correction is needed if the fisheye image is not inside a circle.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0.1,10]</p>
+<p>Default value: 1</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

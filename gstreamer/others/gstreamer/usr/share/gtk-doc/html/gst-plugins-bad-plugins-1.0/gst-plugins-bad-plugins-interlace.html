@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>interlace: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-interaudiosrc.html" title="interaudiosrc">
+<link rel="next" href="gst-plugins-bad-plugins-intersubsink.html" title="intersubsink">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-interlace.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-interaudiosrc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-intersubsink.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-interlace"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-interlace.top_of_page"></a>interlace</span></h2>
+<p>interlace</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-interlace.description"></a><h2>Description</h2>
+<p>The interlace element takes a non-interlaced raw video stream as input,
+creates fields out of each frame, then combines fields into interlaced
+frames to output as an interlaced video stream. It can also produce
+telecined streams from progressive input.</p>
+<div class="refsect3">
+<a name="id-1.2.118.3.3"></a><h4>Example launch line</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v videotestsrc pattern<span class="gtkdoc opt">=</span>ball <span class="gtkdoc opt">!</span> interlace <span class="gtkdoc opt">!</span> xvimagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+This pipeline illustrates the combing effects caused by displaying
+two interlaced fields as one progressive frame.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v filesrc location<span class="gtkdoc opt">=/</span>path<span class="gtkdoc opt">/</span>to<span class="gtkdoc opt">/</span>file <span class="gtkdoc opt">!</span> decodebin <span class="gtkdoc opt">!</span> videorate <span class="gtkdoc opt">!</span>
+  videoscale <span class="gtkdoc opt">!</span> video<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>format<span class="gtkdoc opt">=</span>\<span class="gtkdoc opt">(</span>string\<span class="gtkdoc opt">)</span>I420<span class="gtkdoc opt">,</span>width<span class="gtkdoc opt">=</span><span class="number">720</span><span class="gtkdoc opt">,</span>height<span class="gtkdoc opt">=</span><span class="number">480</span><span class="gtkdoc opt">,</span>
+  framerate<span class="gtkdoc opt">=</span><span class="number">60000</span><span class="gtkdoc opt">/</span><span class="number">1001</span><span class="gtkdoc opt">,</span>pixel<span class="gtkdoc opt">-</span>aspect<span class="gtkdoc opt">-</span>ratio<span class="gtkdoc opt">=</span><span class="number">11</span><span class="gtkdoc opt">/</span><span class="number">10</span> <span class="gtkdoc opt">!</span>
+  interlace top<span class="gtkdoc opt">-</span>field<span class="gtkdoc opt">-</span>first<span class="gtkdoc opt">=</span><span class="keyword">false</span> <span class="gtkdoc opt">!</span> autovideosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+This pipeline converts a progressive video stream into an interlaced
+stream suitable for standard definition NTSC.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v videotestsrc pattern<span class="gtkdoc opt">=</span>ball <span class="gtkdoc opt">!</span> video<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>
+  format<span class="gtkdoc opt">=</span>\<span class="gtkdoc opt">(</span>string\<span class="gtkdoc opt">)</span>I420<span class="gtkdoc opt">,</span>width<span class="gtkdoc opt">=</span><span class="number">720</span><span class="gtkdoc opt">,</span>height<span class="gtkdoc opt">=</span><span class="number">480</span><span class="gtkdoc opt">,</span>framerate<span class="gtkdoc opt">=</span><span class="number">24000</span><span class="gtkdoc opt">/</span><span class="number">1001</span><span class="gtkdoc opt">,</span>
+  pixel<span class="gtkdoc opt">-</span>aspect<span class="gtkdoc opt">-</span>ratio<span class="gtkdoc opt">=</span><span class="number">11</span><span class="gtkdoc opt">/</span><span class="number">10</span> <span class="gtkdoc opt">!</span> interlace <span class="gtkdoc opt">!</span>
+  autovideosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p>
+This pipeline converts a 24 frames per second progressive film stream into a
+30000/1001 2:3:2:3... pattern telecined stream suitable for displaying film
+content on NTSC.</p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.118.3.4.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-interlace.html#plugin-interlace">interlace</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>David Schleef &lt;ds@schleef.org&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.118.3.4.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string){ AYUV, YUY2, UYVY, I420, YV12, Y42B, Y444, NV12, NV21 }, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string){ AYUV, YUY2, UYVY, I420, YV12, Y42B, Y444, NV12, NV21 }, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], interlace-mode=(string){ interleaved, mixed }</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-interlace.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-interlace.other_details"></a><h2>Types and Values</h2>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

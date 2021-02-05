@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>proxysrc: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-proxysink.html" title="proxysink">
+<link rel="next" href="gst-plugins-bad-plugins-rawaudioparse.html" title="rawaudioparse">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-proxysrc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-proxysrc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-proxysrc.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-proxysrc.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-proxysink.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-rawaudioparse.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-proxysrc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-proxysrc.top_of_page"></a>proxysrc</span></h2>
+<p>proxysrc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody><tr>
+<td class="property_type">
+<a class="link" href="gst-plugins-bad-plugins-proxysink.html#GstProxySink"><span class="type">GstProxySink</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-proxysrc.html#GstProxySrc--proxysink" title="The “proxysink” property">proxysink</a></td>
+<td class="property_flags">Read / Write</td>
+</tr></tbody>
+</table></div>
+</div>
+<a name="GstProxySrc"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-proxysrc.html#GstProxySrc-struct" title="struct GstProxySrc">GstProxySrc</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBin.html#GstBin-struct">GstBin</a>
+                    <span class="lineart">╰──</span> GstProxySrc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstProxySrc implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstChildProxy.html#GstChildProxy-struct">GstChildProxy</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.description"></a><h2>Description</h2>
+<p>Proxysrc is a source element that proxies events, queries, and buffers from
+another pipeline that contains a matching proxysink element. The purpose is
+to allow two decoupled pipelines to function as though they are one without
+having to manually shuttle buffers, events, queries, etc between the two.</p>
+<p>The element queues buffers from the matching proxysink to an internal queue,
+so everything downstream is properly decoupled from the upstream pipeline.
+However, the queue may get filled up if the downstream pipeline does not
+accept buffers quickly enough; perhaps because it is not yet PLAYING.</p>
+<div class="refsect3">
+<a name="id-1.2.179.8.4"></a><h4>Usage</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32</pre></td>
+        <td class="listing_code"><pre class="programlisting">GstElement <span class="gtkdoc opt">*</span>pipe1<span class="gtkdoc opt">, *</span>pipe2<span class="gtkdoc opt">, *</span>psink<span class="gtkdoc opt">, *</span>psrc<span class="gtkdoc opt">;</span>
+GstClock <span class="gtkdoc opt">*</span>clock<span class="gtkdoc opt">;</span>
+
+pipe1 <span class="gtkdoc opt">=</span> <span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstParse.html#gst-parse-launch">gst_parse_launch</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;audiotestsrc ! proxysink name=psink&quot;</span><span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+psink <span class="gtkdoc opt">=</span> <span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBin.html#gst-bin-get-by-name">gst_bin_get_by_name</a></span> <span class="gtkdoc opt">(</span><span class="function">GST_BIN</span> <span class="gtkdoc opt">(</span>pipe1<span class="gtkdoc opt">),</span> <span class="string">&quot;psink&quot;</span><span class="gtkdoc opt">);</span>
+
+pipe2 <span class="gtkdoc opt">=</span> <span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstParse.html#gst-parse-launch">gst_parse_launch</a></span> <span class="gtkdoc opt">(</span><span class="string">&quot;proxysrc name=psrc ! autoaudiosink&quot;</span><span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+psrc <span class="gtkdoc opt">=</span> <span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBin.html#gst-bin-get-by-name">gst_bin_get_by_name</a></span> <span class="gtkdoc opt">(</span><span class="function">GST_BIN</span> <span class="gtkdoc opt">(</span>pipe2<span class="gtkdoc opt">),</span> <span class="string">&quot;psrc&quot;</span><span class="gtkdoc opt">);</span>
+
+<span class="gtkdoc slc">// Connect the two pipelines</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-set">g_object_set</a></span> <span class="gtkdoc opt">(</span>psrc<span class="gtkdoc opt">,</span> <span class="string">&quot;proxysink&quot;</span><span class="gtkdoc opt">,</span> psink<span class="gtkdoc opt">,</span> NULL<span class="gtkdoc opt">);</span>
+
+<span class="gtkdoc slc">// Both pipelines must agree on the timing information or we&apos;ll get glitches</span>
+<span class="gtkdoc slc">// or overruns/underruns. Ideally, we should tell pipe1 to use the same clock</span>
+<span class="gtkdoc slc">// as pipe2, but since that will be set asynchronously to the audio clock, it</span>
+<span class="gtkdoc slc">// is simpler and likely accurate enough to use the system clock for both</span>
+<span class="gtkdoc slc">// pipelines. If no element in either pipeline will provide a clock, this</span>
+<span class="gtkdoc slc">// is not needed.</span>
+clock <span class="gtkdoc opt">=</span> <span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstSystemClock.html#gst-system-clock-obtain">gst_system_clock_obtain</a></span> <span class="gtkdoc opt">();</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPipeline.html#gst-pipeline-use-clock">gst_pipeline_use_clock</a></span> <span class="gtkdoc opt">(</span><span class="function">GST_PIPELINE</span> <span class="gtkdoc opt">(</span>pipe1<span class="gtkdoc opt">),</span> clock<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPipeline.html#gst-pipeline-use-clock">gst_pipeline_use_clock</a></span> <span class="gtkdoc opt">(</span><span class="function">GST_PIPELINE</span> <span class="gtkdoc opt">(</span>pipe2<span class="gtkdoc opt">),</span> clock<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#g-object-unref">g_object_unref</a></span> <span class="gtkdoc opt">(</span>clock<span class="gtkdoc opt">);</span>
+
+<span class="gtkdoc slc">// This is not really needed in this case since the pipelines are created and</span>
+<span class="gtkdoc slc">// started at the same time. However, an application that dynamically</span>
+<span class="gtkdoc slc">// generates pipelines must ensure that all the pipelines that will be</span>
+<span class="gtkdoc slc">// connected together share the same base time.</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#gst-element-set-base-time">gst_element_set_base_time</a></span> <span class="gtkdoc opt">(</span>pipe1<span class="gtkdoc opt">,</span> <span class="number">0</span><span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#gst-element-set-base-time">gst_element_set_base_time</a></span> <span class="gtkdoc opt">(</span>pipe2<span class="gtkdoc opt">,</span> <span class="number">0</span><span class="gtkdoc opt">);</span>
+
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#gst-element-set-state">gst_element_set_state</a></span> <span class="gtkdoc opt">(</span>pipe1<span class="gtkdoc opt">,</span> GST_STATE_PLAYING<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#gst-element-set-state">gst_element_set_state</a></span> <span class="gtkdoc opt">(</span>pipe2<span class="gtkdoc opt">,</span> GST_STATE_PLAYING<span class="gtkdoc opt">);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.179.8.5.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-proxy.html#plugin-proxy">proxy</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Sebastian Dröge &lt;sebastian@centricular.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Source</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.179.8.5.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>ANY</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstProxySrc-struct"></a><h3>struct GstProxySrc</h3>
+<pre class="programlisting">struct GstProxySrc;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-proxysrc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstProxySrc--proxysink"></a><h3>The <code class="literal">“proxysink”</code> property</h3>
+<pre class="programlisting">  “proxysink”                <a class="link" href="gst-plugins-bad-plugins-proxysink.html#GstProxySink"><span class="type">GstProxySink</span></a> *</pre>
+<p>Matching proxysink.</p>
+<p>Flags: Read / Write</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

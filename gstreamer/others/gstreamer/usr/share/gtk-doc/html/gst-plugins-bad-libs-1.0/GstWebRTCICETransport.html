@@ -1,0 +1,209 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GstWebRTCICETransport: GStreamer Bad Plugins 1.0 Library Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Library Reference Manual">
+<link rel="up" href="webrtc.html" title="WebRTC Library">
+<link rel="prev" href="GstWebRTCDTLSTransport.html" title="GstWebRTCDTLSTransport">
+<link rel="next" href="GstWebRTCRTPReceiver.html" title="GstWebRTCRTPReceiver">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#GstWebRTCICETransport.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#GstWebRTCICETransport.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#GstWebRTCICETransport.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#GstWebRTCICETransport.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="webrtc.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="GstWebRTCDTLSTransport.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="GstWebRTCRTPReceiver.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="GstWebRTCICETransport"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="GstWebRTCICETransport.top_of_page"></a>GstWebRTCICETransport</span></h2>
+<p>GstWebRTCICETransport — RTCIceTransport object</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">GstWebRTCICEComponent</span></td>
+<td class="property_name"><a class="link" href="GstWebRTCICETransport.html#GstWebRTCICETransport--component" title="The “component” property">component</a></td>
+<td class="property_flags">Read / Write / Construct Only</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebRTCICEGatheringState</span></td>
+<td class="property_name"><a class="link" href="GstWebRTCICETransport.html#GstWebRTCICETransport--gathering-state" title="The “gathering-state” property">gathering-state</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a class="link" href="GstWebRTCICETransport.html#GstWebRTCICEConnectionState" title="enum GstWebRTCICEConnectionState"><span class="type">GstWebRTCICEConnectionState</span></a></td>
+<td class="property_name"><a class="link" href="GstWebRTCICETransport.html#GstWebRTCICETransport--state" title="The “state” property">state</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GstWebRTCICETransport.html#GstWebRTCICETransport-on-new-candidate" title="The “on-new-candidate” signal">on-new-candidate</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="GstWebRTCICETransport.html#GstWebRTCICETransport-on-selected-candidate-pair-change" title="The “on-selected-candidate-pair-change” signal">on-selected-candidate-pair-change</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="GstWebRTCICETransport.html#GstWebRTCICEConnectionState" title="enum GstWebRTCICEConnectionState">GstWebRTCICEConnectionState</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-Enumeration-and-Flag-Types.html">GEnum</a>
+    <span class="lineart">╰──</span> GstWebRTCICEConnectionState
+    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> GstWebRTCICETransport
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.includes"></a><h2>Includes</h2>
+<pre class="synopsis">#include &lt;gst/codecparsers/gstmpeg4parser.h&gt;
+</pre>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.description"></a><h2>Description</h2>
+<a class="ulink" href="https://www.w3.org/TR/webrtc/#rtcicetransport" target="_top">https://www.w3.org/TR/webrtc/#rtcicetransport</a>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstWebRTCICEConnectionState"></a><h3>enum GstWebRTCICEConnectionState</h3>
+<p>See <a class="ulink" href="http://w3c.github.io/webrtc-pc/#dom-rtciceconnectionstate" target="_top">http://w3c.github.io/webrtc-pc/<span class="type">dom-rtciceconnectionstate</span></a></p>
+<div class="refsect3">
+<a name="GstWebRTCICEConnectionState.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="GST-WEBRTC-ICE-GATHERING-STATE-NEW:CAPS"></a>GST_WEBRTC_ICE_GATHERING_STATE_NEW</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-WEBRTC-ICE-GATHERING-STATE-GATHERING:CAPS"></a>GST_WEBRTC_ICE_GATHERING_STATE_GATHERING</p></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="GST-WEBRTC-ICE-GATHERING-STATE-COMPLETE:CAPS"></a>GST_WEBRTC_ICE_GATHERING_STATE_COMPLETE</p></td>
+<td> </td>
+<td> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstWebRTCICETransport--component"></a><h3>The <code class="literal">“component”</code> property</h3>
+<pre class="programlisting">  “component”                <span class="type">GstWebRTCICEComponent</span></pre>
+<p>The ICE component of this transport.</p>
+<p>Flags: Read / Write / Construct Only</p>
+<p>Default value: GST_WEBRTC_ICE_COMPONENT_RTP</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCICETransport--gathering-state"></a><h3>The <code class="literal">“gathering-state”</code> property</h3>
+<pre class="programlisting">  “gathering-state”          <span class="type">GstWebRTCICEGatheringState</span></pre>
+<p>The ICE gathering state of this transport.</p>
+<p>Flags: Read</p>
+<p>Default value: GST_WEBRTC_ICE_GATHERING_STATE_NEW</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCICETransport--state"></a><h3>The <code class="literal">“state”</code> property</h3>
+<pre class="programlisting">  “state”                    <a class="link" href="GstWebRTCICETransport.html#GstWebRTCICEConnectionState" title="enum GstWebRTCICEConnectionState"><span class="type">GstWebRTCICEConnectionState</span></a></pre>
+<p>The ICE connection state of this transport.</p>
+<p>Flags: Read</p>
+<p>Default value: GST_WEBRTC_ICE_CONNECTION_STATE_NEW</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GstWebRTCICETransport-on-new-candidate"></a><h3>The <code class="literal">“on-new-candidate”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GstWebRTCICETransport.html" title="GstWebRTCICETransport"><span class="type">GstWebRTCICETransport</span></a> *gstwebrtcicetransport,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>                 *arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCICETransport-on-selected-candidate-pair-change"></a><h3>The <code class="literal">“on-selected-candidate-pair-change”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="GstWebRTCICETransport.html" title="GstWebRTCICETransport"><span class="type">GstWebRTCICETransport</span></a> *gstwebrtcicetransport,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="GstWebRTCICETransport.see-also"></a><h2>See Also</h2>
+<p><a class="link" href="GstWebRTCRTPSender.html" title="GstWebRTCRTPSender"><span class="type">GstWebRTCRTPSender</span></a>, <a class="link" href="GstWebRTCRTPReceiver.html" title="GstWebRTCRTPReceiver"><span class="type">GstWebRTCRTPReceiver</span></a>, <a class="link" href="GstWebRTCDTLSTransport.html" title="GstWebRTCDTLSTransport"><span class="type">GstWebRTCDTLSTransport</span></a></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

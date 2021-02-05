@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ladspa: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-kmssink.html" title="kmssink">
+<link rel="next" href="gst-plugins-bad-plugins-liveadder.html" title="liveadder">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-ladspa.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-kmssink.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-liveadder.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-ladspa"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-ladspa.top_of_page"></a>ladspa</span></h2>
+<p>ladspa — bridge for LADSPA (Linux Audio Developer's Simple Plugin API)</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-ladspa.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-ladspa.html#GstLADSPA" title="struct GstLADSPA">GstLADSPA</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-ladspa.description"></a><h2>Description</h2>
+<p>The LADSPA (Linux Audio Developer's Simple Plugin API) element is a bridge
+for plugins using the <a class="ulink" href="http://www.ladspa.org/" target="_top">LADSPA</a> API.
+It scans all installed LADSPA plugins and registers them as gstreamer
+elements. If available it can also parse LRDF files and use the metadata for
+element classification. The functionality you get depends on the LADSPA plugins
+you have installed.</p>
+<div class="refsect3">
+<a name="id-1.2.140.4.3"></a><h4>Example LADSPA line without this plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5</pre></td>
+        <td class="listing_code"><pre class="programlisting"><span class="gtkdoc opt">(</span>padsp<span class="gtkdoc opt">)</span> listplugins
+<span class="gtkdoc opt">(</span>padsp<span class="gtkdoc opt">)</span> analyseplugin cmt<span class="gtkdoc opt">.</span>so amp_mono
+gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>e filesrc location<span class="gtkdoc opt">=</span><span class="string">&quot;$myfile&quot;</span> <span class="gtkdoc opt">!</span> decodebin <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> audioresample <span class="gtkdoc opt">!</span> <span class="string">&quot;audio/x-raw,format=S16LE,rate=48000,channels=1&quot;</span> <span class="gtkdoc opt">!</span> wavenc <span class="gtkdoc opt">!</span> filesink location<span class="gtkdoc opt">=</span><span class="string">&quot;testin.wav&quot;</span>
+<span class="gtkdoc opt">(</span>padsp<span class="gtkdoc opt">)</span> applyplugin testin<span class="gtkdoc opt">.</span>wav testout<span class="gtkdoc opt">.</span>wav cmt<span class="gtkdoc opt">.</span>so amp_mono <span class="number">2</span>
+gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> playbin uri<span class="gtkdoc opt">=</span>file<span class="gtkdoc opt">:</span><span class="gtkdoc slc">//&quot;$PWD&quot;/testout.wav</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Decode any audio file into wav with the format expected for the specific ladspa plugin to be applied, apply the ladspa filter and play it.</p>
+<p>Now with this plugin:</p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.4"></a><h4>Example LADSPA line with this plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> autoaudiosrc <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>cmt<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>amp<span class="gtkdoc opt">-</span>mono gain<span class="gtkdoc opt">=</span><span class="number">2</span> <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>caps<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>plate <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>tap<span class="gtkdoc opt">-</span>echo<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>tap<span class="gtkdoc opt">-</span>stereo<span class="gtkdoc opt">-</span>echo l<span class="gtkdoc opt">-</span>delay<span class="gtkdoc opt">=</span><span class="number">500</span> r<span class="gtkdoc opt">-</span>haas<span class="gtkdoc opt">-</span>delay<span class="gtkdoc opt">=</span><span class="number">500</span> <span class="gtkdoc opt">!</span> tee name<span class="gtkdoc opt">=</span>myT myT<span class="gtkdoc opt">. !</span> queue <span class="gtkdoc opt">!</span> autoaudiosink myT<span class="gtkdoc opt">. !</span> queue <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> goom <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> xvimagesink pixel<span class="gtkdoc opt">-</span>aspect<span class="gtkdoc opt">-</span>ratio<span class="gtkdoc opt">=</span><span class="number">3</span><span class="gtkdoc opt">/</span><span class="number">4</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Get audio input, filter it through CAPS Plate and TAP Stereo Echo, play it and show a visualization (recommended hearphones).</p>
+<p>In case you wonder the plugin naming scheme, quoting ladspa.h:
+  "Plugin types should be identified by file and label rather than by
+  index or plugin name, which may be changed in new plugin versions."
+This is really the best way then, and so it is less prone to conflicts.</p>
+<p>Also it is worth noting that LADSPA provides a control in and out interface,
+on top of the audio in and out one, so some parameters are readable too.</p>
+<p>You can see the listing of plugins available with:</p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.5"></a><h4>Inspecting the plugins list</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>inspect ladspa</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> List available LADSPA plugins on gstreamer.</p>
+<p>You can see the parameters of any plugin with:</p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.6"></a><h4>Inspecting the plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>inspect ladspa<span class="gtkdoc opt">-</span>retro<span class="gtkdoc opt">-</span>flange<span class="gtkdoc opt">-</span><span class="number">1208</span><span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>retroflange</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> List details of the plugin, parameters, range and defaults included.</p>
+<p>The elements categorize in:</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Filter/Effect/Audio/LADSPA:</p></li></ul></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.7"></a><h4>Example Filter/Effect/Audio/LADSPA line with this plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> filesrc location<span class="gtkdoc opt">=</span><span class="string">&quot;$myfile&quot;</span> <span class="gtkdoc opt">!</span> decodebin <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> audioresample <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>calf<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>reverb decay<span class="gtkdoc opt">-</span>time<span class="gtkdoc opt">=</span><span class="number">15</span> high<span class="gtkdoc opt">-</span>frq<span class="gtkdoc opt">-</span>damp<span class="gtkdoc opt">=</span><span class="number">20000</span> room<span class="gtkdoc opt">-</span>size<span class="gtkdoc opt">=</span><span class="number">5</span> diffusion<span class="gtkdoc opt">=</span><span class="number">1</span> wet<span class="gtkdoc opt">-</span>amount<span class="gtkdoc opt">=</span><span class="number">2</span> dry<span class="gtkdoc opt">-</span>amount<span class="gtkdoc opt">=</span><span class="number">2</span> pre<span class="gtkdoc opt">-</span>delay<span class="gtkdoc opt">=</span><span class="number">50</span> bass<span class="gtkdoc opt">-</span>cut<span class="gtkdoc opt">=</span><span class="number">20000</span> treble<span class="gtkdoc opt">-</span>cut<span class="gtkdoc opt">=</span><span class="number">20000</span> <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>tap<span class="gtkdoc opt">-</span>echo<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>tap<span class="gtkdoc opt">-</span>stereo<span class="gtkdoc opt">-</span>echo l<span class="gtkdoc opt">-</span>delay<span class="gtkdoc opt">=</span><span class="number">500</span> r<span class="gtkdoc opt">-</span>haas<span class="gtkdoc opt">-</span>delay<span class="gtkdoc opt">=</span><span class="number">500</span> <span class="gtkdoc opt">!</span> autoaudiosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Decode any audio file, filter it through Calf Reverb LADSPA then TAP Stereo Echo, and play it.</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Source/Audio/LADSPA:</p></li></ul></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.8"></a><h4>Example Source/Audio/LADSPA line with this plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> ladspasrc<span class="gtkdoc opt">-</span>sine<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>sine<span class="gtkdoc opt">-</span>fcac frequency<span class="gtkdoc opt">=</span><span class="number">220</span> amplitude<span class="gtkdoc opt">=</span><span class="number">100</span> <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> autoaudiosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Generate a sine wave with Sine Oscillator (Freq:control, Amp:control) and play it.</p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.9"></a><h4>Example Source/Audio/LADSPA line with this plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> ladspasrc<span class="gtkdoc opt">-</span>caps<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>click bpm<span class="gtkdoc opt">=</span><span class="number">240</span> volume<span class="gtkdoc opt">=</span><span class="number">1</span> <span class="gtkdoc opt">!</span> autoaudiosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Generate clicks with CAPS Click - Metronome at 240 beats per minute and play it.</p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.10"></a><h4>Example Source/Audio/LADSPA line with this plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> ladspasrc<span class="gtkdoc opt">-</span>random<span class="gtkdoc opt">-</span><span class="number">1661</span><span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>random<span class="gtkdoc opt">-</span>fcsc<span class="gtkdoc opt">-</span>oa <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>cmt<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>amp<span class="gtkdoc opt">-</span>mono gain<span class="gtkdoc opt">=</span><span class="number">1.5</span> <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>caps<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>plate <span class="gtkdoc opt">!</span> tee name<span class="gtkdoc opt">=</span>myT myT<span class="gtkdoc opt">. !</span> queue <span class="gtkdoc opt">!</span> autoaudiosink myT<span class="gtkdoc opt">. !</span> queue <span class="gtkdoc opt">!</span> audioconvert <span class="gtkdoc opt">!</span> wavescope <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> autovideosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Generate random wave, filter it trhough Mono Amplifier and Versatile Plate Reverb, and play, while showing, it.</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Sink/Audio/LADSPA:</p></li></ul></div>
+</div>
+<div class="refsect3">
+<a name="id-1.2.140.4.11"></a><h4>Example Sink/Audio/LADSPA line with this plugins</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> autoaudiosrc <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>cmt<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>amp<span class="gtkdoc opt">-</span>mono gain<span class="gtkdoc opt">=</span><span class="number">2</span> <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>caps<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>plate <span class="gtkdoc opt">!</span> ladspa<span class="gtkdoc opt">-</span>tap<span class="gtkdoc opt">-</span>echo<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>tap<span class="gtkdoc opt">-</span>stereo<span class="gtkdoc opt">-</span>echo l<span class="gtkdoc opt">-</span>delay<span class="gtkdoc opt">=</span><span class="number">500</span> r<span class="gtkdoc opt">-</span>haas<span class="gtkdoc opt">-</span>delay<span class="gtkdoc opt">=</span><span class="number">500</span> <span class="gtkdoc opt">!</span> tee name<span class="gtkdoc opt">=</span>myT myT<span class="gtkdoc opt">. !</span> audioconvert <span class="gtkdoc opt">!</span> audioresample <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> ladspasink<span class="gtkdoc opt">-</span>cmt<span class="gtkdoc opt">-</span>so<span class="gtkdoc opt">-</span>null<span class="gtkdoc opt">-</span>ai myT<span class="gtkdoc opt">. !</span> audioconvert <span class="gtkdoc opt">!</span> audioresample <span class="gtkdoc opt">!</span> queue <span class="gtkdoc opt">!</span> goom <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> xvimagesink pixel<span class="gtkdoc opt">-</span>aspect<span class="gtkdoc opt">-</span>ratio<span class="gtkdoc opt">=</span><span class="number">3</span><span class="gtkdoc opt">/</span><span class="number">4</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Get audio input, filter it trhough Mono Amplifier, CAPS Plate LADSPA and TAP Stereo Echo, explicitily anulate audio with Null (Audio Output), and play a visualization (recommended hearphones).</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-ladspa.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-ladspa.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstLADSPA"></a><h3>struct GstLADSPA</h3>
+<pre class="programlisting">struct GstLADSPA {
+  GstLADSPAClass *klass;
+
+  LADSPA_Handle *handle;
+  gboolean activated;
+  unsigned long rate;
+
+  struct
+  {
+    struct
+    {
+      LADSPA_Data *in;
+      LADSPA_Data *out;
+    } control;
+
+    struct
+    {
+      LADSPA_Data **in;
+      LADSPA_Data **out;
+    } audio;
+  } ports;
+};
+</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-ladspa.see-also"></a><h2>See Also</h2>
+<p><a href="/usr/share/gtk-doc/html/gst-plugins-base-plugins-1.0/gst-plugins-base-plugins-audioconvert.html#GstAudioConvert-struct"><span class="type">GstAudioConvert</span></a> <a href="/usr/share/gtk-doc/html/gst-plugins-base-plugins-1.0/gst-plugins-base-plugins-audioresample.html#GstAudioResample-struct"><span class="type">GstAudioResample</span></a>, <a href="/usr/share/gtk-doc/html/gst-plugins-base-plugins-1.0/gst-plugins-base-plugins-audiotestsrc.html#GstAudioTestSrc-struct"><span class="type">GstAudioTestSrc</span></a>, <span class="type">GstAutoAudioSink</span></p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>curlhttpsrc: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-curlhttpsink.html" title="curlhttpsink">
+<link rel="next" href="gst-plugins-bad-plugins-curlsftpsink.html" title="curlsftpsink">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-curlhttpsrc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-curlhttpsrc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-curlhttpsrc.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-curlhttpsrc.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-curlhttpsink.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-curlsftpsink.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-curlhttpsrc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-curlhttpsrc.top_of_page"></a>curlhttpsrc</span></h2>
+<p>curlhttpsrc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--automatic-redirect" title="The “automatic-redirect” property">automatic-redirect</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--compress" title="The “compress” property">compress</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--cookies" title="The “cookies” property">cookies</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--extra-headers" title="The “extra-headers” property">extra-headers</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstCurlHttpVersionType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--http-version" title="The “http-version” property">http-version</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--keep-alive" title="The “keep-alive” property">keep-alive</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--location" title="The “location” property">location</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--max-connection-time" title="The “max-connection-time” property">max-connection-time</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--max-connections" title="The “max-connections” property">max-connections</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--max-connections-per-proxy" title="The “max-connections-per-proxy” property">max-connections-per-proxy</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--max-connections-per-server" title="The “max-connections-per-server” property">max-connections-per-server</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--max-redirect" title="The “max-redirect” property">max-redirect</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--proxy" title="The “proxy” property">proxy</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--proxy-id" title="The “proxy-id” property">proxy-id</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--proxy-pw" title="The “proxy-pw” property">proxy-pw</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--retries" title="The “retries” property">retries</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--ssl-ca-file" title="The “ssl-ca-file” property">ssl-ca-file</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--ssl-strict" title="The “ssl-strict” property">ssl-strict</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--timeout" title="The “timeout” property">timeout</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--user-agent" title="The “user-agent” property">user-agent</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--user-id" title="The “user-id” property">user-id</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--user-pw" title="The “user-pw” property">user-pw</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstCurlHttpSrc"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc-struct" title="struct GstCurlHttpSrc">GstCurlHttpSrc</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseSrc.html#GstBaseSrc-struct">GstBaseSrc</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstPushSrc.html#GstPushSrc-struct">GstPushSrc</a>
+                        <span class="lineart">╰──</span> GstCurlHttpSrc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstCurlHttpSrc implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstUriHandler.html#GstURIHandler-struct">GstURIHandler</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.description"></a><h2>Description</h2>
+<p>This plugin reads data from a remote location specified by a URI, when the
+protocol is 'http' or 'https'.</p>
+<p>It is based on the cURL project (http://curl.haxx.se/) and is specifically
+designed to be also used with nghttp2 (http://nghttp2.org) to enable HTTP/2
+support for GStreamer. Your libcurl library MUST be compiled against nghttp2
+for HTTP/2 support for this functionality. HTTPS support is dependent on
+cURL being built with SSL support (OpenSSL/PolarSSL/NSS/GnuTLS).</p>
+<p>An HTTP proxy must be specified by URL.
+If the "http_proxy" environment variable is set, its value is used.
+The <a class="link" href="gst-plugins-bad-plugins-curlhttpsrc.html#GstCurlHttpSrc--proxy" title="The “proxy” property"><span class="type">“proxy”</span></a> property can be used to override the default.</p>
+<div class="refsect2">
+<a name="id-1.2.43.8.5"></a><h3>Example launch line</h3>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> curlhttpsrc location<span class="gtkdoc opt">=</span>http<span class="gtkdoc opt">:</span><span class="gtkdoc slc">//127.0.1.1/index.html ! fakesink dump=1</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ The above pipeline reads a web page from the local machine using HTTP and
+dumps it to stdout.
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> playbin uri<span class="gtkdoc opt">=</span>http<span class="gtkdoc opt">:</span><span class="gtkdoc slc">//rdmedia.bbc.co.uk/dash/testmpds/multiperiod/bbb.php</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+ The above pipeline will start up a DASH streaming session from the given
+MPD file. This requires GStreamer to have been built with dashdemux from
+gst-plugins-bad.
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.43.8.6.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-curl.html#plugin-curl">curl</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Sam Hurst &lt;samuelh@rd.bbc.co.uk&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Source/Network</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.43.8.6.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>ANY</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstCurlHttpSrc-struct"></a><h3>struct GstCurlHttpSrc</h3>
+<pre class="programlisting">struct GstCurlHttpSrc;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-curlhttpsrc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--automatic-redirect"></a><h3>The <code class="literal">“automatic-redirect”</code> property</h3>
+<pre class="programlisting">  “automatic-redirect”       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Allow HTTP Redirections (HTTP Status Code 300 series).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--compress"></a><h3>The <code class="literal">“compress”</code> property</h3>
+<pre class="programlisting">  “compress”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Allow compressed content encodings.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--cookies"></a><h3>The <code class="literal">“cookies”</code> property</h3>
+<pre class="programlisting">  “cookies”                  <a href="/usr/share/gtk-doc/html/glib/glib-String-Utility-Functions.html#GStrv"><span class="type">GStrv</span></a></pre>
+<p>List of HTTP Cookies.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--extra-headers"></a><h3>The <code class="literal">“extra-headers”</code> property</h3>
+<pre class="programlisting">  “extra-headers”            <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</pre>
+<p>Extra headers to append to the HTTP request.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--http-version"></a><h3>The <code class="literal">“http-version”</code> property</h3>
+<pre class="programlisting">  “http-version”             <span class="type">GstCurlHttpVersionType</span></pre>
+<p>The preferred HTTP protocol version.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: HTTP Version 2.0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--keep-alive"></a><h3>The <code class="literal">“keep-alive”</code> property</h3>
+<pre class="programlisting">  “keep-alive”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Toggle keep-alive for connection reuse.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--location"></a><h3>The <code class="literal">“location”</code> property</h3>
+<pre class="programlisting">  “location”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>URI of resource to read.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--max-connection-time"></a><h3>The <code class="literal">“max-connection-time”</code> property</h3>
+<pre class="programlisting">  “max-connection-time”      <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Maximum amount of time to keep-alive HTTP connections.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [2,60]</p>
+<p>Default value: 30</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--max-connections"></a><h3>The <code class="literal">“max-connections”</code> property</h3>
+<pre class="programlisting">  “max-connections”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Maximum number of concurrent connections allowed for HTTP/1.x.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,255]</p>
+<p>Default value: 255</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--max-connections-per-proxy"></a><h3>The <code class="literal">“max-connections-per-proxy”</code> property</h3>
+<pre class="programlisting">  “max-connections-per-proxy” <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Maximum number of concurrent connections allowed per proxy for HTTP/1.x.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,60]</p>
+<p>Default value: 30</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--max-connections-per-server"></a><h3>The <code class="literal">“max-connections-per-server”</code> property</h3>
+<pre class="programlisting">  “max-connections-per-server” <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Maximum number of connections allowed per server for HTTP/1.x.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,60]</p>
+<p>Default value: 5</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--max-redirect"></a><h3>The <code class="literal">“max-redirect”</code> property</h3>
+<pre class="programlisting">  “max-redirect”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Maximum number of permitted redirections. -1 is unlimited.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [G_MAXULONG,255]</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--proxy"></a><h3>The <code class="literal">“proxy”</code> property</h3>
+<pre class="programlisting">  “proxy”                    <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>URI of HTTP proxy server.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--proxy-id"></a><h3>The <code class="literal">“proxy-id”</code> property</h3>
+<pre class="programlisting">  “proxy-id”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>HTTP proxy URI user id for authentication.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--proxy-pw"></a><h3>The <code class="literal">“proxy-pw”</code> property</h3>
+<pre class="programlisting">  “proxy-pw”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>HTTP proxy URI password for authentication.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--retries"></a><h3>The <code class="literal">“retries”</code> property</h3>
+<pre class="programlisting">  “retries”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Maximum number of retries until giving up (-1=infinite).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [G_MAXULONG,9999]</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--ssl-ca-file"></a><h3>The <code class="literal">“ssl-ca-file”</code> property</h3>
+<pre class="programlisting">  “ssl-ca-file”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Location of an SSL CA file to use for checking SSL certificates.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--ssl-strict"></a><h3>The <code class="literal">“ssl-strict”</code> property</h3>
+<pre class="programlisting">  “ssl-strict”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Strict SSL certificate checking.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--timeout"></a><h3>The <code class="literal">“timeout”</code> property</h3>
+<pre class="programlisting">  “timeout”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Value in seconds before timeout a blocking request (0 = no timeout).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,3600]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--user-agent"></a><h3>The <code class="literal">“user-agent”</code> property</h3>
+<pre class="programlisting">  “user-agent”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>URI of resource requested.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "GStreamer curlhttpsrc libcurl/7.61.0"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--user-id"></a><h3>The <code class="literal">“user-id”</code> property</h3>
+<pre class="programlisting">  “user-id”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>HTTP location URI user id for authentication.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstCurlHttpSrc--user-pw"></a><h3>The <code class="literal">“user-pw”</code> property</h3>
+<pre class="programlisting">  “user-pw”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>HTTP location URI password for authentication.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>srtpenc: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-srtpdec.html" title="srtpdec">
+<link rel="next" href="gst-plugins-bad-plugins-stereo.html" title="stereo">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-srtpenc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-srtpenc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-srtpenc.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-srtpenc.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-srtpdec.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-stereo.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-srtpenc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-srtpenc.top_of_page"></a>srtpenc</span></h2>
+<p>srtpenc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--key" title="The “key” property">key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--random-key" title="The “random-key” property">random-key</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstSrtpAuthType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--rtcp-auth" title="The “rtcp-auth” property">rtcp-auth</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstSrtpCipherType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--rtcp-cipher" title="The “rtcp-cipher” property">rtcp-cipher</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstSrtpAuthType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--rtp-auth" title="The “rtp-auth” property">rtp-auth</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstSrtpCipherType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--rtp-cipher" title="The “rtp-cipher” property">rtp-cipher</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--replay-window-size" title="The “replay-window-size” property">replay-window-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--allow-repeat-tx" title="The “allow-repeat-tx” property">allow-repeat-tx</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--stats" title="The “stats” property">stats</a></td>
+<td class="property_flags">Read</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc-soft-limit" title="The “soft-limit” signal">soft-limit</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc-get-rollover-counter" title="The “get-rollover-counter” signal">get-rollover-counter</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstSrtpEnc"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc-struct" title="struct GstSrtpEnc">GstSrtpEnc</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> GstSrtpEnc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.description"></a><h2>Description</h2>
+<p>gstrtpenc acts as an encoder that adds security to RTP and RTCP
+packets in the form of encryption and authentication. It outs SRTP
+and SRTCP.</p>
+<p>An application can request multiple RTP and RTCP pads to protect,
+but every sink pad requested must receive packets from the same
+source (identical SSRC). If a packet received contains a different
+SSRC, a warning is emited and the valid SSRC is forced on the packet.</p>
+<p>This element uses libsrtp library. When receiving the first packet,
+the library is initialized with a new stream (based on the SSRC). It
+uses the default RTP and RTCP encryption and authentication mechanisms,
+unless the user has set the relevant properties first. It also uses
+a master key that MUST be set by property (key) at the beginning. The
+master key must be of a maximum length of 46 characters (14 characters
+for the salt plus the key). The encryption and authentication mecanisms
+available are :</p>
+<p>Encryption (properties rtp-cipher and rtcp-cipher)</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>AES_ICM 256 bits (maximum security)</p></li>
+<li class="listitem"><p>AES_ICM 128 bits (default)</p></li>
+<li class="listitem"><p>NULL</p></li>
+</ul></div>
+<p>Authentication (properties rtp-auth and rtcp-auth)</p>
+<div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; ">
+<li class="listitem"><p>HMAC_SHA1 80 bits (default, maximum protection)</p></li>
+<li class="listitem"><p>HMAC_SHA1 32 bits</p></li>
+<li class="listitem"><p>NULL</p></li>
+</ul></div>
+<p>Note that for SRTP protection, authentication is mandatory (non-null)
+if encryption is used (non-null).</p>
+<p>When requested to create a sink pad, a linked source pad is created.
+Each packet received is first analysed (checked for valid SSRC) then
+its buffer is protected with libsrtp, then pushed on the source pad.
+If protection failed or the stream could not be created, the buffer
+is dropped and a warning is emitted. The packets pushed on the source
+pad are of type 'application/x-srtp' or 'application/x-srtcp'.</p>
+<p>When the maximum usage of the master key is reached, a soft-limit
+signal is sent to the user. The user must then set a new master key
+by property. If the hard limit is reached, a flag is set and every
+subsequent packet is dropped, until a new key is set and the stream
+has been updated.</p>
+<p>If a stream is to be shared between multiple clients it is also
+possible to request the internal SRTP rollover counter for a given
+SSRC. The rollover counter should be then transmitted and used by the
+clients to authenticate and decrypt the packets. Failing to do that
+the clients will start with a rollover counter of 0 which will
+probably be incorrect if the stream has been transmitted for a
+while to other clients.</p>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.219.8.13.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-srtp.html#plugin-srtp">srtp</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Gabriel Millaire &lt;millaire.gabriel@collabora.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Network/SRTP</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.219.8.13.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>rtcp_sink_%u</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>request</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtcp</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>rtp_sink_%u</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>request</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>rtcp_src_%u</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>sometimes</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-srtcp</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>rtp_src_%u</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>sometimes</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-srtp</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstSrtpEnc-struct"></a><h3>struct GstSrtpEnc</h3>
+<pre class="programlisting">struct GstSrtpEnc;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstSrtpEnc--key"></a><h3>The <code class="literal">“key”</code> property</h3>
+<pre class="programlisting">  “key”                      <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GstBuffer-struct"><span class="type">GstBuffer</span></a> *</pre>
+<p>Master key (minimum of 30 and maximum of 46 bytes).</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--random-key"></a><h3>The <code class="literal">“random-key”</code> property</h3>
+<pre class="programlisting">  “random-key”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Generate a random key if TRUE.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--rtcp-auth"></a><h3>The <code class="literal">“rtcp-auth”</code> property</h3>
+<pre class="programlisting">  “rtcp-auth”                <span class="type">GstSrtpAuthType</span></pre>
+<p>RTCP Authentication.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_SRTP_AUTH_HMAC_SHA1_80</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--rtcp-cipher"></a><h3>The <code class="literal">“rtcp-cipher”</code> property</h3>
+<pre class="programlisting">  “rtcp-cipher”              <span class="type">GstSrtpCipherType</span></pre>
+<p>RTCP Cipher.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_SRTP_CIPHER_AES_128_ICM</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--rtp-auth"></a><h3>The <code class="literal">“rtp-auth”</code> property</h3>
+<pre class="programlisting">  “rtp-auth”                 <span class="type">GstSrtpAuthType</span></pre>
+<p>RTP Authentication.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_SRTP_AUTH_HMAC_SHA1_80</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--rtp-cipher"></a><h3>The <code class="literal">“rtp-cipher”</code> property</h3>
+<pre class="programlisting">  “rtp-cipher”               <span class="type">GstSrtpCipherType</span></pre>
+<p>RTP Cipher.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: GST_SRTP_CIPHER_AES_128_ICM</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--replay-window-size"></a><h3>The <code class="literal">“replay-window-size”</code> property</h3>
+<pre class="programlisting">  “replay-window-size”       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Size of the replay protection window.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [64,32768]</p>
+<p>Default value: 128</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--allow-repeat-tx"></a><h3>The <code class="literal">“allow-repeat-tx”</code> property</h3>
+<pre class="programlisting">  “allow-repeat-tx”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Whether retransmissions of packets with the same sequence number are allowed(Note that such repeated transmissions must have the same RTP payload, or a severe security weakness is introduced!).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc--stats"></a><h3>The <code class="literal">“stats”</code> property</h3>
+<pre class="programlisting">  “stats”                    <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *</pre>
+<p>Various statistics.</p>
+<p>Flags: Read</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GstSrtpEnc-soft-limit"></a><h3>The <code class="literal">“soft-limit”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc"><span class="type">GstSrtpEnc</span></a> *gstsrtpenc,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Signal emited when the stream with <em class="parameter"><code>ssrc</code></em>
+ has reached the soft
+limit of utilisation of it's master encryption key. User should
+provide a new key by setting the <a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc--key" title="The “key” property"><span class="type">“key”</span></a> property.</p>
+<div class="refsect3">
+<a name="GstSrtpEnc-soft-limit.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>gstsrtpenc</p></td>
+<td class="parameter_description"><p>the element on which the signal is emitted</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSrtpEnc-get-rollover-counter"></a><h3>The <code class="literal">“get-rollover-counter”</code> signal</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="returnvalue">guint</span></a>
+user_function (<a class="link" href="gst-plugins-bad-plugins-srtpenc.html#GstSrtpEnc"><span class="type">GstSrtpEnc</span></a> *gstsrtpenc,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>       arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>    user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-srtpenc.see-also"></a><h2>See Also</h2>
+<p>srtpdec</p>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

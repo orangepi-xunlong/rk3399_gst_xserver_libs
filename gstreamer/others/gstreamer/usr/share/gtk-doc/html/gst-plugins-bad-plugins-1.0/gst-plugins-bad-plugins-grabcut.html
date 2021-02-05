@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>grabcut: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-gmedec.html" title="gmedec">
+<link rel="next" href="gst-plugins-bad-plugins-gsmdec.html" title="gsmdec">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-grabcut.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-grabcut.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-grabcut.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-gmedec.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-gsmdec.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-grabcut"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-grabcut.top_of_page"></a>grabcut</span></h2>
+<p>grabcut</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-grabcut.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-grabcut.html#GstGrabcut--scale" title="The “scale” property">scale</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-grabcut.html#GstGrabcut--test-mode" title="The “test-mode” property">test-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstGrabcut"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-grabcut.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-grabcut.html#GstGrabcut-struct" title="struct GstGrabcut">GstGrabcut</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-grabcut.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0/GstVideoFilter.html#GstVideoFilter-struct">GstVideoFilter</a>
+                        <span class="lineart">╰──</span> GstOpencvVideoFilter
+                            <span class="lineart">╰──</span> GstGrabcut
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-grabcut.description"></a><h2>Description</h2>
+<p>This element is a wrapper around OpenCV grabcut implementation. GrabCut is an
+image segmentation method based on graph cuts technique. It can be seen as a
+way of fine-grain segmenting the image from some FG and BG "seed" areas. The
+OpenCV implementation follows the article [1].
+The "seed" areas are taken in this element from either an input bounding box
+coming from a face detection, or from alpha channel values. The input box is
+taken from a "face" event such as the one generated from the 'facedetect'
+element. The Alpha channel values should be one of the following (cv.hpp):
+enum{
+ GC_BGD    = 0,  //!&lt; background
+ GC_FGD    = 1,  //!&lt; foreground
+ GC_PR_BGD = 2,  //!&lt; most probably background
+ GC_PR_FGD = 3   //!&lt; most probably foreground
+};
+with values over GC_PR_FGD interpreted as GC_PR_FGD. IN CASE OF no alpha mask
+input (all 0's or all 1's), the 'GstOpenCvFaceDetect-face' downstream event
+is used to create a bbox of PR_FG elements. If both foreground alpha
+is not specified and there is no face detection, nothing is done.</p>
+<p>[1] C. Rother, V. Kolmogorov, and A. Blake, "GrabCut: Interactive foreground
+extraction using iterated graph cuts, ACM Trans. Graph., vol. 23, pp. 309–314,
+2004.</p>
+<div class="refsect2">
+<a name="id-1.2.105.7.4"></a><h3>Example launch line</h3>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">--</span>gst<span class="gtkdoc opt">-</span>debug<span class="gtkdoc opt">=</span>grabcut<span class="gtkdoc opt">=</span><span class="number">4</span>  v4l2src device<span class="gtkdoc opt">=/</span>dev<span class="gtkdoc opt">/</span>video0 <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> grabcut <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> video<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>width<span class="gtkdoc opt">=</span><span class="number">320</span><span class="gtkdoc opt">,</span>height<span class="gtkdoc opt">=</span><span class="number">240</span> <span class="gtkdoc opt">!</span> ximagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+Another example launch line
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">--</span>gst<span class="gtkdoc opt">-</span>debug<span class="gtkdoc opt">=</span>grabcut<span class="gtkdoc opt">=</span><span class="number">4</span>  v4l2src device<span class="gtkdoc opt">=/</span>dev<span class="gtkdoc opt">/</span>video0 <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> facedetect display<span class="gtkdoc opt">=</span><span class="number">0</span> <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> grabcut test<span class="gtkdoc opt">-</span>mode<span class="gtkdoc opt">=</span><span class="keyword">true</span> <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> video<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>width<span class="gtkdoc opt">=</span><span class="number">320</span><span class="gtkdoc opt">,</span>height<span class="gtkdoc opt">=</span><span class="number">240</span> <span class="gtkdoc opt">!</span> ximagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.105.7.5.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-opencv.html#plugin-opencv">opencv</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Miguel Casas-Sanchez &lt;miguelecasassanchez@gmail.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Effect/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.105.7.5.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-grabcut.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-grabcut.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstGrabcut-struct"></a><h3>struct GstGrabcut</h3>
+<pre class="programlisting">struct GstGrabcut;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-grabcut.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstGrabcut--scale"></a><h3>The <code class="literal">“scale”</code> property</h3>
+<pre class="programlisting">  “scale”                    <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<p>Grow factor for the face bounding box, if present.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,4]</p>
+<p>Default value: 1.6</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstGrabcut--test-mode"></a><h3>The <code class="literal">“test-mode”</code> property</h3>
+<pre class="programlisting">  “test-mode”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>If true, the output RGB is overwritten with the segmented foreground. Alpha channel same as normal case .</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,1237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>GStreamer Bad Plugins 1.0 Plugins Reference Manual: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="next" href="ch01.html" title="gst-plugins-bad Elements">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<div class="book">
+<div class="titlepage">
+<div>
+<div><table class="navigation" id="top" width="100%" cellpadding="2" cellspacing="0"><tr><th valign="middle"><p class="title">GStreamer Bad Plugins 1.0 Plugins Reference Manual</p></th></tr></table></div>
+<div><p class="releaseinfo">
+      for GStreamer Bad Plugins 1.0 (1.14.4)
+      The latest version of this documentation can be found on-line at
+      <a class="ulink" href="http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad/html/" target="_top">http://gstreamer.freedesktop.org/data/doc/gstreamer/head/gst-plugins-bad/html/</a>.
+    </p></div>
+</div>
+<hr>
+</div>
+<div class="toc"><dl class="toc">
+<dt><span class="chapter"><a href="ch01.html">gst-plugins-bad Elements</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-a2dpsink.html">a2dpsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-accurip.html">accurip</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-adpcmdec.html">adpcmdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-adpcmenc.html">adpcmenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-aiffmux.html">aiffmux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-aiffparse.html">aiffparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-asfmux.html">asfmux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-asfparse.html">asfparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-assrender.html">assrender</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-audiobuffersplit.html">audiobuffersplit</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-audiochannelmix.html">audiochannelmix</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-audiolatency.html">audiolatency</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-audiomixmatrix.html">audiomixmatrix</a></span><span class="refpurpose"> — Transform input/output channels according to a matrix</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-audioparse.html">audioparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-audiosegmentclip.html">audiosegmentclip</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-autoconvert.html">autoconvert</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-autovideoconvert.html">autovideoconvert</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-avdtpsink.html">avdtpsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-avdtpsrc.html">avdtpsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-avwait.html">avwait</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-bayer2rgb.html">bayer2rgb</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-bpmdetect.html">bpmdetect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-bs2b.html">bs2b</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-bulge.html">bulge</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-burn.html">burn</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-bz2dec.html">bz2dec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-bz2enc.html">bz2enc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-camerabin.html">camerabin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-checksumsink.html">checksumsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-chopmydata.html">chopmydata</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-chromahold.html">chromahold</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-chromaprint.html">chromaprint</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-chromium.html">chromium</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-circle.html">circle</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-coloreffects.html">coloreffects</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-combdetect.html">combdetect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-compare.html">compare</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-compositor.html">compositor</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-curlfilesink.html">curlfilesink</a></span><span class="refpurpose"> — sink that uploads data to a server using libcurl</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-curlftpsink.html">curlftpsink</a></span><span class="refpurpose"> — sink that uploads data to a server using libcurl</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-curlhttpsink.html">curlhttpsink</a></span><span class="refpurpose"> — sink that uploads data to a server using libcurl</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-curlhttpsrc.html">curlhttpsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-curlsftpsink.html">curlsftpsink</a></span><span class="refpurpose"> — sink that uploads data to a server using libcurl</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-curlsmtpsink.html">curlsmtpsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-cvdilate.html">cvdilate</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-cvequalizehist.html">cvequalizehist</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-cverode.html">cverode</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-cvlaplace.html">cvlaplace</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-cvsmooth.html">cvsmooth</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-cvsobel.html">cvsobel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dashdemux.html">dashdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dc1394src.html">dc1394src</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-debugspy.html">debugspy</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-decklinkaudiosink.html">decklinkaudiosink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-decklinkaudiosrc.html">decklinkaudiosrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-decklinkvideosink.html">decklinkvideosink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-decklinkvideosrc.html">decklinkvideosrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dewarp.html">dewarp</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dfbvideosink.html">dfbvideosink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-diffuse.html">diffuse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dilate.html">dilate</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-diracparse.html">diracparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-disparity.html">disparity</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dodge.html">dodge</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dtlsdec.html">dtlsdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dtlsenc.html">dtlsenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dtlssrtpdec.html">dtlssrtpdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dtlssrtpdemux.html">dtlssrtpdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dtlssrtpenc.html">dtlssrtpenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dtmfdetect.html">dtmfdetect</a></span><span class="refpurpose"> — Detects DTMF tones</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dtsdec.html">dtsdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dvbbasebin.html">dvbbasebin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dvbsrc.html">dvbsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dvbsuboverlay.html">dvbsuboverlay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-dvdspu.html">dvdspu</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-edgedetect.html">edgedetect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-errorignore.html">errorignore</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-exclusion.html">exclusion</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-faac.html">faac</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-faad.html">faad</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-faceblur.html">faceblur</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-facedetect.html">facedetect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-faceoverlay.html">faceoverlay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fakevideosink.html">fakevideosink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fbdevsink.html">fbdevsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fdkaacdec.html">fdkaacdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fdkaacenc.html">fdkaacenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-festival.html">festival</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fieldanalysis.html">fieldanalysis</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fisheye.html">fisheye</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fluiddec.html">fluiddec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-fpsdisplaysink.html">fpsdisplaysink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-freeverb.html">freeverb</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-gaussianblur.html">gaussianblur</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-gdpdepay.html">gdpdepay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-gdppay.html">gdppay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-glmixerbin.html">glmixerbin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-glmosaic.html">glmosaic</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-glstereomix.html">glstereomix</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-glvideomixerelement.html">glvideomixerelement</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-glvideomixer.html">glvideomixer</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-gmedec.html">gmedec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-grabcut.html">grabcut</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-gsmdec.html">gsmdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-gsmenc.html">gsmenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-h263parse.html">h263parse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-h264parse.html">h264parse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-h265parse.html">h265parse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-handdetect.html">handdetect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-hlsdemux.html">hlsdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-hlssink2.html">hlssink2</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-hlssink.html">hlssink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-id3mux.html">id3mux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-interaudiosink.html">interaudiosink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-interaudiosrc.html">interaudiosrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-interlace.html">interlace</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-intersubsink.html">intersubsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-intersubsrc.html">intersubsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-intervideosink.html">intervideosink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-intervideosrc.html">intervideosrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ipcpipelinesink.html">ipcpipelinesink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ipcpipelinesrc.html">ipcpipelinesrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ipcslavepipeline.html">ipcslavepipeline</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-IQA.html">iqa</a></span><span class="refpurpose"> — Image Quality Assessment plugin.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-irtspparse.html">irtspparse</a></span><span class="refpurpose"> — Interleaved RTSP parser</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ivfparse.html">ivfparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ivtc.html">ivtc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-jifmux.html">jifmux</a></span><span class="refpurpose"> — JPEG interchange format writer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-jp2kdecimator.html">jp2kdecimator</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-jpeg2000parse.html">jpeg2000parse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-jpegparse.html">jpegparse</a></span><span class="refpurpose"> — JPEG parser</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-kaleidoscope.html">kaleidoscope</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-katedec.html">katedec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-kateenc.html">kateenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-kateparse.html">kateparse</a></span><span class="refpurpose"> — parses kate streams</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-katetag.html">katetag</a></span><span class="refpurpose"> — retags kate streams</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-kmssink.html">kmssink</a></span><span class="refpurpose"> — A KMS/DRM based video sink</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ladspa.html">ladspa</a></span><span class="refpurpose"> — bridge for LADSPA (Linux Audio Developer's Simple Plugin API)</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-liveadder.html">liveadder</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-marble.html">marble</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-midiparse.html">midiparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mirror.html">mirror</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mmssrc.html">mmssrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-modplug.html">modplug</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-motioncells.html">motioncells</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mpeg2enc.html">mpeg2enc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mpeg4videoparse.html">mpeg4videoparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mpegpsdemux.html">mpegpsdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mpegpsmux.html">mpegpsmux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mpegtsmux.html">mpegtsmux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mpegvideoparse.html">mpegvideoparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mplex.html">mplex</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mssdemux.html">mssdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-musepackdec.html">musepackdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mxfdemux.html">mxfdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-mxfmux.html">mxfmux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-neonhttpsrc.html">neonhttpsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-netsim.html">netsim</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ofa.html">ofa</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-openalsink.html">openalsink</a></span><span class="refpurpose"> — capture raw audio samples through OpenAL</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-openalsrc.html">openalsrc</a></span><span class="refpurpose"> — capture raw audio samples through OpenAL</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-opencvtextoverlay.html">opencvtextoverlay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-openexrdec.html">openexrdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-openh264dec.html">openh264dec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-openh264enc.html">openh264enc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-openjpegdec.html">openjpegdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-openjpegenc.html">openjpegenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-opusparse.html">opusparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-pcapparse.html">pcapparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-perspective.html">perspective</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-pinch.html">pinch</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-pitch.html">pitch</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-pngparse.html">pngparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-pnmdec.html">pnmdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-pnmenc.html">pnmenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-proxysink.html">proxysink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-proxysrc.html">proxysrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rawaudioparse.html">rawaudioparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rawvideoparse.html">rawvideoparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-removesilence.html">removesilence</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-retinex.html">retinex</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rfbsrc.html">rfbsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rgb2bayer.html">rgb2bayer</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rotate.html">rotate</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rsndvdbin.html">rsndvdbin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rsvgdec.html">rsvgdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rsvgoverlay.html">rsvgoverlay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rtmpsink.html">rtmpsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rtmpsrc.html">rtmpsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rtpasfpay.html">rtpasfpay</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rtponvifparse.html">rtponvifparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-rtponviftimestamp.html">rtponviftimestamp</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sbcdec.html">sbcdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sbcenc.html">sbcenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-scenechange.html">scenechange</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sdpdemux.html">sdpdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sdpsrc.html">sdpsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-segmentation.html">segmentation</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sfdec.html">sfdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-shmsink.html">shmsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-shmsrc.html">shmsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-simplevideomarkdetect.html">simplevideomarkdetect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-simplevideomark.html">simplevideomark</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sirendec.html">sirendec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sirenenc.html">sirenenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-skindetect.html">skindetect</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-smooth.html">smooth</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-solarize.html">solarize</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-spacescope.html">spacescope</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-spanplc.html">spanplc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-spectrascope.html">spectrascope</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-speed.html">speed</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-sphere.html">sphere</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-square.html">square</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-srtenc.html">srtenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-srtpdec.html">srtpdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-srtpenc.html">srtpenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-stereo.html">stereo</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-stretch.html">stretch</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-synaescope.html">synaescope</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-teletextdec.html">teletextdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-templatematch.html">templatematch</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-tiger.html">tiger</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-timecodestamper.html">timecodestamper</a></span><span class="refpurpose"> — Attach a timecode into incoming video frames</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-tonegeneratesrc.html">tonegeneratesrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-tsdemux.html">tsdemux</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-tsparse.html">tsparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ttmlparse.html">ttmlparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-ttmlrender.html">ttmlrender</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-tunnel.html">tunnel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-twirl.html">twirl</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-unalignedaudioparse.html">unalignedaudioparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-unalignedvideoparse.html">unalignedvideoparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-uvch264mjpgdemux.html">uvch264mjpgdemux</a></span><span class="refpurpose"> — UVC H264 compliant MJPG demuxer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-uvch264src.html">uvch264src</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-vc1parse.html">vc1parse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-vcdsrc.html">vcdsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-vdpaumpegdec.html">vdpaumpegdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-videoanalyse.html">videoanalyse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-videodiff.html">videodiff</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-videoframe-audiolevel.html">videoframe-audiolevel</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-videoparse.html">videoparse</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-videosegmentclip.html">videosegmentclip</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-viewfinderbin.html">viewfinderbin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-vmncdec.html">vmncdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-voaacenc.html">voaacenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-voamrwbenc.html">voamrwbenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-vulkansink.html">vulkansink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-vulkanupload.html">vulkanupload</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-wasapisink.html">wasapisink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-wasapisrc.html">wasapisrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-watchdog.html">watchdog</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-waterripple.html">waterripple</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-wavescope.html">wavescope</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-waylandsink.html">waylandsink</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-webpdec.html">webpdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-webpenc.html">webpenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-webrtcbin.html">webrtcbin</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-webrtcdsp.html">webrtcdsp</a></span><span class="refpurpose"> — Audio Filter using WebRTC Audio Processing library</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-webrtcechoprobe.html">webrtcechoprobe</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-webvttenc.html">webvttenc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-wildmidi.html">wildmidi</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-wrappercamerabinsrc.html">wrappercamerabinsrc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-x265enc.html">x265enc</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-y4mdec.html">y4mdec</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-yadif.html">yadif</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-zbar.html">zbar</a></span><span class="refpurpose"></span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-zebrastripe.html">zebrastripe</a></span><span class="refpurpose"></span>
+</dt>
+</dl></dd>
+<dt><span class="chapter"><a href="ch02.html">gst-plugins-bad Plugins</a></span></dt>
+<dd><dl>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-accurip.html">accurip</a></span><span class="refpurpose"> — Computes an AccurateRip CRC</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-adpcmdec.html">adpcmdec</a></span><span class="refpurpose"> — ADPCM decoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-adpcmenc.html">adpcmenc</a></span><span class="refpurpose"> — ADPCM encoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-aiff.html">aiff</a></span><span class="refpurpose"> — Create and parse Audio Interchange File Format (AIFF) files</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-asfmux.html">asfmux</a></span><span class="refpurpose"> — ASF Muxer Plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-assrender.html">assrender</a></span><span class="refpurpose"> — ASS/SSA subtitle renderer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-audiobuffersplit.html">audiobuffersplit</a></span><span class="refpurpose"> — Audio buffer splitter</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-audiofxbad.html">audiofxbad</a></span><span class="refpurpose"> — Audio filters from gst-plugins-bad</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-audiolatency.html">audiolatency</a></span><span class="refpurpose"> — A plugin to measure audio latency</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-audiomixmatrix.html">audiomixmatrix</a></span><span class="refpurpose"> — Audio matrix mix</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-audiovisualizers.html">audiovisualizers</a></span><span class="refpurpose"> — Creates video visualizations of audio input</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-autoconvert.html">autoconvert</a></span><span class="refpurpose"> — Selects convertor element based on caps</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-bayer.html">bayer</a></span><span class="refpurpose"> — Elements to convert Bayer images</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-bluez.html">bluez</a></span><span class="refpurpose"> — Bluez-based bluetooth support</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-bs2b.html">bs2b</a></span><span class="refpurpose"> — Improve headphone listening of stereo audio recordsusing the bs2b library.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-bz2.html">bz2</a></span><span class="refpurpose"> — Compress or decompress streams</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-camerabin.html">camerabin</a></span><span class="refpurpose"> — Take image snapshots and record movies from camera</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-chromaprint.html">chromaprint</a></span><span class="refpurpose"> — Calculate Chromaprint fingerprint from audio files</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-coloreffects.html">coloreffects</a></span><span class="refpurpose"> — Color Look-up Table filters</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-colormanagement.html">colormanagement</a></span><span class="refpurpose"> — Color management correction plugins</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-compositor.html">compositor</a></span><span class="refpurpose"> — Compositor</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-curl.html">curl</a></span><span class="refpurpose"> — libcurl-based elements</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dashdemux.html">dashdemux</a></span><span class="refpurpose"> — DASH demuxer plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dc1394.html">dc1394</a></span><span class="refpurpose"> — 1394 IIDC video source</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-de265.html">de265</a></span><span class="refpurpose"> — HEVC/H.265 decoder using libde265</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-debugutilsbad.html">debugutilsbad</a></span><span class="refpurpose"> — Collection of elements that may or may not be useful for debugging</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-decklink.html">decklink</a></span><span class="refpurpose"> — Blackmagic Decklink plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dfbvideosink.html">dfbvideosink</a></span><span class="refpurpose"> — DirectFB video output plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dtls.html">dtls</a></span><span class="refpurpose"> — DTLS decoder and encoder plugins</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dtsdec.html">dtsdec</a></span><span class="refpurpose"> — Decodes DTS audio streams</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dvbsuboverlay.html">dvbsuboverlay</a></span><span class="refpurpose"> — DVB subtitle renderer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dvb.html">dvb</a></span><span class="refpurpose"> — DVB elements</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-dvdspu.html">dvdspu</a></span><span class="refpurpose"> — DVD Sub-picture Overlay element</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-faac.html">faac</a></span><span class="refpurpose"> — Free AAC Encoder (FAAC)</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-faad.html">faad</a></span><span class="refpurpose"> — Free AAC Decoder (FAAD)</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-faceoverlay.html">faceoverlay</a></span><span class="refpurpose"> — SVG Face Overlay</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-fbdevsink.html">fbdevsink</a></span><span class="refpurpose"> — Linux framebuffer video sink</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-fdkaac.html">fdkaac</a></span><span class="refpurpose"> — Fraunhofer FDK AAC Codec plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-festival.html">festival</a></span><span class="refpurpose"> — Synthesizes plain text into audio</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-fieldanalysis.html">fieldanalysis</a></span><span class="refpurpose"> — Video field analysis</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-flite.html">flite</a></span><span class="refpurpose"> — Flite speech synthesizer plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-fluidsynthmidi.html">fluidsynthmidi</a></span><span class="refpurpose"> — Fluidsynth MIDI Plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-freeverb.html">freeverb</a></span><span class="refpurpose"> — Reverberation/room effect</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-frei0r.html">frei0r</a></span><span class="refpurpose"> — frei0r plugin library</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-gaudieffects.html">gaudieffects</a></span><span class="refpurpose"> — Gaudi video effects.</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-gdp.html">gdp</a></span><span class="refpurpose"> — Payload/depayload GDP packets</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-geometrictransform.html">geometrictransform</a></span><span class="refpurpose"> — Various geometric image transform elements</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-gmedec.html">gmedec</a></span><span class="refpurpose"> — GME Audio Decoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-gme.html">gme</a></span><span class="refpurpose"> — GME Audio Decoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-gsm.html">gsm</a></span><span class="refpurpose"> — GSM encoder/decoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-hls.html">hls</a></span><span class="refpurpose"> — HTTP Live Streaming (HLS)</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-id3tag.html">id3tag</a></span><span class="refpurpose"> — ID3 v1 and v2 muxing plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-interlace.html">interlace</a></span><span class="refpurpose"> — Create an interlaced video stream</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-inter.html">inter</a></span><span class="refpurpose"> — plugin for inter-pipeline communication</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-ipcpipeline.html">ipcpipeline</a></span><span class="refpurpose"> — plugin for inter-process pipeline communication</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-ivfparse.html">ivfparse</a></span><span class="refpurpose"> — IVF parser</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-ivtc.html">ivtc</a></span><span class="refpurpose"> — Inverse Telecine</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-jp2kdecimator.html">jp2kdecimator</a></span><span class="refpurpose"> — JPEG2000 decimator</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-jpegformat.html">jpegformat</a></span><span class="refpurpose"> — JPEG interchange format plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-kate.html">kate</a></span><span class="refpurpose"> — Kate plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-kms.html">kms</a></span><span class="refpurpose"> — Video sink using the Linux kernel mode setting API</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-ladspa.html">ladspa</a></span><span class="refpurpose"> — LADSPA plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-legacyrawparse.html">legacyrawparse</a></span><span class="refpurpose"> — Parses byte streams into raw frames</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-midi.html">midi</a></span><span class="refpurpose"> — Parse MIDI files</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mms.html">mms</a></span><span class="refpurpose"> — Microsoft Multi Media Server streaming protocol support</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-modplug.html">modplug</a></span><span class="refpurpose"> — .MOD audio decoding</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mpeg2enc.html">mpeg2enc</a></span><span class="refpurpose"> — High-quality MPEG-1/2 video encoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mpegpsdemux.html">mpegpsdemux</a></span><span class="refpurpose"> — MPEG-PS demuxer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mpegpsmux.html">mpegpsmux</a></span><span class="refpurpose"> — MPEG-PS muxer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mpegtsdemux.html">mpegtsdemux</a></span><span class="refpurpose"> — MPEG TS demuxer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mpegtsmux.html">mpegtsmux</a></span><span class="refpurpose"> — MPEG-TS muxer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mplex.html">mplex</a></span><span class="refpurpose"> — High-quality MPEG/DVD/SVCD/VCD video/audio multiplexer</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-musepack.html">musepack</a></span><span class="refpurpose"> — Musepack decoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-mxf.html">mxf</a></span><span class="refpurpose"> — MXF plugin library</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-neonhttpsrc.html">neonhttpsrc</a></span><span class="refpurpose"> — lib neon http client src</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-neon.html">neon</a></span><span class="refpurpose"> — lib neon http client src</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-netsim.html">netsim</a></span><span class="refpurpose"> — Network Simulator</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-ofa.html">ofa</a></span><span class="refpurpose"> — Calculate MusicIP fingerprint from audio files</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-openal.html">openal</a></span><span class="refpurpose"> — OpenAL plugin library</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-opencv.html">opencv</a></span><span class="refpurpose"> — GStreamer OpenCV Plugins</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-openexr.html">openexr</a></span><span class="refpurpose"> — OpenEXR image plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-openglmixers.html">openglmixers</a></span><span class="refpurpose"> — OpenGL mixers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-openh264.html">openh264</a></span><span class="refpurpose"> — OpenH264 encoder/decoder plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-openjpeg.html">openjpeg</a></span><span class="refpurpose"> — OpenJPEG-based JPEG2000 image decoder/encoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-opusparse.html">opusparse</a></span><span class="refpurpose"> — OPUS parse plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-pcapparse.html">pcapparse</a></span><span class="refpurpose"> — Element parsing raw pcap streams</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-pnm.html">pnm</a></span><span class="refpurpose"> — PNM plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-proxy.html">proxy</a></span><span class="refpurpose"> — plugin for proxied inter-pipeline communication</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-removesilence.html">removesilence</a></span><span class="refpurpose"> — Removes silence from an audio stream</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-resindvd.html">resindvd</a></span><span class="refpurpose"> — Resin DVD playback elements</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-rfbsrc.html">rfbsrc</a></span><span class="refpurpose"> — Connects to a VNC server and decodes RFB stream</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-rsvg.html">rsvg</a></span><span class="refpurpose"> — RSVG plugin library</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-rtmp.html">rtmp</a></span><span class="refpurpose"> — RTMP source and sink</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-rtponvif.html">rtponvif</a></span><span class="refpurpose"> — ONVIF Streaming features</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-sbc.html">sbc</a></span><span class="refpurpose"> — SBC bluetooth audio support</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-sdpelem.html">sdpelem</a></span><span class="refpurpose"> — configure streaming sessions using SDP</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-segmentclip.html">segmentclip</a></span><span class="refpurpose"> — Segment clip elements</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-shm.html">shm</a></span><span class="refpurpose"> — shared memory sink source</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-siren.html">siren</a></span><span class="refpurpose"> — Siren encoder/decoder/payloader/depayloader plugins</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-smoothstreaming.html">smoothstreaming</a></span><span class="refpurpose"> — Microsoft's Smooth Streaming format support </span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-smooth.html">smooth</a></span><span class="refpurpose"> — Apply a smooth filter to an image</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-sndfile.html">sndfile</a></span><span class="refpurpose"> — use libsndfile to read and write various audio formats</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-soundtouch.html">soundtouch</a></span><span class="refpurpose"> — Audio Pitch Controller &amp; BPM Detection</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-spandsp.html">spandsp</a></span><span class="refpurpose"> — libspandsp plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-speed.html">speed</a></span><span class="refpurpose"> — Set speed/pitch on audio/raw streams (resampler)</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-srtp.html">srtp</a></span><span class="refpurpose"> — GStreamer SRTP</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-stereo.html">stereo</a></span><span class="refpurpose"> — Muck with the stereo signal, enhance its 'stereo-ness'</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-subenc.html">subenc</a></span><span class="refpurpose"> — subtitle encoders</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-teletext.html">teletext</a></span><span class="refpurpose"> — Teletext plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-timecode.html">timecode</a></span><span class="refpurpose"> — Timecode-related elements</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-ttmlsubs.html">ttmlsubs</a></span><span class="refpurpose"> — TTML subtitle handling</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-uvch264.html">uvch264</a></span><span class="refpurpose"> — UVC compliant H264 encoding cameras plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-vcdsrc.html">vcdsrc</a></span><span class="refpurpose"> — Asynchronous read from VCD disk</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-vdpau.html">vdpau</a></span><span class="refpurpose"> — Various elements utilizing VDPAU</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-videofiltersbad.html">videofiltersbad</a></span><span class="refpurpose"> — Video filters in gst-plugins-bad</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-videoframe_audiolevel.html">videoframe_audiolevel</a></span><span class="refpurpose"> — Video frame-synchronized audio level</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-videoparsersbad.html">videoparsersbad</a></span><span class="refpurpose"> — videoparsers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-videosignal.html">videosignal</a></span><span class="refpurpose"> — Various video signal analysers</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-vmnc.html">vmnc</a></span><span class="refpurpose"> — VmWare Video Codec plugins</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-voaacenc.html">voaacenc</a></span><span class="refpurpose"> — AAC audio encoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-voamrwbenc.html">voamrwbenc</a></span><span class="refpurpose"> — Adaptive Multi-Rate Wide-Band Encoder</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-vulkan.html">vulkan</a></span><span class="refpurpose"> — Vulkan plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-wasapi.html">wasapi</a></span><span class="refpurpose"> — Windows audio session API plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-waylandsink.html">waylandsink</a></span><span class="refpurpose"> — Wayland Video Sink</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-webp.html">webp</a></span><span class="refpurpose"> — WebP plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-webrtcdsp.html">webrtcdsp</a></span><span class="refpurpose"> — Voice pre-processing using WebRTC Audio Processing Library</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-webrtc.html">webrtc</a></span><span class="refpurpose"> — WebRTC plugins</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-wildmidi.html">wildmidi</a></span><span class="refpurpose"> — WildMidi-based MIDI playback plugin</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-x265.html">x265</a></span><span class="refpurpose"> — x265-based H265 plugins</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-y4mdec.html">y4mdec</a></span><span class="refpurpose"> — Demuxes/decodes YUV4MPEG streams</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-yadif.html">yadif</a></span><span class="refpurpose"> — YADIF deinterlacing filter</span>
+</dt>
+<dt>
+<span class="refentrytitle"><a href="gst-plugins-bad-plugins-plugin-zbar.html">zbar</a></span><span class="refpurpose"> — zbar barcode scanner</span>
+</dt>
+</dl></dd>
+</dl></div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

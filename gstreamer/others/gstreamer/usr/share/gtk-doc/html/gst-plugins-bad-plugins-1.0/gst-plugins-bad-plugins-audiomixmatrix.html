@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>audiomixmatrix: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-audiolatency.html" title="audiolatency">
+<link rel="next" href="gst-plugins-bad-plugins-audioparse.html" title="audioparse">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-audiomixmatrix.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-audiomixmatrix.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-audiomixmatrix.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-audiolatency.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-audioparse.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-audiomixmatrix"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-audiomixmatrix.top_of_page"></a>audiomixmatrix</span></h2>
+<p>audiomixmatrix — Transform input/output channels according to a matrix</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiomixmatrix.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiomixmatrix.html#GstAudioMixMatrix--channel-mask" title="The “channel-mask” property">channel-mask</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiomixmatrix.html#GstAudioMixMatrix--in-channels" title="The “in-channels” property">in-channels</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstControlSource.html#GstValueArray"><span class="type">GstValueArray</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiomixmatrix.html#GstAudioMixMatrix--matrix" title="The “matrix” property">matrix</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/gobject/gobject-Value-arrays.html#GValueArray-struct"><span class="type">GValueArray</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiomixmatrix.html#GstAudioMixMatrix--matrix-value-array" title="The “matrix-value-array” property">matrix-value-array</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstAudioMixMatrixModeType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiomixmatrix.html#GstAudioMixMatrix--mode" title="The “mode” property">mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-audiomixmatrix.html#GstAudioMixMatrix--out-channels" title="The “out-channels” property">out-channels</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstAudioMixMatrix"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiomixmatrix.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-audiomixmatrix.html#GstAudioMixMatrix-struct" title="struct GstAudioMixMatrix">GstAudioMixMatrix</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiomixmatrix.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+                    <span class="lineart">╰──</span> GstAudioMixMatrix
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiomixmatrix.description"></a><h2>Description</h2>
+<p>This element transforms a given number of input channels into a given
+number of output channels according to a given transformation matrix. The
+matrix coefficients must be between -1 and 1: the number of rows is equal
+to the number of output channels and the number of columns is equal to the
+number of input channels. In the first-channels mode, input/output channels
+are automatically negotiated and the transformation matrix is a truncated
+identity matrix.</p>
+<div class="refsect3">
+<a name="id-1.2.14.7.3"></a><h4>Example matrix generation code</h4>
+<p>To generate the matrix using code:</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16</pre></td>
+        <td class="listing_code"><pre class="programlisting">GValue v <span class="gtkdoc opt">=</span> G_VALUE_INIT<span class="gtkdoc opt">;</span>
+GValue v2 <span class="gtkdoc opt">=</span> G_VALUE_INIT<span class="gtkdoc opt">;</span>
+GValue v3 <span class="gtkdoc opt">=</span> G_VALUE_INIT<span class="gtkdoc opt">;</span>
+
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#g-value-init">g_value_init</a></span> <span class="gtkdoc opt">(&amp;</span>v2<span class="gtkdoc opt">,</span> GST_TYPE_ARRAY<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#g-value-init">g_value_init</a></span> <span class="gtkdoc opt">(&amp;</span>v3<span class="gtkdoc opt">,</span> G_TYPE_DOUBLE<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-Standard-Parameter-and-Value-Types.html#g-value-set-double">g_value_set_double</a></span> <span class="gtkdoc opt">(&amp;</span>v3<span class="gtkdoc opt">,</span> <span class="number">1</span><span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstValue.html#gst-value-array-append-value">gst_value_array_append_value</a></span> <span class="gtkdoc opt">(&amp;</span>v2<span class="gtkdoc opt">, &amp;</span>v3<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#g-value-unset">g_value_unset</a></span> <span class="gtkdoc opt">(&amp;</span>v3<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">[</span> Repeat <span class="keyword">for</span> as many <span class="gtkdoc kwb">double</span> as your input channels <span class="gtkdoc opt">-</span> unset <span class="keyword">and</span> reinit v3 <span class="gtkdoc opt">]</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#g-value-init">g_value_init</a></span> <span class="gtkdoc opt">(&amp;</span>v<span class="gtkdoc opt">,</span> GST_TYPE_ARRAY<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gstreamer-1.0/gstreamer-GstValue.html#gst-value-array-append-value">gst_value_array_append_value</a></span> <span class="gtkdoc opt">(&amp;</span>v<span class="gtkdoc opt">, &amp;</span>v2<span class="gtkdoc opt">);</span>
+<span class="function"><a href="/usr/share/gtk-doc/html/gobject/gobject-Generic-values.html#g-value-unset">g_value_unset</a></span> <span class="gtkdoc opt">(&amp;</span>v2<span class="gtkdoc opt">);</span>
+<span class="gtkdoc opt">[</span> Repeat <span class="keyword">for</span> as many v2<span class="string">&apos;s as your output channels - unset and reinit v2]</span>
+<span class="string">g_object_set_property (G_OBJECT (audiomixmatrix), &quot;matrix&quot;, &amp;v);</span>
+<span class="string">g_value_unset (&amp;v);</span></pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsect3">
+<a name="id-1.2.14.7.4"></a><h4>Example launch line</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> audiotestsrc <span class="gtkdoc opt">!</span> audio<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>channels<span class="gtkdoc opt">=</span><span class="number">4</span> <span class="gtkdoc opt">!</span> audiomixmatrix in<span class="gtkdoc opt">-</span>channels<span class="gtkdoc opt">=</span><span class="number">4</span> out<span class="gtkdoc opt">-</span>channels<span class="gtkdoc opt">=</span><span class="number">2</span> channel<span class="gtkdoc opt">-</span>mask<span class="gtkdoc opt">=-</span><span class="number">1</span> matrix<span class="gtkdoc opt">=</span><span class="string">&quot;&lt;&lt;(double)1, (double)0, (double)0, (double)0&gt;, &lt;0.0, 1.0, 0.0, 0.0&gt;&gt;&quot;</span> <span class="gtkdoc opt">!</span> audio<span class="gtkdoc opt">/</span>x<span class="gtkdoc opt">-</span>raw<span class="gtkdoc opt">,</span>channels<span class="gtkdoc opt">=</span><span class="number">2</span> <span class="gtkdoc opt">!</span> autoaudiosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p></p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.14.7.5.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-audiomixmatrix.html#plugin-audiomixmatrix">audiomixmatrix</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Vivia Nikolaidou &lt;vivia@toolsonair.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Audio</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.14.7.5.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>audio/x-raw, channels=(int)[ 1, 2147483647 ], layout=(string)interleaved, format=(string){ F32LE, F64LE, S16LE, S32LE }</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>audio/x-raw, channels=(int)[ 1, 2147483647 ], layout=(string)interleaved, format=(string){ F32LE, F64LE, S16LE, S32LE }</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiomixmatrix.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiomixmatrix.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstAudioMixMatrix-struct"></a><h3>struct GstAudioMixMatrix</h3>
+<pre class="programlisting">struct GstAudioMixMatrix;</pre>
+<p>Opaque data structure.</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-audiomixmatrix.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstAudioMixMatrix--channel-mask"></a><h3>The <code class="literal">“channel-mask”</code> property</h3>
+<pre class="programlisting">  “channel-mask”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint64"><span class="type">guint64</span></a></pre>
+<p>Output channel mask (-1 means "default for these channels").</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioMixMatrix--in-channels"></a><h3>The <code class="literal">“in-channels”</code> property</h3>
+<pre class="programlisting">  “in-channels”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>How many audio channels we have on the input side.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 64</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioMixMatrix--matrix"></a><h3>The <code class="literal">“matrix”</code> property</h3>
+<pre class="programlisting">  “matrix”                   <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstControlSource.html#GstValueArray"><span class="type">GstValueArray</span></a></pre>
+<p>Transformation matrix for input/output channels.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioMixMatrix--matrix-value-array"></a><h3>The <code class="literal">“matrix-value-array”</code> property</h3>
+<pre class="programlisting">  “matrix-value-array”       <a href="/usr/share/gtk-doc/html/gobject/gobject-Value-arrays.html#GValueArray-struct"><span class="type">GValueArray</span></a> *</pre>
+<p>Transformation matrix (GValueArray) for input/output channels.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioMixMatrix--mode"></a><h3>The <code class="literal">“mode”</code> property</h3>
+<pre class="programlisting">  “mode”                     <span class="type">GstAudioMixMatrixModeType</span></pre>
+<p>Whether to auto-negotiate input/output channels and matrix.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Manual mode: please specify input/output channels and transformation matrix</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstAudioMixMatrix--out-channels"></a><h3>The <code class="literal">“out-channels”</code> property</h3>
+<pre class="programlisting">  “out-channels”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>How many audio channels we have on the output side.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 64</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

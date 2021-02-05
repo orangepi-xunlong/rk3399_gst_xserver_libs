@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>x265enc: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-wrappercamerabinsrc.html" title="wrappercamerabinsrc">
+<link rel="next" href="gst-plugins-bad-plugins-y4mdec.html" title="y4mdec">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-x265enc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-x265enc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-x265enc.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-x265enc.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-wrappercamerabinsrc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-y4mdec.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-x265enc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-x265enc.top_of_page"></a>x265enc</span></h2>
+<p>x265enc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-x265enc.html#GstX265Enc--bitrate" title="The “bitrate” property">bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstX265LogLevel</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-x265enc.html#GstX265Enc--log-level" title="The “log-level” property">log-level</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-x265enc.html#GstX265Enc--option-string" title="The “option-string” property">option-string</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-x265enc.html#GstX265Enc--qp" title="The “qp” property">qp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstX265SpeedPreset</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-x265enc.html#GstX265Enc--speed-preset" title="The “speed-preset” property">speed-preset</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstX265Tune</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-x265enc.html#GstX265Enc--tune" title="The “tune” property">tune</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstX265Enc"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-x265enc.html#GstX265Enc-struct" title="struct GstX265Enc">GstX265Enc</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0/gst-plugins-base-libs-GstVideoEncoder.html#GstVideoEncoder">GstVideoEncoder</a>
+                    <span class="lineart">╰──</span> GstX265Enc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstX265Enc implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPreset.html#GstPreset-struct">GstPreset</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.description"></a><h2>Description</h2>
+<p>This element encodes raw video into H265 compressed data.</p>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.266.8.3.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-x265.html#plugin-x265">x265</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Thijs Vermeir &lt;thijs.vermeir@barco.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Codec/Encoder/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.266.8.3.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string){ I420, Y444, I420_10LE, Y444_10LE }, framerate=(fraction)[ 0/1, 2147483647/1 ], width=(int)[ 4, 2147483647 ], height=(int)[ 4, 2147483647 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-h265, framerate=(fraction)[ 0/1, 2147483647/1 ], width=(int)[ 4, 2147483647 ], height=(int)[ 4, 2147483647 ], stream-format=(string)byte-stream, alignment=(string)au, profile=(string){ main }</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstX265Enc-struct"></a><h3>struct GstX265Enc</h3>
+<pre class="programlisting">struct GstX265Enc;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-x265enc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstX265Enc--bitrate"></a><h3>The <code class="literal">“bitrate”</code> property</h3>
+<pre class="programlisting">  “bitrate”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Bitrate in kbit/sec.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [1,102400]</p>
+<p>Default value: 2048</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstX265Enc--log-level"></a><h3>The <code class="literal">“log-level”</code> property</h3>
+<pre class="programlisting">  “log-level”                <span class="type">GstX265LogLevel</span></pre>
+<p>x265 log level.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: No logging</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstX265Enc--option-string"></a><h3>The <code class="literal">“option-string”</code> property</h3>
+<pre class="programlisting">  “option-string”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>String of x265 options (overridden by element properties) in the format "key1=value1:key2=value2".</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ""</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstX265Enc--qp"></a><h3>The <code class="literal">“qp”</code> property</h3>
+<pre class="programlisting">  “qp”                       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>QP for P slices in (implied) CQP mode (-1 = disabled).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [G_MAXULONG,51]</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstX265Enc--speed-preset"></a><h3>The <code class="literal">“speed-preset”</code> property</h3>
+<pre class="programlisting">  “speed-preset”             <span class="type">GstX265SpeedPreset</span></pre>
+<p>Preset name for speed/quality tradeoff options.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: medium</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstX265Enc--tune"></a><h3>The <code class="literal">“tune”</code> property</h3>
+<pre class="programlisting">  “tune”                     <span class="type">GstX265Tune</span></pre>
+<p>Preset name for tuning options.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: ssim</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

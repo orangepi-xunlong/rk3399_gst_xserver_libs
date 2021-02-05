@@ -1,0 +1,688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>uvch264src: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-uvch264mjpgdemux.html" title="uvch264mjpgdemux">
+<link rel="next" href="gst-plugins-bad-plugins-vc1parse.html" title="vc1parse">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-uvch264src.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-uvch264src.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-uvch264src.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-uvch264src.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-uvch264src.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-uvch264mjpgdemux.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-vc1parse.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-uvch264src"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-uvch264src.top_of_page"></a>uvch264src</span></h2>
+<p>uvch264src</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--average-bitrate" title="The “average-bitrate” property">average-bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--colorspace-name" title="The “colorspace-name” property">colorspace-name</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--device" title="The “device” property">device</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--device-name" title="The “device-name” property">device-name</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--enable-sei" title="The “enable-sei” property">enable-sei</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">UvcH264Entropy</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--entropy" title="The “entropy” property">entropy</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--fixed-framerate" title="The “fixed-framerate” property">fixed-framerate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--iframe-period" title="The “iframe-period” property">iframe-period</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--initial-bitrate" title="The “initial-bitrate” property">initial-bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--jpeg-decoder-name" title="The “jpeg-decoder-name” property">jpeg-decoder-name</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--leaky-bucket-size" title="The “leaky-bucket-size” property">leaky-bucket-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--level-idc" title="The “level-idc” property">level-idc</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--ltr-buffer-size" title="The “ltr-buffer-size” property">ltr-buffer-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--ltr-encoder-control" title="The “ltr-encoder-control” property">ltr-encoder-control</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--max-bframe-qp" title="The “max-bframe-qp” property">max-bframe-qp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--max-iframe-qp" title="The “max-iframe-qp” property">max-iframe-qp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--max-mbps" title="The “max-mbps” property">max-mbps</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--max-pframe-qp" title="The “max-pframe-qp” property">max-pframe-qp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--min-bframe-qp" title="The “min-bframe-qp” property">min-bframe-qp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--min-iframe-qp" title="The “min-iframe-qp” property">min-iframe-qp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--min-pframe-qp" title="The “min-pframe-qp” property">min-pframe-qp</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--num-buffers" title="The “num-buffers” property">num-buffers</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--num-clock-samples" title="The “num-clock-samples” property">num-clock-samples</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--num-reorder-frames" title="The “num-reorder-frames” property">num-reorder-frames</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--peak-bitrate" title="The “peak-bitrate” property">peak-bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--preview-flipped" title="The “preview-flipped” property">preview-flipped</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">UvcH264RateControl</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--rate-control" title="The “rate-control” property">rate-control</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">UvcH264SliceMode</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--slice-mode" title="The “slice-mode” property">slice-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--slice-units" title="The “slice-units” property">slice-units</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">UvcH264UsageType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src--usage-type" title="The “usage-type” property">usage-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src-get-boolean-setting" title="The “get-boolean-setting” signal">get-boolean-setting</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src-get-enum-setting" title="The “get-enum-setting” signal">get-enum-setting</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src-get-int-setting" title="The “get-int-setting” signal">get-int-setting</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstUvcH264Src"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src-struct" title="struct GstUvcH264Src">GstUvcH264Src</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBin.html#GstBin-struct">GstBin</a>
+                    <span class="lineart">╰──</span> GstBaseCameraSrc
+                        <span class="lineart">╰──</span> GstUvcH264Src
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstUvcH264Src implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstChildProxy.html#GstChildProxy-struct">GstChildProxy</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.description"></a><h2>Description</h2>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.237.9.2.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-uvch264.html#plugin-uvch264">uvch264</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Youness Alaoui &lt;youness.alaoui@collabora.co.uk&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Source/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.237.9.2.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>imgsrc</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>EMPTY</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>vfsrc</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string){ I420, YV12, YUY2, UYVY, AYUV, RGBx, BGRx, xRGB, xBGR, RGBA, BGRA, ARGB, ABGR, RGB, BGR, Y41B, Y42B, YVYU, Y444, v210, v216, NV12, NV21, GRAY8, GRAY16_BE, GRAY16_LE, v308, RGB16, BGR16, RGB15, BGR15, UYVP, A420, RGB8P, YUV9, YVU9, IYU1, ARGB64, AYUV64, r210, I420_10BE, I420_10LE, I422_10BE, I422_10LE, Y444_10BE, Y444_10LE, GBR, GBR_10BE, GBR_10LE, NV16, NV24, NV12_64Z32, A420_10BE, A420_10LE, A422_10BE, A422_10LE, A444_10BE, A444_10LE, NV61, P010_10BE, P010_10LE, IYU2, VYUY, GBRA, GBRA_10BE, GBRA_10LE, GBR_12BE, GBR_12LE, GBRA_12BE, GBRA_12LE, I420_12BE, I420_12LE, I422_12BE, I422_12LE, Y444_12BE, Y444_12LE, GRAY10_LE32, NV12_10LE32, NV16_10LE32 }, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/jpeg, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>vidsrc</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string){ I420, YV12, YUY2, UYVY, AYUV, RGBx, BGRx, xRGB, xBGR, RGBA, BGRA, ARGB, ABGR, RGB, BGR, Y41B, Y42B, YVYU, Y444, v210, v216, NV12, NV21, GRAY8, GRAY16_BE, GRAY16_LE, v308, RGB16, BGR16, RGB15, BGR15, UYVP, A420, RGB8P, YUV9, YVU9, IYU1, ARGB64, AYUV64, r210, I420_10BE, I420_10LE, I422_10BE, I422_10LE, Y444_10BE, Y444_10LE, GBR, GBR_10BE, GBR_10LE, NV16, NV24, NV12_64Z32, A420_10BE, A420_10LE, A422_10BE, A422_10LE, A444_10BE, A444_10LE, NV61, P010_10BE, P010_10LE, IYU2, VYUY, GBRA, GBRA_10BE, GBRA_10LE, GBR_12BE, GBR_12LE, GBRA_12BE, GBRA_12LE, I420_12BE, I420_12LE, I422_12BE, I422_12LE, Y444_12BE, Y444_12LE, GRAY10_LE32, NV12_10LE32, NV16_10LE32 }, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> image/jpeg, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-h264, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ], stream-format=(string){ byte-stream, avc }, alignment=(string)au, profile=(string){ high, main, baseline, constrained-baseline }</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstUvcH264Src-struct"></a><h3>struct GstUvcH264Src</h3>
+<pre class="programlisting">struct GstUvcH264Src;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstUvcH264Src--average-bitrate"></a><h3>The <code class="literal">“average-bitrate”</code> property</h3>
+<pre class="programlisting">  “average-bitrate”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The average bitrate in bits/second (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 3000000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--colorspace-name"></a><h3>The <code class="literal">“colorspace-name”</code> property</h3>
+<pre class="programlisting">  “colorspace-name”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The name of the colorspace element.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: "videoconvert"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--device"></a><h3>The <code class="literal">“device”</code> property</h3>
+<pre class="programlisting">  “device”                   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Device location.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: "/dev/video0"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--device-name"></a><h3>The <code class="literal">“device-name”</code> property</h3>
+<pre class="programlisting">  “device-name”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>Name of the device.</p>
+<p>Flags: Read</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--enable-sei"></a><h3>The <code class="literal">“enable-sei”</code> property</h3>
+<pre class="programlisting">  “enable-sei”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Enable SEI picture timing (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--entropy"></a><h3>The <code class="literal">“entropy”</code> property</h3>
+<pre class="programlisting">  “entropy”                  <span class="type">UvcH264Entropy</span></pre>
+<p>Entropy (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: CAVLC</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--fixed-framerate"></a><h3>The <code class="literal">“fixed-framerate”</code> property</h3>
+<pre class="programlisting">  “fixed-framerate”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Fixed framerate (static &amp; dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--iframe-period"></a><h3>The <code class="literal">“iframe-period”</code> property</h3>
+<pre class="programlisting">  “iframe-period”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Time between IDR frames in milliseconds (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 65535</p>
+<p>Default value: 10000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--initial-bitrate"></a><h3>The <code class="literal">“initial-bitrate”</code> property</h3>
+<pre class="programlisting">  “initial-bitrate”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Initial bitrate in bits/second (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 3000000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--jpeg-decoder-name"></a><h3>The <code class="literal">“jpeg-decoder-name”</code> property</h3>
+<pre class="programlisting">  “jpeg-decoder-name”        <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The name of the jpeg decoder element.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: "jpegdec"</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--leaky-bucket-size"></a><h3>The <code class="literal">“leaky-bucket-size”</code> property</h3>
+<pre class="programlisting">  “leaky-bucket-size”        <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Size of the leaky bucket size in milliseconds (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 65535</p>
+<p>Default value: 1000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--level-idc"></a><h3>The <code class="literal">“level-idc”</code> property</h3>
+<pre class="programlisting">  “level-idc”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Level IDC (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 255</p>
+<p>Default value: 40</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--ltr-buffer-size"></a><h3>The <code class="literal">“ltr-buffer-size”</code> property</h3>
+<pre class="programlisting">  “ltr-buffer-size”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Total number of Long-Term Reference frames (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,255]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--ltr-encoder-control"></a><h3>The <code class="literal">“ltr-encoder-control”</code> property</h3>
+<pre class="programlisting">  “ltr-encoder-control”      <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Number of LTR frames the device can control (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,255]</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--max-bframe-qp"></a><h3>The <code class="literal">“max-bframe-qp”</code> property</h3>
+<pre class="programlisting">  “max-bframe-qp”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The minimum Quantization step size for B frames (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-127,127]</p>
+<p>Default value: 46</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--max-iframe-qp"></a><h3>The <code class="literal">“max-iframe-qp”</code> property</h3>
+<pre class="programlisting">  “max-iframe-qp”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The minimum Quantization step size for I frames (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-127,127]</p>
+<p>Default value: 46</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--max-mbps"></a><h3>The <code class="literal">“max-mbps”</code> property</h3>
+<pre class="programlisting">  “max-mbps”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The number of macroblocks per second for the maximum processing rate.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--max-pframe-qp"></a><h3>The <code class="literal">“max-pframe-qp”</code> property</h3>
+<pre class="programlisting">  “max-pframe-qp”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The minimum Quantization step size for P frames (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-127,127]</p>
+<p>Default value: 46</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--min-bframe-qp"></a><h3>The <code class="literal">“min-bframe-qp”</code> property</h3>
+<pre class="programlisting">  “min-bframe-qp”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The minimum Quantization step size for B frames (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-127,127]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--min-iframe-qp"></a><h3>The <code class="literal">“min-iframe-qp”</code> property</h3>
+<pre class="programlisting">  “min-iframe-qp”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The minimum Quantization step size for I frames (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-127,127]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--min-pframe-qp"></a><h3>The <code class="literal">“min-pframe-qp”</code> property</h3>
+<pre class="programlisting">  “min-pframe-qp”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The minimum Quantization step size for P frames (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [-127,127]</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--num-buffers"></a><h3>The <code class="literal">“num-buffers”</code> property</h3>
+<pre class="programlisting">  “num-buffers”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Number of buffers to output before sending EOS (-1 = unlimited).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Default value: -1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--num-clock-samples"></a><h3>The <code class="literal">“num-clock-samples”</code> property</h3>
+<pre class="programlisting">  “num-clock-samples”        <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Number of clock samples to gather for the PTS synchronization (-1 = unlimited).</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--num-reorder-frames"></a><h3>The <code class="literal">“num-reorder-frames”</code> property</h3>
+<pre class="programlisting">  “num-reorder-frames”       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Number of B frames between the references frames (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 255</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--peak-bitrate"></a><h3>The <code class="literal">“peak-bitrate”</code> property</h3>
+<pre class="programlisting">  “peak-bitrate”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The peak bitrate in bits/second (dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 3000000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--preview-flipped"></a><h3>The <code class="literal">“preview-flipped”</code> property</h3>
+<pre class="programlisting">  “preview-flipped”          <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Horizontal flipped image for non H.264 streams (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--rate-control"></a><h3>The <code class="literal">“rate-control”</code> property</h3>
+<pre class="programlisting">  “rate-control”             <span class="type">UvcH264RateControl</span></pre>
+<p>Rate control mode (static &amp; dynamic control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Constant bit rate</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--slice-mode"></a><h3>The <code class="literal">“slice-mode”</code> property</h3>
+<pre class="programlisting">  “slice-mode”               <span class="type">UvcH264SliceMode</span></pre>
+<p>Defines the unit of the slice-units property (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Slice Per Frame</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--slice-units"></a><h3>The <code class="literal">“slice-units”</code> property</h3>
+<pre class="programlisting">  “slice-units”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Slice units (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 65535</p>
+<p>Default value: 4</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src--usage-type"></a><h3>The <code class="literal">“usage-type”</code> property</h3>
+<pre class="programlisting">  “usage-type”               <span class="type">UvcH264UsageType</span></pre>
+<p>The usage type (static control).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Realtime (video conferencing)</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-uvch264src.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GstUvcH264Src-get-boolean-setting"></a><h3>The <code class="literal">“get-boolean-setting”</code> signal</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src"><span class="type">GstUvcH264Src</span></a> *gstuvch264src,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       arg3,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src-get-enum-setting"></a><h3>The <code class="literal">“get-enum-setting”</code> signal</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src"><span class="type">GstUvcH264Src</span></a> *gstuvch264src,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       arg3,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstUvcH264Src-get-int-setting"></a><h3>The <code class="literal">“get-int-setting”</code> signal</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>
+user_function (<a class="link" href="gst-plugins-bad-plugins-uvch264src.html#GstUvcH264Src"><span class="type">GstUvcH264Src</span></a> *gstuvch264src,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>         *arg1,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       arg3,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       arg4,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>       user_data)</pre>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

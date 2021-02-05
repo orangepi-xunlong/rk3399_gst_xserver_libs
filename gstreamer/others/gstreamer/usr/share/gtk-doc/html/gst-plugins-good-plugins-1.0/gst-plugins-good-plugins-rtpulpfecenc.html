@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>rtpulpfecenc: GStreamer Good Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Good Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-good Elements">
+<link rel="prev" href="gst-plugins-good-plugins-rtpulpfecdec.html" title="rtpulpfecdec">
+<link rel="next" href="gst-plugins-good-plugins-rtpvorbisdepay.html" title="rtpvorbisdepay">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtpulpfecenc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtpulpfecenc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-good-plugins-rtpulpfecenc.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-good-plugins-rtpulpfecdec.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-good-plugins-rtpvorbisdepay.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-good-plugins-rtpulpfecenc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-good-plugins-rtpulpfecenc.top_of_page"></a>rtpulpfecenc</span></h2>
+<p>rtpulpfecenc — Generic RTP Forward Error Correction (FEC) encoder</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecenc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--multipacket" title="The “multipacket” property">multipacket</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--mux-seq" title="The “mux-seq” property">mux-seq</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--percentage" title="The “percentage” property">percentage</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--percentage-important" title="The “percentage-important” property">percentage-important</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--protected" title="The “protected” property">protected</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--pt" title="The “pt” property">pt</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--ssrc" title="The “ssrc” property">ssrc</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstRtpUlpFecEnc"></a><div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecenc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc-struct" title="struct GstRtpUlpFecEnc">GstRtpUlpFecEnc</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecenc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> GstRtpUlpFecEnc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecenc.description"></a><h2>Description</h2>
+<p>Generic Forward Error Correction (FEC) encoder using Uneven Level
+Protection (ULP) as described in RFC 5109.</p>
+<p>This element will insert protection packets in any RTP stream, which
+can then be used on the receiving side to recover lost packets.</p>
+<p>This element rewrites packets' seqnums, which means that when combined
+with retransmission elements such as <a class="link" href="gst-plugins-good-plugins-rtprtxsend.html#GstRtpRtxSend"><span class="type">GstRtpRtxSend</span></a>, it *must* be
+placed upstream of those, otherwise retransmission requests will request
+incorrect seqnums.</p>
+<p>A payload type for the protection packets *must* be specified, different
+from the payload type of the protected packets, with the GstRtpUlpFecEnc:pt
+property.</p>
+<p>The marker bit of RTP packets is used to determine sets of packets to
+protect as a unit, in order to modulate the level of protection, this
+behaviour can be disabled with GstRtpUlpFecEnc:multipacket, but should
+be left enabled for video streams.</p>
+<p>The level of protection can be configured with two properties,
+<a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--percentage" title="The “percentage” property"><span class="type">“percentage”</span></a> and <a class="link" href="gst-plugins-good-plugins-rtpulpfecenc.html#GstRtpUlpFecEnc--percentage-important" title="The “percentage-important” property"><span class="type">“percentage-important”</span></a>,
+the element will determine which percentage to use for a given set of
+packets based on the presence of the <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBuffer.html#GST-BUFFER-FLAG-NON-DROPPABLE:CAPS"><span class="type">GST_BUFFER_FLAG_NON_DROPPABLE</span></a>
+flag, upstream payloaders are expected to set this flag on "important"
+packets such as those making up a keyframe.</p>
+<p>The percentage is expressed not in terms of bytes, but in terms of
+packets, this for implementation convenience. The drawback with this
+approach is that when using a percentage different from 100 %, and a
+low bitrate, entire frames may be contained in a single packet, leading
+to some packets not being protected, thus lowering the overall recovery
+rate on the receiving side.</p>
+<p>When using <a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin"><span class="type">GstRtpBin</span></a>, this element should be inserted through the
+<a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin-request-fec-encoder" title="The “request-fec-encoder” signal"><span class="type">“request-fec-encoder”</span></a> signal.</p>
+<p>Example programs using this element can be found at
+<a class="ulink" href="https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecserver.rs" target="_top">https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecserver.rs</a>
+and
+<a class="ulink" href="https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecclient.rs" target="_top">https://github.com/sdroege/gstreamer-rs/blob/master/examples/src/bin/rtpfecclient.rs</a>.</p>
+<p>See also: <a class="link" href="gst-plugins-good-plugins-rtpulpfecdec.html#GstRtpUlpFecDec"><span class="type">GstRtpUlpFecDec</span></a>, <a class="link" href="gst-plugins-good-plugins-rtpbin.html#GstRtpBin"><span class="type">GstRtpBin</span></a></p>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.228.7.12.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-good-plugins-plugin-rtp.html#plugin-rtp">rtp</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Mikhail Fludkov &lt;misha@pexip.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Codec/Payloader/Network/RTP</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.228.7.12.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecenc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecenc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc-struct"></a><h3>struct GstRtpUlpFecEnc</h3>
+<pre class="programlisting">struct GstRtpUlpFecEnc;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-good-plugins-rtpulpfecenc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc--multipacket"></a><h3>The <code class="literal">“multipacket”</code> property</h3>
+<pre class="programlisting">  “multipacket”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Apply FEC on multiple packets.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc--mux-seq"></a><h3>The <code class="literal">“mux-seq”</code> property</h3>
+<pre class="programlisting">  “mux-seq”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Mux seqnum for media and fec packets in same seqnum space.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc--percentage"></a><h3>The <code class="literal">“percentage”</code> property</h3>
+<pre class="programlisting">  “percentage”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>FEC overhead percentage for the whole stream.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: &lt;= 100</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc--percentage-important"></a><h3>The <code class="literal">“percentage-important”</code> property</h3>
+<pre class="programlisting">  “percentage-important”     <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>FEC overhead percentage for important packets.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: &lt;= 100</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc--protected"></a><h3>The <code class="literal">“protected”</code> property</h3>
+<pre class="programlisting">  “protected”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Count of protected packets.</p>
+<p>Flags: Read</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc--pt"></a><h3>The <code class="literal">“pt”</code> property</h3>
+<pre class="programlisting">  “pt”                       <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The payload type of FEC packets.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: &lt;= 255</p>
+<p>Default value: 255</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstRtpUlpFecEnc--ssrc"></a><h3>The <code class="literal">“ssrc”</code> property</h3>
+<pre class="programlisting">  “ssrc”                     <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The SSRC to use on FEC'd packets.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

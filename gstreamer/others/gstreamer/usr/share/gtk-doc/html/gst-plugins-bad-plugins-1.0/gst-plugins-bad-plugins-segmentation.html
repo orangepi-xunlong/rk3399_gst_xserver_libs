@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>segmentation: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-sdpsrc.html" title="sdpsrc">
+<link rel="next" href="gst-plugins-bad-plugins-sfdec.html" title="sfdec">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-segmentation.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-segmentation.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-segmentation.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-sdpsrc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-sfdec.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-segmentation"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-segmentation.top_of_page"></a>segmentation</span></h2>
+<p>segmentation</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-segmentation.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-segmentation.html#GstSegmentation--learning-rate" title="The “learning-rate” property">learning-rate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstSegmentationMethod</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-segmentation.html#GstSegmentation--method" title="The “method” property">method</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-segmentation.html#GstSegmentation--test-mode" title="The “test-mode” property">test-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstSegmentation"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-segmentation.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-segmentation.html#GstSegmentation-struct" title="struct GstSegmentation">GstSegmentation</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-segmentation.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseTransform.html#GstBaseTransform-struct">GstBaseTransform</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0/GstVideoFilter.html#GstVideoFilter-struct">GstVideoFilter</a>
+                        <span class="lineart">╰──</span> GstOpencvVideoFilter
+                            <span class="lineart">╰──</span> GstSegmentation
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-segmentation.description"></a><h2>Description</h2>
+<p>This element creates and updates a fg/bg model using one of several approaches.
+The one called "codebook" refers to the codebook approach following the opencv
+O'Reilly book [1] implementation of the algorithm described in K. Kim,
+T. H. Chalidabhongse, D. Harwood and L. Davis [2]. BackgroundSubtractorMOG [3],
+or MOG for shorts, refers to a Gaussian Mixture-based Background/Foreground
+Segmentation Algorithm. OpenCV MOG implements the algorithm described in [4].
+BackgroundSubtractorMOG2 [5], refers to another Gaussian Mixture-based
+Background/Foreground segmentation algorithm. OpenCV MOG2 implements the
+algorithm described in [6] and [7].</p>
+<p>[1] Learning OpenCV: Computer Vision with the OpenCV Library by Gary Bradski
+and Adrian Kaehler, Published by O'Reilly Media, October 3, 2008
+[2] "Real-time Foreground-Background Segmentation using Codebook Model",
+Real-time Imaging, Volume 11, Issue 3, Pages 167-256, June 2005.
+[3] http://opencv.itseez.com/modules/video/doc/motion_analysis_and_object_tracking.html<span class="type">backgroundsubtractormog</span>
+[4] P. KadewTraKuPong and R. Bowden, "An improved adaptive background
+mixture model for real-time tracking with shadow detection", Proc. 2nd
+European Workshop on Advanced Video-Based Surveillance Systems, 2001
+[5] http://opencv.itseez.com/modules/video/doc/motion_analysis_and_object_tracking.html<span class="type">backgroundsubtractormog2</span>
+[6] Z.Zivkovic, "Improved adaptive Gausian mixture model for background
+subtraction", International Conference Pattern Recognition, UK, August, 2004.
+[7] Z.Zivkovic, F. van der Heijden, "Efficient Adaptive Density Estimation
+per Image Pixel for the Task of Background Subtraction", Pattern Recognition
+Letters, vol. 27, no. 7, pages 773-780, 2006.</p>
+<div class="refsect2">
+<a name="id-1.2.200.7.4"></a><h3>Example launch line</h3>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span>  v4l2src device<span class="gtkdoc opt">=/</span>dev<span class="gtkdoc opt">/</span>video0 <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> segmentation test<span class="gtkdoc opt">-</span>mode<span class="gtkdoc opt">=</span><span class="keyword">true</span> method<span class="gtkdoc opt">=</span><span class="number">2</span> <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> ximagesink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.200.7.5.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-opencv.html#plugin-opencv">opencv</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Miguel Casas-Sanchez &lt;miguelecasassanchez@gmail.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Effect/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.200.7.5.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)RGBA, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-segmentation.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-segmentation.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstSegmentation-struct"></a><h3>struct GstSegmentation</h3>
+<pre class="programlisting">struct GstSegmentation;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-segmentation.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstSegmentation--learning-rate"></a><h3>The <code class="literal">“learning-rate”</code> property</h3>
+<pre class="programlisting">  “learning-rate”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gfloat"><span class="type">gfloat</span></a></pre>
+<p>Speed with which a motionless foreground pixel would become background (inverse of number of frames).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: [0,1]</p>
+<p>Default value: 0.01</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSegmentation--method"></a><h3>The <code class="literal">“method”</code> property</h3>
+<pre class="programlisting">  “method”                   <span class="type">GstSegmentationMethod</span></pre>
+<p>Segmentation method to use.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Mixture-of-Gaussians segmentation (Zivkovic2004)</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstSegmentation--test-mode"></a><h3>The <code class="literal">“test-mode”</code> property</h3>
+<pre class="programlisting">  “test-mode”                <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>If true, the output RGB is overwritten with the calculated foreground (white color).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

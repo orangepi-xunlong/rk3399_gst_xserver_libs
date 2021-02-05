@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>misc: Orc Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Orc Reference Manual">
+<link rel="up" href="ch05.html" title="Herein lie dragons">
+<link rel="prev" href="ch05.html" title="Herein lie dragons">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#orc-misc.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch05.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="ch05.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><img src="right-insensitive.png" width="16" height="16" border="0"></td>
+</tr></table>
+<div class="refentry">
+<a name="orc-misc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="orc-misc.top_of_page"></a>misc</span></h2>
+<p>misc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="orc-misc.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="orc-misc.html#OrcRuleEmitFunc" title="OrcRuleEmitFunc ()">*OrcRuleEmitFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-misc.html#orc-powerpc-init" title="orc_powerpc_init ()">orc_powerpc_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-misc.html#orc-arm-init" title="orc_arm_init ()">orc_arm_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-misc.html#orc-c-init" title="orc_c_init ()">orc_c_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-misc.html#orc-parse" title="orc_parse ()">orc_parse</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-misc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="orc-misc.html#OrcVariable" title="struct OrcVariable">OrcVariable</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="orc-misc.html#OrcInstruction" title="OrcInstruction">OrcInstruction</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="orc-misc.html#OrcRule" title="struct OrcRule">OrcRule</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="orc-misc.html#OrcFixup" title="struct OrcFixup">OrcFixup</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-N-REGS:CAPS" title="ORC_N_REGS">ORC_N_REGS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-N-INSNS:CAPS" title="ORC_N_INSNS">ORC_N_INSNS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-N-VARIABLES:CAPS" title="ORC_N_VARIABLES">ORC_N_VARIABLES</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-N-REGISTERS:CAPS" title="ORC_N_REGISTERS">ORC_N_REGISTERS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-N-FIXUPS:CAPS" title="ORC_N_FIXUPS">ORC_N_FIXUPS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-N-LABELS:CAPS" title="ORC_N_LABELS">ORC_N_LABELS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-GP-REG-BASE:CAPS" title="ORC_GP_REG_BASE">ORC_GP_REG_BASE</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-misc.html#ORC-VEC-REG-BASE:CAPS" title="ORC_VEC_REG_BASE">ORC_VEC_REG_BASE</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">enum</td>
+<td class="function_name"><a class="link" href="orc-misc.html#OrcVarType" title="enum OrcVarType">OrcVarType</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-misc.description"></a><h2>Description</h2>
+<p>
+</p>
+</div>
+<div class="refsect1">
+<a name="orc-misc.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="OrcRuleEmitFunc"></a><h3>OrcRuleEmitFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*OrcRuleEmitFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="orc-OrcCompiler.html#OrcCompiler" title="OrcCompiler"><span class="type">OrcCompiler</span></a> *p</code></em>,
+                    <em class="parameter"><code><span class="type">void</span> *user</code></em>,
+                    <em class="parameter"><code><a class="link" href="orc-misc.html#OrcInstruction" title="OrcInstruction"><span class="type">OrcInstruction</span></a> *insn</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-powerpc-init"></a><h3>orc_powerpc_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_powerpc_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-arm-init"></a><h3>orc_arm_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_arm_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-c-init"></a><h3>orc_c_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_c_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-parse"></a><h3>orc_parse ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_parse (<em class="parameter"><code>const <span class="type">char</span> *code</code></em>,
+           <em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> ***programs</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="orc-misc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="OrcVariable"></a><h3>struct OrcVariable</h3>
+<pre class="programlisting">struct OrcVariable {
+};
+</pre>
+<p>The OrcVariable structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcInstruction"></a><h3>OrcInstruction</h3>
+<pre class="programlisting">typedef struct {
+} OrcInstruction;
+</pre>
+<p>The OrcInstruction structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcRule"></a><h3>struct OrcRule</h3>
+<pre class="programlisting">struct OrcRule {
+};
+</pre>
+<p>The OrcRule structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcFixup"></a><h3>struct OrcFixup</h3>
+<pre class="programlisting">struct OrcFixup {
+};
+</pre>
+<p>The OrcFixup structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-REGS:CAPS"></a><h3>ORC_N_REGS</h3>
+<pre class="programlisting">#define ORC_N_REGS (32*4)
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-INSNS:CAPS"></a><h3>ORC_N_INSNS</h3>
+<pre class="programlisting">#define ORC_N_INSNS 100
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-VARIABLES:CAPS"></a><h3>ORC_N_VARIABLES</h3>
+<pre class="programlisting">#define ORC_N_VARIABLES 64
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-REGISTERS:CAPS"></a><h3>ORC_N_REGISTERS</h3>
+<pre class="programlisting">#define ORC_N_REGISTERS 20
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-FIXUPS:CAPS"></a><h3>ORC_N_FIXUPS</h3>
+<pre class="programlisting">#define ORC_N_FIXUPS 100
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-LABELS:CAPS"></a><h3>ORC_N_LABELS</h3>
+<pre class="programlisting">#define ORC_N_LABELS 40
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-GP-REG-BASE:CAPS"></a><h3>ORC_GP_REG_BASE</h3>
+<pre class="programlisting">#define ORC_GP_REG_BASE 32
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-VEC-REG-BASE:CAPS"></a><h3>ORC_VEC_REG_BASE</h3>
+<pre class="programlisting">#define ORC_VEC_REG_BASE 64
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcVarType"></a><h3>enum OrcVarType</h3>
+<p>
+</p>
+<div class="refsect3">
+<a name="OrcVarType.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="300px" class="enum_members_name">
+<col class="enum_members_description">
+<col width="200px" class="enum_members_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-VAR-TYPE-TEMP:CAPS"></a>ORC_VAR_TYPE_TEMP</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-VAR-TYPE-SRC:CAPS"></a>ORC_VAR_TYPE_SRC</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-VAR-TYPE-DEST:CAPS"></a>ORC_VAR_TYPE_DEST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-VAR-TYPE-CONST:CAPS"></a>ORC_VAR_TYPE_CONST</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-VAR-TYPE-PARAM:CAPS"></a>ORC_VAR_TYPE_PARAM</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+<tr>
+<td class="enum_member_name"><p><a name="ORC-VAR-TYPE-ACCUMULATOR:CAPS"></a>ORC_VAR_TYPE_ACCUMULATOR</p></td>
+<td class="enum_member_description"> </td>
+<td class="enum_member_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

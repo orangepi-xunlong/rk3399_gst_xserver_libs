@@ -1,0 +1,717 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>decklinkvideosink: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-decklinkaudiosrc.html" title="decklinkaudiosrc">
+<link rel="next" href="gst-plugins-bad-plugins-decklinkvideosrc.html" title="decklinkvideosrc">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-decklinkvideosink.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-decklinkvideosink.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-decklinkvideosink.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-decklinkaudiosrc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-decklinkvideosrc.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-decklinkvideosink"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-decklinkvideosink.top_of_page"></a>decklinkvideosink</span></h2>
+<p>decklinkvideosink</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-decklinkvideosink.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink--device-number" title="The “device-number” property">device-number</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstDecklinkModes</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink--mode" title="The “mode” property">mode</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstDecklinkVideoFormat</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink--video-format" title="The “video-format” property">video-format</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstDecklinkTimecodeFormat</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink--timecode-format" title="The “timecode-format” property">timecode-format</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink--hw-serial-number" title="The “hw-serial-number” property">hw-serial-number</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink--keyer-level" title="The “keyer-level” property">keyer-level</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstDecklinkKeyerMode</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink--keyer-mode" title="The “keyer-mode” property">keyer-mode</a></td>
+<td class="property_flags">Read / Write / Construct</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstDecklinkVideoSink"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-decklinkvideosink.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-decklinkvideosink.html#GstDecklinkVideoSink-struct" title="struct GstDecklinkVideoSink">GstDecklinkVideoSink</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-decklinkvideosink.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseSink.html#GstBaseSink-struct">GstBaseSink</a>
+                    <span class="lineart">╰──</span> GstDecklinkVideoSink
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-decklinkvideosink.description"></a><h2>Description</h2>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.57.7.2.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-decklink.html#plugin-decklink">decklink</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>David Schleef &lt;ds@entropywave.com&gt;, Sebastian Dröge &lt;sebastian@centricular.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Video/Sink</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.57.7.2.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt601, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt601, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt601, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt601, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)486, pixel-aspect-ratio=(fraction)10/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt601, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)720, height=(int)576, pixel-aspect-ratio=(fraction)12/11, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)interleaved, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)1280, height=(int)720, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt709, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)2048, height=(int)1556, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)UYVY, colorimetry=(string)bt2020, chroma-site=(string)mpeg2</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)v210</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)ARGB</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, width=(int)3840, height=(int)2160, pixel-aspect-ratio=(fraction)1/1, interlace-mode=(string)progressive, framerate=(fraction)[ 0/1, 2147483647/1 ], format=(string)BGRA</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-decklinkvideosink.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-decklinkvideosink.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink-struct"></a><h3>struct GstDecklinkVideoSink</h3>
+<pre class="programlisting">struct GstDecklinkVideoSink;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-decklinkvideosink.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink--device-number"></a><h3>The <code class="literal">“device-number”</code> property</h3>
+<pre class="programlisting">  “device-number”            <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Output device instance to use.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: &gt;= 0</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink--mode"></a><h3>The <code class="literal">“mode”</code> property</h3>
+<pre class="programlisting">  “mode”                     <span class="type">GstDecklinkModes</span></pre>
+<p>Video Mode to use for playback.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: NTSC SD 60i</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink--video-format"></a><h3>The <code class="literal">“video-format”</code> property</h3>
+<pre class="programlisting">  “video-format”             <span class="type">GstDecklinkVideoFormat</span></pre>
+<p>Video format type to use for playback.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: bmdFormat8BitYUV</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink--timecode-format"></a><h3>The <code class="literal">“timecode-format”</code> property</h3>
+<pre class="programlisting">  “timecode-format”          <span class="type">GstDecklinkTimecodeFormat</span></pre>
+<p>Timecode format type to use for playback.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: bmdTimecodeRP188Any</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink--hw-serial-number"></a><h3>The <code class="literal">“hw-serial-number”</code> property</h3>
+<pre class="programlisting">  “hw-serial-number”         <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The serial number (hardware ID) of the Decklink card.</p>
+<p>Flags: Read</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink--keyer-level"></a><h3>The <code class="literal">“keyer-level”</code> property</h3>
+<pre class="programlisting">  “keyer-level”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>Keyer level.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Allowed values: [0,255]</p>
+<p>Default value: 255</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDecklinkVideoSink--keyer-mode"></a><h3>The <code class="literal">“keyer-mode”</code> property</h3>
+<pre class="programlisting">  “keyer-mode”               <span class="type">GstDecklinkKeyerMode</span></pre>
+<p>Keyer mode to be enabled.</p>
+<p>Flags: Read / Write / Construct</p>
+<p>Default value: Off</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

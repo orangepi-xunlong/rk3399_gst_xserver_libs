@@ -1,0 +1,1102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OrcProgram: Orc Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Orc Reference Manual">
+<link rel="up" href="ch02.html" title="Application API">
+<link rel="prev" href="orc-Orc.html" title="Orc">
+<link rel="next" href="orc-OrcCompiler.html" title="OrcCompiler">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#orc-OrcProgram.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch02.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="orc-Orc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="orc-OrcCompiler.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="orc-OrcProgram"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="orc-OrcProgram.top_of_page"></a>OrcProgram</span></h2>
+<p>OrcProgram — Creating and manipulating Orc programs</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="orc-OrcProgram.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#ORC-PROGRAM-ERROR:CAPS" title="ORC_PROGRAM_ERROR()">ORC_PROGRAM_ERROR</a><span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-new" title="orc_program_new ()">orc_program_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-new-dss" title="orc_program_new_dss ()">orc_program_new_dss</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-new-as" title="orc_program_new_as ()">orc_program_new_as</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-new-ass" title="orc_program_new_ass ()">orc_program_new_ass</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-new-ds" title="orc_program_new_ds ()">orc_program_new_ds</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-free" title="orc_program_free ()">orc_program_free</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-get-name" title="orc_program_get_name ()">orc_program_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-set-name" title="orc_program_set_name ()">orc_program_set_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-add-temporary" title="orc_program_add_temporary ()">orc_program_add_temporary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-add-source" title="orc_program_add_source ()">orc_program_add_source</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-add-destination" title="orc_program_add_destination ()">orc_program_add_destination</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-add-constant" title="orc_program_add_constant ()">orc_program_add_constant</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-add-accumulator" title="orc_program_add_accumulator ()">orc_program_add_accumulator</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-add-parameter" title="orc_program_add_parameter ()">orc_program_add_parameter</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-append" title="orc_program_append ()">orc_program_append</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-append-str" title="orc_program_append_str ()">orc_program_append_str</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-append-ds" title="orc_program_append_ds ()">orc_program_append_ds</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-append-ds-str" title="orc_program_append_ds_str ()">orc_program_append_ds_str</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcCompiler.html#OrcCompileResult" title="enum OrcCompileResult"><span class="returnvalue">OrcCompileResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-compile" title="orc_program_compile ()">orc_program_compile</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcCompiler.html#OrcCompileResult" title="enum OrcCompileResult"><span class="returnvalue">OrcCompileResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-compile-for-target" title="orc_program_compile_for_target ()">orc_program_compile_for_target</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcCompiler.html#OrcCompileResult" title="enum OrcCompileResult"><span class="returnvalue">OrcCompileResult</span></a>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-compile-full" title="orc_program_compile_full ()">orc_program_compile_full</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-get-asm-code" title="orc_program_get_asm_code ()">orc_program_get_asm_code</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-find-var-by-name" title="orc_program_find_var_by_name ()">orc_program_find_var_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-allocate-register" title="orc_program_allocate_register ()">orc_program_allocate_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcProgram.html#orc-program-dup-temporary" title="orc_program_dup_temporary ()">orc_program_dup_temporary</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-OrcProgram.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram">OrcProgram</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-OrcProgram.html#ORC-N-CONSTANTS:CAPS" title="ORC_N_CONSTANTS">ORC_N_CONSTANTS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-OrcProgram.html#ORC-N-RULE-SETS:CAPS" title="ORC_N_RULE_SETS">ORC_N_RULE_SETS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-OrcProgram.html#ORC-N-TARGETS:CAPS" title="ORC_N_TARGETS">ORC_N_TARGETS</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-OrcProgram.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="orc-OrcProgram.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="ORC-PROGRAM-ERROR:CAPS"></a><h3>ORC_PROGRAM_ERROR()</h3>
+<pre class="programlisting">#define             ORC_PROGRAM_ERROR(program, ...)</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-new"></a><h3>orc_program_new ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+orc_program_new (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Create a new OrcProgram.  The program should be freed using
+<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#orc-program-free" title="orc_program_free ()"><code class="function">orc_program_free()</code></a></code></em>
+.</p>
+<div class="refsect3">
+<a name="orc-program-new.returns"></a><h4>Returns</h4>
+<p> a pointer to an OrcProgram structure</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-new-dss"></a><h3>orc_program_new_dss ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+orc_program_new_dss (<em class="parameter"><code><span class="type">int</span> size1</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> size2</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> size3</code></em>);</pre>
+<p>Create a new OrcProgram, with a destination named "d1" and
+two sources named "s1" and "s2".</p>
+<div class="refsect3">
+<a name="orc-program-new-dss.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>size1</p></td>
+<td class="parameter_description"><p>size of destination array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size2</p></td>
+<td class="parameter_description"><p>size of first source array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size3</p></td>
+<td class="parameter_description"><p>size of second source array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-new-dss.returns"></a><h4>Returns</h4>
+<p> a pointer to an OrcProgram structure</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-new-as"></a><h3>orc_program_new_as ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+orc_program_new_as (<em class="parameter"><code><span class="type">int</span> size1</code></em>,
+                    <em class="parameter"><code><span class="type">int</span> size2</code></em>);</pre>
+<p>Create a new OrcProgram, with an accumulator named "a1" and
+one source named "s1".</p>
+<div class="refsect3">
+<a name="orc-program-new-as.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>size1</p></td>
+<td class="parameter_description"><p>size of destination array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size2</p></td>
+<td class="parameter_description"><p>size of source array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-new-as.returns"></a><h4>Returns</h4>
+<p> a pointer to an OrcProgram structure</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-new-ass"></a><h3>orc_program_new_ass ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+orc_program_new_ass (<em class="parameter"><code><span class="type">int</span> size1</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> size2</code></em>,
+                     <em class="parameter"><code><span class="type">int</span> size3</code></em>);</pre>
+<p>Create a new OrcProgram, with an accumulator named "a1" and
+two source named "s1" and "s2".</p>
+<div class="refsect3">
+<a name="orc-program-new-ass.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>size1</p></td>
+<td class="parameter_description"><p>size of destination array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size2</p></td>
+<td class="parameter_description"><p>size of first source array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size3</p></td>
+<td class="parameter_description"><p>size of second source array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-new-ass.returns"></a><h4>Returns</h4>
+<p> a pointer to an OrcProgram structure</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-new-ds"></a><h3>orc_program_new_ds ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="returnvalue">OrcProgram</span></a> *
+orc_program_new_ds (<em class="parameter"><code><span class="type">int</span> size1</code></em>,
+                    <em class="parameter"><code><span class="type">int</span> size2</code></em>);</pre>
+<p>Create a new OrcProgram, with a destination named "d1" and
+one source named "s1".</p>
+<div class="refsect3">
+<a name="orc-program-new-ds.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>size1</p></td>
+<td class="parameter_description"><p>size of destination array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size2</p></td>
+<td class="parameter_description"><p>size of source array members</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-new-ds.returns"></a><h4>Returns</h4>
+<p> a pointer to an OrcProgram structure</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-free"></a><h3>orc_program_free ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_program_free (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>);</pre>
+<p>Frees an OrcProgram.</p>
+<div class="refsect3">
+<a name="orc-program-free.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-get-name"></a><h3>orc_program_get_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+orc_program_get_name (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>);</pre>
+<p>Gets the name of the program.  The string is valid until the name
+is changed or the program is freed.</p>
+<div class="refsect3">
+<a name="orc-program-get-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-get-name.returns"></a><h4>Returns</h4>
+<p> a character string</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-set-name"></a><h3>orc_program_set_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_program_set_name (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                      <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Sets the name of the program.  The string is copied.</p>
+<div class="refsect3">
+<a name="orc-program-set-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>string to set the name to</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-add-temporary"></a><h3>orc_program_add_temporary ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_add_temporary (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                           <em class="parameter"><code><span class="type">int</span> size</code></em>,
+                           <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Creates a new variable holding temporary values.</p>
+<div class="refsect3">
+<a name="orc-program-add-temporary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of data values</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-add-temporary.returns"></a><h4>Returns</h4>
+<p> the index of the new variable</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-add-source"></a><h3>orc_program_add_source ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_add_source (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                        <em class="parameter"><code><span class="type">int</span> size</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Creates a new variable representing a source array.</p>
+<div class="refsect3">
+<a name="orc-program-add-source.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of data values</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-add-source.returns"></a><h4>Returns</h4>
+<p> the index of the new variable</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-add-destination"></a><h3>orc_program_add_destination ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_add_destination (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                             <em class="parameter"><code><span class="type">int</span> size</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Creates a new variable representing a destination array.</p>
+<div class="refsect3">
+<a name="orc-program-add-destination.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of data values</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-add-destination.returns"></a><h4>Returns</h4>
+<p> the index of the new variable</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-add-constant"></a><h3>orc_program_add_constant ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_add_constant (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                          <em class="parameter"><code><span class="type">int</span> size</code></em>,
+                          <em class="parameter"><code><span class="type">int</span> value</code></em>,
+                          <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Creates a new variable representing a constant value.</p>
+<div class="refsect3">
+<a name="orc-program-add-constant.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of data value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>value</p></td>
+<td class="parameter_description"><p>the value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-add-constant.returns"></a><h4>Returns</h4>
+<p> the index of the new variable</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-add-accumulator"></a><h3>orc_program_add_accumulator ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_add_accumulator (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                             <em class="parameter"><code><span class="type">int</span> size</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Creates a new variable representing an accumulator.</p>
+<div class="refsect3">
+<a name="orc-program-add-accumulator.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of data value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-add-accumulator.returns"></a><h4>Returns</h4>
+<p> the index of the new variable</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-add-parameter"></a><h3>orc_program_add_parameter ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_add_parameter (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                           <em class="parameter"><code><span class="type">int</span> size</code></em>,
+                           <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Creates a new variable representing a scalar parameter.</p>
+<div class="refsect3">
+<a name="orc-program-add-parameter.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>size</p></td>
+<td class="parameter_description"><p>size of data value</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-add-parameter.returns"></a><h4>Returns</h4>
+<p> the index of the new variable</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-append"></a><h3>orc_program_append ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_program_append (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *p</code></em>,
+                    <em class="parameter"><code>const <span class="type">char</span> *opcode</code></em>,
+                    <em class="parameter"><code><span class="type">int</span> arg0</code></em>,
+                    <em class="parameter"><code><span class="type">int</span> arg1</code></em>,
+                    <em class="parameter"><code><span class="type">int</span> arg2</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-append-str"></a><h3>orc_program_append_str ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_program_append_str (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *p</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *opcode</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *arg0</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *arg1</code></em>,
+                        <em class="parameter"><code>const <span class="type">char</span> *arg2</code></em>);</pre>
+<p>Appends an instruction to the program, with arguments <em class="parameter"><code>arg0</code></em>
+,
+<em class="parameter"><code>arg1</code></em>
+, and <em class="parameter"><code>arg2</code></em>
+.  The instruction must take 3 operands.</p>
+<div class="refsect3">
+<a name="orc-program-append-str.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg0</p></td>
+<td class="parameter_description"><p>name of first variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>name of second variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg2</p></td>
+<td class="parameter_description"><p>name of third variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-append-ds"></a><h3>orc_program_append_ds ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_program_append_ds (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                       <em class="parameter"><code>const <span class="type">char</span> *opcode</code></em>,
+                       <em class="parameter"><code><span class="type">int</span> arg0</code></em>,
+                       <em class="parameter"><code><span class="type">int</span> arg1</code></em>);</pre>
+<p>Appends an instruction to the program, with arguments <em class="parameter"><code>arg0</code></em>
+,
+<em class="parameter"><code>arg1</code></em>
+, and <em class="parameter"><code>arg2</code></em>
+.  The instruction must take 3 operands.</p>
+<div class="refsect3">
+<a name="orc-program-append-ds.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg0</p></td>
+<td class="parameter_description"><p>index of first variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>index of second variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-append-ds-str"></a><h3>orc_program_append_ds_str ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_program_append_ds_str (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *p</code></em>,
+                           <em class="parameter"><code>const <span class="type">char</span> *opcode</code></em>,
+                           <em class="parameter"><code>const <span class="type">char</span> *arg0</code></em>,
+                           <em class="parameter"><code>const <span class="type">char</span> *arg1</code></em>);</pre>
+<p>Appends an instruction to the program, with arguments <em class="parameter"><code>arg0</code></em>
+ and
+<em class="parameter"><code>arg2</code></em>
+.  The instruction must take 2 operands.</p>
+<div class="refsect3">
+<a name="orc-program-append-ds-str.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>arg0</p></td>
+<td class="parameter_description"><p>name of first variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>arg1</p></td>
+<td class="parameter_description"><p>name of second variable</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-compile"></a><h3>orc_program_compile ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcCompiler.html#OrcCompileResult" title="enum OrcCompileResult"><span class="returnvalue">OrcCompileResult</span></a>
+orc_program_compile (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *p</code></em>);</pre>
+<p>Compiles an Orc program for the current CPU.  If successful,
+executable code for the program was generated and can be
+executed.</p>
+<p>The return value indicates various levels of success or failure.
+Success can be determined by checking for a true value of the
+macro <a class="link" href="orc-OrcCompiler.html#ORC-COMPILE-RESULT-IS-SUCCESSFUL:CAPS" title="ORC_COMPILE_RESULT_IS_SUCCESSFUL()"><code class="function">ORC_COMPILE_RESULT_IS_SUCCESSFUL()</code></a> on the return value.  This
+indicates that executable code was generated.  If the macro
+<a class="link" href="orc-OrcCompiler.html#ORC-COMPILE-RESULT-IS-FATAL:CAPS" title="ORC_COMPILE_RESULT_IS_FATAL()"><code class="function">ORC_COMPILE_RESULT_IS_FATAL()</code></a> on the return value evaluates to
+true, then there was a syntactical error in the program.  If the
+result is neither successful nor fatal, the program can still be
+emulated.</p>
+<div class="refsect3">
+<a name="orc-program-compile.returns"></a><h4>Returns</h4>
+<p> an OrcCompileResult</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-compile-for-target"></a><h3>orc_program_compile_for_target ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcCompiler.html#OrcCompileResult" title="enum OrcCompileResult"><span class="returnvalue">OrcCompileResult</span></a>
+orc_program_compile_for_target (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *p</code></em>,
+                                <em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="type">OrcTarget</span></a> *target</code></em>);</pre>
+<p>Compiles an Orc program for the given target, using the
+default target flags for that target.</p>
+<div class="refsect3">
+<a name="orc-program-compile-for-target.returns"></a><h4>Returns</h4>
+<p> an OrcCompileResult</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-compile-full"></a><h3>orc_program_compile_full ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcCompiler.html#OrcCompileResult" title="enum OrcCompileResult"><span class="returnvalue">OrcCompileResult</span></a>
+orc_program_compile_full (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *p</code></em>,
+                          <em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="type">OrcTarget</span></a> *target</code></em>,
+                          <em class="parameter"><code>unsigned <span class="type">int</span> flags</code></em>);</pre>
+<p>Compiles an Orc program for the given target, using the
+given target flags.</p>
+<div class="refsect3">
+<a name="orc-program-compile-full.returns"></a><h4>Returns</h4>
+<p> an OrcCompileResult</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-get-asm-code"></a><h3>orc_program_get_asm_code ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+orc_program_get_asm_code (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>);</pre>
+<p>Returns a character string containing the assembly code created
+by compiling the program.  This string is valid until the program
+is compiled again or the program is freed.</p>
+<div class="refsect3">
+<a name="orc-program-get-asm-code.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody><tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-get-asm-code.returns"></a><h4>Returns</h4>
+<p> a character string</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-find-var-by-name"></a><h3>orc_program_find_var_by_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_find_var_by_name (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                              <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>Finds the variable with the name <em class="parameter"><code>name</code></em>
+.  If no variable with the
+given name exists in the program, -1 is returned.</p>
+<div class="refsect3">
+<a name="orc-program-find-var-by-name.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>name</p></td>
+<td class="parameter_description"><p>name of instruction</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-find-var-by-name.returns"></a><h4>Returns</h4>
+<p> the index of the variable</p>
+</div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-allocate-register"></a><h3>orc_program_allocate_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_allocate_register (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                               <em class="parameter"><code><span class="type">int</span> is_data</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-program-dup-temporary"></a><h3>orc_program_dup_temporary ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_program_dup_temporary (<em class="parameter"><code><a class="link" href="orc-OrcProgram.html#OrcProgram" title="OrcProgram"><span class="type">OrcProgram</span></a> *program</code></em>,
+                           <em class="parameter"><code><span class="type">int</span> i</code></em>,
+                           <em class="parameter"><code><span class="type">int</span> j</code></em>);</pre>
+<p>Internal function.</p>
+<div class="refsect3">
+<a name="orc-program-dup-temporary.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>program</p></td>
+<td class="parameter_description"><p>a pointer to an OrcProgram structure</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>j</p></td>
+<td class="parameter_description"><p>index</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="orc-program-dup-temporary.returns"></a><h4>Returns</h4>
+<p> the index of the new variable</p>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="orc-OrcProgram.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="OrcProgram"></a><h3>OrcProgram</h3>
+<pre class="programlisting">typedef struct {
+} OrcProgram;
+</pre>
+<p>The OrcProgram structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-CONSTANTS:CAPS"></a><h3>ORC_N_CONSTANTS</h3>
+<pre class="programlisting">#define ORC_N_CONSTANTS 20
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-RULE-SETS:CAPS"></a><h3>ORC_N_RULE_SETS</h3>
+<pre class="programlisting">#define ORC_N_RULE_SETS 10
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-N-TARGETS:CAPS"></a><h3>ORC_N_TARGETS</h3>
+<pre class="programlisting">#define ORC_N_TARGETS 10
+</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dc1394src: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-dashdemux.html" title="dashdemux">
+<link rel="next" href="gst-plugins-bad-plugins-debugspy.html" title="debugspy">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-dc1394src.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-dc1394src.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-dc1394src.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-dashdemux.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-debugspy.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-dc1394src"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-dc1394src.top_of_page"></a>dc1394src</span></h2>
+<p>dc1394src</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dc1394src.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dc1394src.html#GstDC1394Src--dma" title="The “dma” property">dma</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dc1394src.html#GstDC1394Src--guid" title="The “guid” property">guid</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstDC1394ISOSpeed</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dc1394src.html#GstDC1394Src--iso" title="The “iso” property">iso</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-dc1394src.html#GstDC1394Src--unit" title="The “unit” property">unit</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstDC1394Src"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-dc1394src.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-dc1394src.html#GstDC1394Src-struct" title="struct GstDC1394Src">GstDC1394Src</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dc1394src.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstBaseSrc.html#GstBaseSrc-struct">GstBaseSrc</a>
+                    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-libs-1.0/GstPushSrc.html#GstPushSrc-struct">GstPushSrc</a>
+                        <span class="lineart">╰──</span> GstDC1394Src
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dc1394src.description"></a><h2>Description</h2>
+<p>Source for IIDC (Instrumentation &amp; Industrial Digital Camera) firewire
+cameras. If several cameras are connected to the system, the desired one
+can be selected by its GUID and an optional unit number (most cameras are
+single unit and do not require it). The frame size, rate and format are set
+from capabilities. Although the IIDC specification includes a raw video
+mode, many cameras use mono video modes to capture in Bayer format.
+Thus, for each mono video mode supported by a camera, both gray raw and Bayer
+corresponding video formats are exposed in the capabilities.
+The Bayer pattern is left unspecified.</p>
+<div class="refsect3">
+<a name="id-1.2.53.7.3"></a><h4>Example launch lines</h4>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> <span class="gtkdoc opt">-</span>v dc1394src <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> autovideosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Capture and display frames from the first camera available in the system.</p>
+<div class="informalexample">
+  <table class="listing_frame" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+      <tr>
+        <td class="listing_lines" align="right"><pre>1
+2
+3</pre></td>
+        <td class="listing_code"><pre class="programlisting">gst<span class="gtkdoc opt">-</span>launch<span class="gtkdoc opt">-</span><span class="number">1.0</span> dc1394src guid<span class="gtkdoc opt">=</span><span class="number">00074813004</span>DF937 \
+    <span class="gtkdoc opt">!</span> <span class="string">&quot;video/x-bayer,format=gbrg,width=1280,height=960,framerate=15/2&quot;</span> \
+    <span class="gtkdoc opt">!</span> bayer2rgb <span class="gtkdoc opt">!</span> videoconvert <span class="gtkdoc opt">!</span> autovideosink</pre></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<p> Capture and display frames from a specific camera in the desired format.</p>
+</div>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.53.7.4.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-dc1394.html#plugin-dc1394">dc1394</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Antoine Tremblay &lt;hexa00@gmail.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Source/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.53.7.4.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)IYU2, width=(int)160, height=(int)120, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)UYVY, width=(int)320, height=(int)240, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)IYU1, width=(int)640, height=(int)480, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)UYVY, width=(int)640, height=(int)480, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)RGB, width=(int)640, height=(int)480, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY8, width=(int)640, height=(int)480, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-bayer, format=(string){ bggr, rggb, grbg, gbrg }, width=(int)640, height=(int)480, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY16_BE, width=(int)640, height=(int)480, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)UYVY, width=(int)800, height=(int)600, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)RGB, width=(int)800, height=(int)600, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY8, width=(int)800, height=(int)600, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-bayer, format=(string){ bggr, rggb, grbg, gbrg }, width=(int)800, height=(int)600, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)UYVY, width=(int)1024, height=(int)768, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)RGB, width=(int)1024, height=(int)768, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY8, width=(int)1024, height=(int)768, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-bayer, format=(string){ bggr, rggb, grbg, gbrg }, width=(int)1024, height=(int)768, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY16_BE, width=(int)800, height=(int)600, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY16_BE, width=(int)1024, height=(int)768, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)UYVY, width=(int)1280, height=(int)960, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)RGB, width=(int)1280, height=(int)960, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY8, width=(int)1280, height=(int)960, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-bayer, format=(string){ bggr, rggb, grbg, gbrg }, width=(int)1280, height=(int)960, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)UYVY, width=(int)1600, height=(int)1200, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)RGB, width=(int)1600, height=(int)1200, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY8, width=(int)1600, height=(int)1200, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-bayer, format=(string){ bggr, rggb, grbg, gbrg }, width=(int)1600, height=(int)1200, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY16_BE, width=(int)1280, height=(int)960, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY16_BE, width=(int)1600, height=(int)1200, framerate=(fraction){ 15/8, 15/4, 15/2, 15/1, 30/1, 60/1, 120/1, 240/1 }</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)RGB, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)IYU2, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)UYVY, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)IYU1, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY16_BE, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-bayer, format=(string){ bggr, rggb, grbg, gbrg }, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-raw, format=(string)GRAY8, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+<tr>
+<td><p><span class="term"></span></p></td>
+<td> video/x-bayer, format=(string){ bggr, rggb, grbg, gbrg }, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 1/2147483647, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dc1394src.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dc1394src.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstDC1394Src-struct"></a><h3>struct GstDC1394Src</h3>
+<pre class="programlisting">struct GstDC1394Src;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-dc1394src.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstDC1394Src--dma"></a><h3>The <code class="literal">“dma”</code> property</h3>
+<pre class="programlisting">  “dma”                      <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The number of frames in the Direct Memory Access ring buffer.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= 1</p>
+<p>Default value: 10</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDC1394Src--guid"></a><h3>The <code class="literal">“guid”</code> property</h3>
+<pre class="programlisting">  “guid”                     <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The hexadecimal representation of the GUID of the camera (use first camera available if null).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDC1394Src--iso"></a><h3>The <code class="literal">“iso”</code> property</h3>
+<pre class="programlisting">  “iso”                      <span class="type">GstDC1394ISOSpeed</span></pre>
+<p>The ISO bandwidth in Mbps.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: DC1394 ISO speed 400</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstDC1394Src--unit"></a><h3>The <code class="literal">“unit”</code> property</h3>
+<pre class="programlisting">  “unit”                     <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a></pre>
+<p>The unit number of the camera (-1 if no unit number is used).</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Default value: -1</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>webrtcbin: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-webpenc.html" title="webpenc">
+<link rel="next" href="gst-plugins-bad-plugins-webrtcdsp.html" title="webrtcdsp">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcbin.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcbin.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcbin.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcbin.properties" class="shortcut">Properties</a></span><span id="nav_signals">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-webrtcbin.signals" class="shortcut">Signals</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-webpenc.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-webrtcdsp.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-webrtcbin"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-webrtcbin.top_of_page"></a>webrtcbin</span></h2>
+<p>webrtcbin</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><span class="type">GstWebRTCPeerConnectionState</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--connection-state" title="The “connection-state” property">connection-state</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebRTCICEConnectionState</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--ice-connection-state" title="The “ice-connection-state” property">ice-connection-state</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebRTCICEGatheringState</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--ice-gathering-state" title="The “ice-gathering-state” property">ice-gathering-state</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">GstWebRTCSessionDescription</span> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--local-description" title="The “local-description” property">local-description</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<span class="type">GstWebRTCSessionDescription</span> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--remote-description" title="The “remote-description” property">remote-description</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstWebRTCSignalingState</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--signaling-state" title="The “signaling-state” property">signaling-state</a></td>
+<td class="property_flags">Read</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--stun-server" title="The “stun-server” property">stun-server</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin--turn-server" title="The “turn-server” property">turn-server</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.signals"></a><h2>Signals</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="signals_return">
+<col width="300px" class="signals_name">
+<col width="200px" class="signals_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-add-ice-candidate" title="The “add-ice-candidate” signal">add-ice-candidate</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type">
+<span class="returnvalue">GstWebRTCRTPTransceiver</span>*</td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-add-transceiver" title="The “add-transceiver” signal">add-transceiver</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-create-answer" title="The “create-answer” signal">create-answer</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-create-offer" title="The “create-offer” signal">create-offer</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-get-stats" title="The “get-stats” signal">get-stats</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type">
+<a href="/usr/share/gtk-doc/html/glib/glib-Arrays.html#GArray"><span class="returnvalue">GArray</span></a>*</td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-get-transceivers" title="The “get-transceivers” signal">get-transceivers</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-on-ice-candidate" title="The “on-ice-candidate” signal">on-ice-candidate</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-on-negotiation-needed" title="The “on-negotiation-needed” signal">on-negotiation-needed</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-set-local-description" title="The “set-local-description” signal">set-local-description</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-set-remote-description" title="The “set-remote-description” signal">set-remote-description</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></td>
+</tr>
+<tr>
+<td class="signal_type"><span class="returnvalue">void</span></td>
+<td class="signal_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-on-new-transceiver" title="The “on-new-transceiver” signal">on-new-transceiver</a></td>
+<td class="signal_flags"><a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstWebRTCBin"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin-struct" title="GstWebRTCBin">GstWebRTCBin</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstBin.html#GstBin-struct">GstBin</a>
+                    <span class="lineart">╰──</span> GstWebRTCBin
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstWebRTCBin implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstChildProxy.html#GstChildProxy-struct">GstChildProxy</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.description"></a><h2>Description</h2>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.260.9.2.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-webrtc.html#plugin-webrtc">webrtc</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Matthew Waters &lt;matthew@centricular.com&gt;</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Filter/Network/WebRTC</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.260.9.2.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink_%u</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>request</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src_%u</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>sometimes</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>application/x-rtp</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstWebRTCBin-struct"></a><h3>GstWebRTCBin</h3>
+<pre class="programlisting">typedef struct _GstWebRTCBin GstWebRTCBin;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstWebRTCBin--connection-state"></a><h3>The <code class="literal">“connection-state”</code> property</h3>
+<pre class="programlisting">  “connection-state”         <span class="type">GstWebRTCPeerConnectionState</span></pre>
+<p>The overall connection state of this element.</p>
+<p>Flags: Read</p>
+<p>Default value: GST_WEBRTC_PEER_CONNECTION_STATE_NEW</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin--ice-connection-state"></a><h3>The <code class="literal">“ice-connection-state”</code> property</h3>
+<pre class="programlisting">  “ice-connection-state”     <span class="type">GstWebRTCICEConnectionState</span></pre>
+<p>The collective connection state of all ICETransport's.</p>
+<p>Flags: Read</p>
+<p>Default value: GST_WEBRTC_ICE_CONNECTION_STATE_NEW</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin--ice-gathering-state"></a><h3>The <code class="literal">“ice-gathering-state”</code> property</h3>
+<pre class="programlisting">  “ice-gathering-state”      <span class="type">GstWebRTCICEGatheringState</span></pre>
+<p>The collective gathering state of all ICETransport's.</p>
+<p>Flags: Read</p>
+<p>Default value: GST_WEBRTC_ICE_GATHERING_STATE_NEW</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin--local-description"></a><h3>The <code class="literal">“local-description”</code> property</h3>
+<pre class="programlisting">  “local-description”        <span class="type">GstWebRTCSessionDescription</span> *</pre>
+<p>The local SDP description to use for this connection.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin--remote-description"></a><h3>The <code class="literal">“remote-description”</code> property</h3>
+<pre class="programlisting">  “remote-description”       <span class="type">GstWebRTCSessionDescription</span> *</pre>
+<p>The remote SDP description to use for this connection.</p>
+<p>Flags: Read / Write</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin--signaling-state"></a><h3>The <code class="literal">“signaling-state”</code> property</h3>
+<pre class="programlisting">  “signaling-state”          <span class="type">GstWebRTCSignalingState</span></pre>
+<p>The signaling state of this element.</p>
+<p>Flags: Read</p>
+<p>Default value: GST_WEBRTC_SIGNALING_STATE_STABLE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin--stun-server"></a><h3>The <code class="literal">“stun-server”</code> property</h3>
+<pre class="programlisting">  “stun-server”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The STUN server of the form stun://hostname:port.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin--turn-server"></a><h3>The <code class="literal">“turn-server”</code> property</h3>
+<pre class="programlisting">  “turn-server”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *</pre>
+<p>The TURN server of the form turn(s)://username:password@host:port.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: NULL</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-webrtcbin.signal-details"></a><h2>Signal Details</h2>
+<div class="refsect2">
+<a name="GstWebRTCBin-add-ice-candidate"></a><h3>The <code class="literal">“add-ice-candidate”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a> *object,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         ice-candidate,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-add-ice-candidate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>ice-candidate</p></td>
+<td class="parameter_description"><p>an ice candidate</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-add-transceiver"></a><h3>The <code class="literal">“add-transceiver”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">GstWebRTCRTPTransceiver</span>*
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a>                    *object,
+               <span class="type">GstWebRTCRTPTransceiverDirection</span> direction,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstCaps.html#GstCaps-struct"><span class="type">GstCaps</span></a>                         *caps,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                         user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-add-transceiver.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>direction</p></td>
+<td class="parameter_description"><p>the direction of the new transceiver</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>caps</p></td>
+<td class="parameter_description"><p>the codec preferences for this transceiver. </p></td>
+<td class="parameter_annotations"><span class="annotation">[allow none]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GstWebRTCBin-add-transceiver.returns"></a><h4>Returns</h4>
+<p> the new <span class="type">GstWebRTCRTPTransceiver</span></p>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-create-answer"></a><h3>The <code class="literal">“create-answer”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a> *object,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *options,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a>   *promise,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-create-answer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>create-answer options</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a> which will contain the answer</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-create-offer"></a><h3>The <code class="literal">“create-offer”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a> *object,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstStructure.html#GstStructure-struct"><span class="type">GstStructure</span></a> *options,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a>   *promise,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-create-offer.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>options</p></td>
+<td class="parameter_description"><p>create-offer options</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a> which will contain the offer</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-get-stats"></a><h3>The <code class="literal">“get-stats”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a> *object,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPad.html#GstPad-struct"><span class="type">GstPad</span></a>       *promise,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a>   *arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<p>The <em class="parameter"><code>promise</code></em>
+ will contain the result of retrieving the session statistics.
+The structure will be named 'application/x-webrtc-stats and contain the
+following based on the webrtc-stats spec available from
+https://www.w3.org/TR/webrtc-stats/.  As the webrtc-stats spec is a draft
+and is constantly changing these statistics may be changed to fit with
+the latest spec.</p>
+<p>Each field key is a unique identifer for each RTCStats
+(https://www.w3.org/TR/webrtc/<span class="type">rtcstats-dictionary</span>) value (another
+GstStructure) in the RTCStatsReport
+(https://www.w3.org/TR/webrtc/<span class="type">rtcstatsreport-object</span>).  Each supported
+field in the RTCStats subclass is outlined below.</p>
+<p>Each statistics structure contains the following values as defined by
+the RTCStats dictionary (https://www.w3.org/TR/webrtc/<span class="type">rtcstats-dictionary</span>).</p>
+<p> "timestamp"           G_TYPE_DOUBLE               timestamp the statistics were generated
+ "type"                GST_TYPE_WEBRTC_STATS_TYPE  the type of statistics reported
+ "id"                  G_TYPE_STRING               unique identifier</p>
+<p>RTCCodecStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">codec-dict</span>*)</p>
+<p> "payload-type"        G_TYPE_UINT                 the rtp payload number in use
+ "clock-rate"          G_TYPE_UINT                 the rtp clock-rate</p>
+<p>RTCRTPStreamStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">streamstats-dict</span>*)</p>
+<p> "ssrc"                G_TYPE_STRING               the rtp sequence src in use
+ "transport-id"        G_TYPE_STRING               identifier for the associated RTCTransportStats for this stream
+ "codec-id"            G_TYPE_STRING               identifier for the associated RTCCodecStats for this stream
+ "fir-count"           G_TYPE_UINT                 FIR requests received by the sender (only for local statistics)
+ "pli-count"           G_TYPE_UINT                 PLI requests received by the sender (only for local statistics)
+ "nack-count"          G_TYPE_UINT                 NACK requests received by the sender (only for local statistics)</p>
+<p>RTCReceivedStreamStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">receivedrtpstats-dict</span>*)</p>
+<p> "packets-received"     G_TYPE_UINT64              number of packets received (only for local inbound)
+ "bytes-received"       G_TYPE_UINT64              number of bytes received (only for local inbound)
+ "packets-lost"         G_TYPE_UINT                number of packets lost
+ "jitter"               G_TYPE_DOUBLE              packet jitter measured in secondss</p>
+<p>RTCInboundRTPStreamStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">inboundrtpstats-dict</span>*)</p>
+<p> "remote-id"           G_TYPE_STRING               identifier for the associated RTCRemoteOutboundRTPSTreamStats</p>
+<p>RTCRemoteInboundRTPStreamStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">remoteinboundrtpstats-dict</span>*)</p>
+<p> "local-id"            G_TYPE_STRING               identifier for the associated RTCOutboundRTPSTreamStats
+ "round-trip-time"     G_TYPE_DOUBLE               round trip time of packets measured in seconds</p>
+<p>RTCSentRTPStreamStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">sentrtpstats-dict</span>*)</p>
+<p> "packets-sent"        G_TYPE_UINT64               number of packets sent (only for local outbound)
+ "bytes-sent"          G_TYPE_UINT64               number of packets sent (only for local outbound)</p>
+<p>RTCOutboundRTPStreamStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">outboundrtpstats-dict</span>*)</p>
+<p> "remote-id"           G_TYPE_STRING               identifier for the associated RTCRemoteInboundRTPSTreamStats</p>
+<p>RTCRemoteOutboundRTPStreamStats supported fields (https://w3c.github.io/webrtc-stats/<span class="type">remoteoutboundrtpstats-dict</span>*)</p>
+<p> "local-id"            G_TYPE_STRING               identifier for the associated RTCInboundRTPSTreamStats</p>
+<div class="refsect3">
+<a name="GstWebRTCBin-get-stats.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>promise</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a> for the result</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-get-transceivers"></a><h3>The <code class="literal">“get-transceivers”</code> signal</h3>
+<pre class="programlisting"><a href="/usr/share/gtk-doc/html/glib/glib-Arrays.html#GArray"><span class="returnvalue">GArray</span></a>*
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a> *object,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-get-transceivers.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="GstWebRTCBin-get-transceivers.returns"></a><h4>Returns</h4>
+<p> a <a href="/usr/share/gtk-doc/html/glib/glib-Arrays.html#GArray"><span class="type">GArray</span></a> of <span class="type">GstWebRTCRTPTransceivers</span></p>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-on-ice-candidate"></a><h3>The <code class="literal">“on-ice-candidate”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a> *object,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>         candidate,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>        *arg2,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-on-ice-candidate.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>candidate</p></td>
+<td class="parameter_description"><p>the ICE candidate</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-on-negotiation-needed"></a><h3>The <code class="literal">“on-negotiation-needed”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a> *object,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-on-negotiation-needed.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-set-local-description"></a><h3>The <code class="literal">“set-local-description”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a>                *object,
+               <span class="type">GstWebRTCSessionDescription</span> *type,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a>                  *sdp,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                     user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-set-local-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of description being set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sdp</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0/gst-plugins-base-libs-GstSDPMessage.html#GstSDPMessage"><span class="type">GstSDPMessage</span></a> description</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>promise (allow-none)</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a> to be notified when it's set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-set-remote-description"></a><h3>The <code class="literal">“set-remote-description”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a>                *object,
+               <span class="type">GstWebRTCSessionDescription</span> *type,
+               <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a>                  *sdp,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                     user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-set-remote-description.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>type</p></td>
+<td class="parameter_description"><p>the type of description being set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>sdp</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0/gst-plugins-base-libs-GstSDPMessage.html#GstSDPMessage"><span class="type">GstSDPMessage</span></a> description</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>promise (allow-none)</p></td>
+<td class="parameter_description"><p>a <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPromise.html#GstPromise-struct"><span class="type">GstPromise</span></a> to be notified when it's set</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-ACTION:CAPS">Action</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstWebRTCBin-on-new-transceiver"></a><h3>The <code class="literal">“on-new-transceiver”</code> signal</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+user_function (<a class="link" href="gst-plugins-bad-plugins-webrtcbin.html#GstWebRTCBin"><span class="type">GstWebRTCBin</span></a>            *object,
+               <span class="type">GstWebRTCRTPTransceiver</span> *candidate,
+               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>                 user_data)</pre>
+<div class="refsect3">
+<a name="GstWebRTCBin-on-new-transceiver.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>object</p></td>
+<td class="parameter_description"><p>the <span class="type">GstWebRtcBin</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>candidate</p></td>
+<td class="parameter_description"><p>the new <span class="type">GstWebRTCRTPTransceiver</span></p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>user_data</p></td>
+<td class="parameter_description"><p>user data set when the signal handler was connected.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p>Flags: <a href="/usr/share/gtk-doc/html/gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS">Run Last</a></p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

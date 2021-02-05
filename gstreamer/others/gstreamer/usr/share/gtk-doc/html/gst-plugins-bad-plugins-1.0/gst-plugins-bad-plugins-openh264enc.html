@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>openh264enc: GStreamer Bad Plugins 1.0 Plugins Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="GStreamer Bad Plugins 1.0 Plugins Reference Manual">
+<link rel="up" href="ch01.html" title="gst-plugins-bad Elements">
+<link rel="prev" href="gst-plugins-bad-plugins-openh264dec.html" title="openh264dec">
+<link rel="next" href="gst-plugins-bad-plugins-openjpegdec.html" title="openjpegdec">
+<meta name="generator" content="GTK-Doc V1.28 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-openh264enc.description" class="shortcut">Description</a></span><span id="nav_hierarchy">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-openh264enc.object-hierarchy" class="shortcut">Object Hierarchy</a></span><span id="nav_interfaces">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-openh264enc.implemented-interfaces" class="shortcut">Implemented Interfaces</a></span><span id="nav_properties">  <span class="dim">|</span> 
+                  <a href="#gst-plugins-bad-plugins-openh264enc.properties" class="shortcut">Properties</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="gst-plugins-bad-plugins-openh264dec.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="gst-plugins-bad-plugins-openjpegdec.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="gst-plugins-bad-plugins-openh264enc"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="gst-plugins-bad-plugins-openh264enc.top_of_page"></a>openh264enc</span></h2>
+<p>openh264enc</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.properties"></a><h2>Properties</h2>
+<div class="informaltable"><table class="informaltable" border="0">
+<colgroup>
+<col width="150px" class="properties_type">
+<col width="300px" class="properties_name">
+<col width="200px" class="properties_flags">
+</colgroup>
+<tbody>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--adaptive-quantization" title="The “adaptive-quantization” property">adaptive-quantization</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--background-detection" title="The “background-detection” property">background-detection</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--bitrate" title="The “bitrate” property">bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstOpenh264encDeblockingModes</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--deblocking" title="The “deblocking” property">deblocking</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--enable-denoise" title="The “enable-denoise” property">enable-denoise</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--enable-frame-skip" title="The “enable-frame-skip” property">enable-frame-skip</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--gop-size" title="The “gop-size” property">gop-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--max-slice-size" title="The “max-slice-size” property">max-slice-size</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--multi-thread" title="The “multi-thread” property">multi-thread</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--num-slices" title="The “num-slices” property">num-slices</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">RC_MODES</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--rate-control" title="The “rate-control” property">rate-control</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--scene-change-detection" title="The “scene-change-detection” property">scene-change-detection</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstOpenh264EncSliceModes</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--slice-mode" title="The “slice-mode” property">slice-mode</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">EUsageType</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--usage-type" title="The “usage-type” property">usage-type</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><span class="type">GstOpenh264encComplexity</span></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--complexity" title="The “complexity” property">complexity</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--max-bitrate" title="The “max-bitrate” property">max-bitrate</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--qp-max" title="The “qp-max” property">qp-max</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+<tr>
+<td class="property_type"><a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></td>
+<td class="property_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc--qp-min" title="The “qp-min” property">qp-min</a></td>
+<td class="property_flags">Read / Write</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<a name="GstOpenh264Enc"></a><div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody><tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="gst-plugins-bad-plugins-openh264enc.html#GstOpenh264Enc-struct" title="struct GstOpenh264Enc">GstOpenh264Enc</a></td>
+</tr></tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.object-hierarchy"></a><h2>Object Hierarchy</h2>
+<pre class="screen">    <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GObject-struct">GObject</a>
+    <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+        <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstObject.html#GstObject-struct">GstObject</a>
+            <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstElement.html#GstElement-struct">GstElement</a>
+                <span class="lineart">╰──</span> <a href="/usr/share/gtk-doc/html/gst-plugins-base-libs-1.0/gst-plugins-base-libs-GstVideoEncoder.html#GstVideoEncoder">GstVideoEncoder</a>
+                    <span class="lineart">╰──</span> GstOpenh264Enc
+</pre>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
+<p>
+GstOpenh264Enc implements
+ <a href="/usr/share/gtk-doc/html/gstreamer-1.0/GstPreset.html#GstPreset-struct">GstPreset</a>.</p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.description"></a><h2>Description</h2>
+<div class="refsynopsisdiv">
+<h2>Synopsis</h2>
+<div class="refsect2">
+<a name="id-1.2.167.8.2.1"></a><h3>Element Information</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">plugin</span></p></td>
+<td>
+            <a class="link" href="gst-plugins-bad-plugins-plugin-openh264.html#plugin-openh264">openh264</a>
+          </td>
+</tr>
+<tr>
+<td><p><span class="term">author</span></p></td>
+<td>Ericsson AB, http://www.ericsson.com</td>
+</tr>
+<tr>
+<td><p><span class="term">class</span></p></td>
+<td>Encoder/Video</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="id-1.2.167.8.2.2"></a><h3>Element Pads</h3>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>sink</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-raw, format=(string)I420, width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], framerate=(fraction)[ 0/1, 2147483647/1 ]</td>
+</tr>
+</tbody>
+</table></div>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term">name</span></p></td>
+<td>src</td>
+</tr>
+<tr>
+<td><p><span class="term">direction</span></p></td>
+<td>source</td>
+</tr>
+<tr>
+<td><p><span class="term">presence</span></p></td>
+<td>always</td>
+</tr>
+<tr>
+<td><p><span class="term">details</span></p></td>
+<td>video/x-h264, stream-format=(string)byte-stream, alignment=(string)au, profile=(string)baseline</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.functions_details"></a><h2>Functions</h2>
+<p></p>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="GstOpenh264Enc-struct"></a><h3>struct GstOpenh264Enc</h3>
+<pre class="programlisting">struct GstOpenh264Enc;</pre>
+</div>
+</div>
+<div class="refsect1">
+<a name="gst-plugins-bad-plugins-openh264enc.property-details"></a><h2>Property Details</h2>
+<div class="refsect2">
+<a name="GstOpenh264Enc--adaptive-quantization"></a><h3>The <code class="literal">“adaptive-quantization”</code> property</h3>
+<pre class="programlisting">  “adaptive-quantization”    <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Adaptive quantization.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--background-detection"></a><h3>The <code class="literal">“background-detection”</code> property</h3>
+<pre class="programlisting">  “background-detection”     <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Background detection.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--bitrate"></a><h3>The <code class="literal">“bitrate”</code> property</h3>
+<pre class="programlisting">  “bitrate”                  <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Bitrate (in bits per second).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 128000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--deblocking"></a><h3>The <code class="literal">“deblocking”</code> property</h3>
+<pre class="programlisting">  “deblocking”               <span class="type">GstOpenh264encDeblockingModes</span></pre>
+<p>Deblocking mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Deblocking on</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--enable-denoise"></a><h3>The <code class="literal">“enable-denoise”</code> property</h3>
+<pre class="programlisting">  “enable-denoise”           <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Denoise control.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--enable-frame-skip"></a><h3>The <code class="literal">“enable-frame-skip”</code> property</h3>
+<pre class="programlisting">  “enable-frame-skip”        <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Skip frames to reach target bitrate.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: FALSE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--gop-size"></a><h3>The <code class="literal">“gop-size”</code> property</h3>
+<pre class="programlisting">  “gop-size”                 <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Number of frames between intra frames.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 90</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--max-slice-size"></a><h3>The <code class="literal">“max-slice-size”</code> property</h3>
+<pre class="programlisting">  “max-slice-size”           <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The maximum size of one slice (in bytes).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 1500000</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--multi-thread"></a><h3>The <code class="literal">“multi-thread”</code> property</h3>
+<pre class="programlisting">  “multi-thread”             <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The number of threads.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--num-slices"></a><h3>The <code class="literal">“num-slices”</code> property</h3>
+<pre class="programlisting">  “num-slices”               <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>The number of slices (needs slice-mode=n-slices).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 1</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--rate-control"></a><h3>The <code class="literal">“rate-control”</code> property</h3>
+<pre class="programlisting">  “rate-control”             <span class="type">RC_MODES</span></pre>
+<p>Rate control mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Quality mode</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--scene-change-detection"></a><h3>The <code class="literal">“scene-change-detection”</code> property</h3>
+<pre class="programlisting">  “scene-change-detection”   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a></pre>
+<p>Scene change detection.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: TRUE</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--slice-mode"></a><h3>The <code class="literal">“slice-mode”</code> property</h3>
+<pre class="programlisting">  “slice-mode”               <span class="type">GstOpenh264EncSliceModes</span></pre>
+<p>Slice mode.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Fixed number of slices</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--usage-type"></a><h3>The <code class="literal">“usage-type”</code> property</h3>
+<pre class="programlisting">  “usage-type”               <span class="type">EUsageType</span></pre>
+<p>Type of video content.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: video from camera</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--complexity"></a><h3>The <code class="literal">“complexity”</code> property</h3>
+<pre class="programlisting">  “complexity”               <span class="type">GstOpenh264encComplexity</span></pre>
+<p>Complexity.</p>
+<p>Flags: Read / Write</p>
+<p>Default value: Medium complexity / medium speed encoding</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--max-bitrate"></a><h3>The <code class="literal">“max-bitrate”</code> property</h3>
+<pre class="programlisting">  “max-bitrate”              <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Maximum Bitrate (in bits per second).</p>
+<p>Flags: Read / Write</p>
+<p>Default value: 0</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--qp-max"></a><h3>The <code class="literal">“qp-max”</code> property</h3>
+<pre class="programlisting">  “qp-max”                   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Maximum quantizer.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 51</p>
+<p>Default value: 51</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="GstOpenh264Enc--qp-min"></a><h3>The <code class="literal">“qp-min”</code> property</h3>
+<pre class="programlisting">  “qp-min”                   <a href="/usr/share/gtk-doc/html/glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a></pre>
+<p>Minimum quantizer.</p>
+<p>Flags: Read / Write</p>
+<p>Allowed values: &lt;= 51</p>
+<p>Default value: 0</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.28</div>
+</body>
+</html>

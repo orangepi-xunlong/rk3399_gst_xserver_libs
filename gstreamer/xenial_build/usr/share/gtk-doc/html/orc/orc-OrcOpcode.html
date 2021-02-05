@@ -1,0 +1,427 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>OrcOpcode: Orc Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Orc Reference Manual">
+<link rel="up" href="ch03.html" title="Extension API">
+<link rel="prev" href="orc-OrcDebug.html" title="OrcDebug">
+<link rel="next" href="orc-Utility-functions.html" title="Utility functions">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
+<td width="100%" align="left" class="shortcuts">
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#orc-OrcOpcode.description" class="shortcut">Description</a></span>
+</td>
+<td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
+<td><a accesskey="u" href="ch03.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
+<td><a accesskey="p" href="orc-OrcDebug.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
+<td><a accesskey="n" href="orc-Utility-functions.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+</tr></table>
+<div class="refentry">
+<a name="orc-OrcOpcode"></a><div class="titlepage"></div>
+<div class="refnamediv"><table width="100%"><tr>
+<td valign="top">
+<h2><span class="refentrytitle"><a name="orc-OrcOpcode.top_of_page"></a>OrcOpcode</span></h2>
+<p>OrcOpcode — Operations</p>
+</td>
+<td class="gallery_image" valign="top" align="right"></td>
+</tr></table></div>
+<div class="refsect1">
+<a name="orc-OrcOpcode.functions"></a><h2>Functions</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="functions_return">
+<col class="functions_name">
+</colgroup>
+<tbody>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<span class="c_punctuation">(</span><a class="link" href="orc-OrcOpcode.html#OrcOpcodeEmulateFunc" title="OrcOpcodeEmulateFunc ()">*OrcOpcodeEmulateFunc</a><span class="c_punctuation">)</span> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcOpcode.html#OrcStaticOpcode" title="struct OrcStaticOpcode"><span class="returnvalue">OrcStaticOpcode</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-opcode-find-by-name" title="orc_opcode_find_by_name ()">orc_opcode_find_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-opcode-init" title="orc_opcode_init ()">orc_opcode_init</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-opcode-register-static" title="orc_opcode_register_static ()">orc_opcode_register_static</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-opcode-set-find-by-name" title="orc_opcode_set_find_by_name ()">orc_opcode_set_find_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcOpcode.html#OrcOpcodeSet" title="struct OrcOpcodeSet"><span class="returnvalue">OrcOpcodeSet</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-opcode-set-get" title="orc_opcode_set_get ()">orc_opcode_set_get</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcOpcode.html#OrcRuleSet" title="struct OrcRuleSet"><span class="returnvalue">OrcRuleSet</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-rule-set-new" title="orc_rule_set_new ()">orc_rule_set_new</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-target-get-asm-preamble" title="orc_target_get_asm_preamble ()">orc_target_get_asm_preamble</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="returnvalue">OrcTarget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-target-get-by-name" title="orc_target_get_by_name ()">orc_target_get_by_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="returnvalue">OrcTarget</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-target-get-default" title="orc_target_get_default ()">orc_target_get_default</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">unsigned <span class="returnvalue">int</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-target-get-default-flags" title="orc_target_get_default_flags ()">orc_target_get_default_flags</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-target-get-name" title="orc_target_get_name ()">orc_target_get_name</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<a class="link" href="orc-misc.html#OrcRule" title="struct OrcRule"><span class="returnvalue">OrcRule</span></a> *
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-target-get-rule" title="orc_target_get_rule ()">orc_target_get_rule</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="orc-OrcOpcode.html#orc-target-register" title="orc_target_register ()">orc_target_register</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-OrcOpcode.other"></a><h2>Types and Values</h2>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="name">
+<col class="description">
+</colgroup>
+<tbody>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#OrcOpcodeExecutor" title="struct OrcOpcodeExecutor">OrcOpcodeExecutor</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#OrcOpcodeSet" title="struct OrcOpcodeSet">OrcOpcodeSet</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#OrcRuleSet" title="struct OrcRuleSet">OrcRuleSet</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword">struct</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#OrcStaticOpcode" title="struct OrcStaticOpcode">OrcStaticOpcode</a></td>
+</tr>
+<tr>
+<td class="datatype_keyword"> </td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget">OrcTarget</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#ORC-OPCODE-N-ARGS:CAPS" title="ORC_OPCODE_N_ARGS">ORC_OPCODE_N_ARGS</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#ORC-STATIC-OPCODE-ACCUMULATOR:CAPS" title="ORC_STATIC_OPCODE_ACCUMULATOR">ORC_STATIC_OPCODE_ACCUMULATOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#ORC-STATIC-OPCODE-N-DEST:CAPS" title="ORC_STATIC_OPCODE_N_DEST">ORC_STATIC_OPCODE_N_DEST</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="orc-OrcOpcode.html#ORC-STATIC-OPCODE-N-SRC:CAPS" title="ORC_STATIC_OPCODE_N_SRC">ORC_STATIC_OPCODE_N_SRC</a></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect1">
+<a name="orc-OrcOpcode.description"></a><h2>Description</h2>
+</div>
+<div class="refsect1">
+<a name="orc-OrcOpcode.functions_details"></a><h2>Functions</h2>
+<div class="refsect2">
+<a name="OrcOpcodeEmulateFunc"></a><h3>OrcOpcodeEmulateFunc ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+<span class="c_punctuation">(</span>*OrcOpcodeEmulateFunc<span class="c_punctuation">)</span> (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcOpcodeExecutor" title="struct OrcOpcodeExecutor"><span class="type">OrcOpcodeExecutor</span></a> *ex</code></em>,
+                         <em class="parameter"><code><span class="type">void</span> *user</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-opcode-find-by-name"></a><h3>orc_opcode_find_by_name ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcOpcode.html#OrcStaticOpcode" title="struct OrcStaticOpcode"><span class="returnvalue">OrcStaticOpcode</span></a> *
+orc_opcode_find_by_name (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-opcode-init"></a><h3>orc_opcode_init ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_opcode_init (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-opcode-register-static"></a><h3>orc_opcode_register_static ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_opcode_register_static (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcStaticOpcode" title="struct OrcStaticOpcode"><span class="type">OrcStaticOpcode</span></a> *sopcode</code></em>,
+                            <em class="parameter"><code><span class="type">char</span> *prefix</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-opcode-set-find-by-name"></a><h3>orc_opcode_set_find_by_name ()</h3>
+<pre class="programlisting"><span class="returnvalue">int</span>
+orc_opcode_set_find_by_name (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcOpcodeSet" title="struct OrcOpcodeSet"><span class="type">OrcOpcodeSet</span></a> *opcode_set</code></em>,
+                             <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-opcode-set-get"></a><h3>orc_opcode_set_get ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcOpcode.html#OrcOpcodeSet" title="struct OrcOpcodeSet"><span class="returnvalue">OrcOpcodeSet</span></a> *
+orc_opcode_set_get (<em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-rule-set-new"></a><h3>orc_rule_set_new ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcOpcode.html#OrcRuleSet" title="struct OrcRuleSet"><span class="returnvalue">OrcRuleSet</span></a> *
+orc_rule_set_new (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcOpcodeSet" title="struct OrcOpcodeSet"><span class="type">OrcOpcodeSet</span></a> *opcode_set</code></em>,
+                  <em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="type">OrcTarget</span></a> *target</code></em>,
+                  <em class="parameter"><code>unsigned <span class="type">int</span> required_flags</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-target-get-asm-preamble"></a><h3>orc_target_get_asm_preamble ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+orc_target_get_asm_preamble (<em class="parameter"><code>const <span class="type">char</span> *target</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-target-get-by-name"></a><h3>orc_target_get_by_name ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="returnvalue">OrcTarget</span></a> *
+orc_target_get_by_name (<em class="parameter"><code>const <span class="type">char</span> *target_name</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-target-get-default"></a><h3>orc_target_get_default ()</h3>
+<pre class="programlisting"><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="returnvalue">OrcTarget</span></a> *
+orc_target_get_default (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-target-get-default-flags"></a><h3>orc_target_get_default_flags ()</h3>
+<pre class="programlisting">unsigned <span class="returnvalue">int</span>
+orc_target_get_default_flags (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="type">OrcTarget</span></a> *target</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-target-get-name"></a><h3>orc_target_get_name ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+orc_target_get_name (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="type">OrcTarget</span></a> *target</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-target-get-rule"></a><h3>orc_target_get_rule ()</h3>
+<pre class="programlisting"><a class="link" href="orc-misc.html#OrcRule" title="struct OrcRule"><span class="returnvalue">OrcRule</span></a> *
+orc_target_get_rule (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="type">OrcTarget</span></a> *target</code></em>,
+                     <em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcStaticOpcode" title="struct OrcStaticOpcode"><span class="type">OrcStaticOpcode</span></a> *opcode</code></em>,
+                     <em class="parameter"><code>unsigned <span class="type">int</span> target_flags</code></em>);</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="orc-target-register"></a><h3>orc_target_register ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+orc_target_register (<em class="parameter"><code><a class="link" href="orc-OrcOpcode.html#OrcTarget" title="OrcTarget"><span class="type">OrcTarget</span></a> *target</code></em>);</pre>
+<p>
+</p>
+</div>
+</div>
+<div class="refsect1">
+<a name="orc-OrcOpcode.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="OrcOpcodeExecutor"></a><h3>struct OrcOpcodeExecutor</h3>
+<pre class="programlisting">struct OrcOpcodeExecutor {
+};
+</pre>
+<p>The OrcOpcodeExecutor structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcOpcodeSet"></a><h3>struct OrcOpcodeSet</h3>
+<pre class="programlisting">struct OrcOpcodeSet {
+};
+</pre>
+<p>The OrcOpcodeSet structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcRuleSet"></a><h3>struct OrcRuleSet</h3>
+<pre class="programlisting">struct OrcRuleSet {
+};
+</pre>
+<p>The OrcRuleSet structure has no public members</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcStaticOpcode"></a><h3>struct OrcStaticOpcode</h3>
+<pre class="programlisting">struct OrcStaticOpcode {
+  char name[16];
+  unsigned int flags;
+  int dest_size[ORC_STATIC_OPCODE_N_DEST];
+  int src_size[ORC_STATIC_OPCODE_N_SRC];
+  OrcOpcodeEmulateNFunc emulateN;
+};
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="OrcTarget"></a><h3>OrcTarget</h3>
+<pre class="programlisting">typedef struct {
+  const char *name;
+  orc_bool executable;
+  int data_register_offset;
+
+  unsigned int (*get_default_flags)(void);
+  void (*compiler_init)(OrcCompiler *compiler);
+  void (*compile)(OrcCompiler *compiler);
+
+  OrcRuleSet rule_sets[ORC_N_RULE_SETS];
+  int n_rule_sets;
+
+  const char * (*get_asm_preamble)(void);
+  void (*load_constant)(OrcCompiler *compiler, int reg, int size, int value);
+  const char * (*get_flag_name)(int shift);
+  void (*flush_cache) (OrcCode *code);
+  void (*load_constant_long)(OrcCompiler *compiler, int reg,
+      OrcConstant *constant);
+
+  void *_unused[5];
+} OrcTarget;
+</pre>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-OPCODE-N-ARGS:CAPS"></a><h3>ORC_OPCODE_N_ARGS</h3>
+<pre class="programlisting">#define ORC_OPCODE_N_ARGS 4
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-STATIC-OPCODE-ACCUMULATOR:CAPS"></a><h3>ORC_STATIC_OPCODE_ACCUMULATOR</h3>
+<pre class="programlisting">#define ORC_STATIC_OPCODE_ACCUMULATOR (1&lt;&lt;0)
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-STATIC-OPCODE-N-DEST:CAPS"></a><h3>ORC_STATIC_OPCODE_N_DEST</h3>
+<pre class="programlisting">#define ORC_STATIC_OPCODE_N_DEST 2
+</pre>
+<p>
+</p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="ORC-STATIC-OPCODE-N-SRC:CAPS"></a><h3>ORC_STATIC_OPCODE_N_SRC</h3>
+<pre class="programlisting">#define ORC_STATIC_OPCODE_N_SRC 4
+</pre>
+<p>
+</p>
+</div>
+</div>
+</div>
+<div class="footer">
+<hr>Generated by GTK-Doc V1.25</div>
+</body>
+</html>
